@@ -1,0 +1,154 @@
+$device-type: mobile;
+
+.contacts {
+	display: block;
+
+	margin-bottom: blocks-margin($device-type);
+}
+
+.contacts__title {
+	display: block;
+
+	margin-bottom: 2px;
+
+	text-align: left;
+	text-transform: uppercase;
+	@include font(fsz($device-type, h2), 1, bold, $c-grey-dark, 1.5px);
+}
+
+.contacts tbody {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	padding-top: fsz($device-type, h1);
+	border-top: 3px solid $c-grey;
+}
+
+.contacts__method {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	padding-left: 65px;
+
+	margin-left: -2px;
+	margin-bottom: fsz($device-type, h2);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		@include pseudo;
+		width: 50px;
+		height: 50px;
+
+		left: 0px;
+		top: -1px;
+
+		background-color: $c-accent;
+		border-radius: 50%;
+	}
+}
+
+.contacts__name {
+	display: block;
+	
+	@include font(fsz($device-type, p), 24px, normal, $c-grey);
+	order: 2;
+}
+
+.contacts__info {
+	display: block;
+	
+	@include font(fsz(mobile, h3), 1, normal, $c-grey);
+}
+
+.contacts__icon {
+	position: absolute;
+
+	width: 24px;
+	height: 24px;
+
+	left: 14px;
+	top: 12px;
+
+	fill: #fff;
+}
+
+@media #{$tablet-width} {
+	$device-type: tablet;
+	
+	.contacts {
+		margin-bottom: blocks-margin($device-type);
+	}
+
+	.contacts__title {
+		font-size: fsz($device-type, h2);
+	}
+
+	.contacts tbody {
+		padding-top: fsz($device-type, h2);
+	}
+
+	.contacts__method {
+		padding-left: 60px;
+		margin-bottom: 0;
+	}
+
+	.contacts__name {
+		font-size: fsz($device-type, p);
+	}
+}
+
+@media #{$desktop-width} {
+
+	$device-type: desktop;
+
+	.contacts {
+		margin-bottom: blocks-margin($device-type);
+	}
+
+	.contacts__title {
+		font-size: fsz($device-type, h2);
+	}
+
+	.contacts tbody {
+		padding-top: fsz($device-type, h2);
+	}
+
+	.contacts__method {
+		padding-left: 80px;
+
+		&:last-child {
+			margin-right: 15px;
+		}
+
+		&:before {
+			@include pseudo;
+			width: 60px;
+			height: 60px;
+
+			left: 0px;
+			top: -7px;
+		}
+	}
+
+	.contacts__name {
+		font-size: fsz(desktop, p);
+	}
+
+	.contacts__info {
+		font-size: fsz(desktop, h3);;
+	}
+
+	.contacts__icon {
+		width: 26px;
+		height: 26px;
+
+		left: 18px;
+		top: 10px;
+	}
+}

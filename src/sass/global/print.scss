@@ -1,0 +1,41 @@
+@media print {
+	@page {
+		margin: 0;
+		padding: 0;
+	}
+
+	.page {
+		width: $max-width;
+    height: $max-width*$page-proportion;
+
+    max-width: none;
+    // margin: 0 auto;
+
+		print-color-adjust: exact;
+		-webkit-print-color-adjust: exact;
+
+		margin: 0;
+
+		border: none;
+		box-shadow: none;
+
+		a {
+			text-decoration: none;
+
+			&:after {
+				content:" <" attr(href) ">";		
+			}
+		}
+
+		.contacts a:after {
+			content: "";
+		}	
+
+		.business__circle {
+			&--grey {
+				background-color: $c-grey-light;
+			}
+		}
+	}
+
+}
