@@ -5,6 +5,13 @@ $device-type: mobile;
 	@include container();
 
 	margin-top: 2.5%;
+	margin-bottom: 72px;
+}
+
+.page__footer {
+	position: absolute;	
+	bottom: -40px;
+	color: $c-grey;
 }
 
 .page__lang {
@@ -43,8 +50,13 @@ $device-type: mobile;
 		@include container();
 
 		margin-top: 5%;
+		margin-bottom: 104px;
 	}
-	
+
+	.page__footer {
+		bottom: -72px;
+	}
+
 	.page__lang {
 		right: 16px;
 		top: 3px;
@@ -81,6 +93,10 @@ $device-type: mobile;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
 
 		overflow: hidden;
+	}
+
+	.page__footer {
+		bottom: 64px;
 	}
 
 	.page__lang {

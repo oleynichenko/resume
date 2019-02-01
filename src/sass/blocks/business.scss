@@ -61,10 +61,14 @@ $device-type: mobile;
 	margin-bottom: 8px;		
 }
 
-.business__description ul {
+.business__list {
 	margin: 5px 0;
 	padding-left: 16px;
 	list-style: none;
+}
+
+.business__list li {
+	margin-bottom: 3px;
 }
 
 .business__mark {
@@ -75,8 +79,8 @@ $device-type: mobile;
 .business__circle {
 	display: block;
 
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 
 	font-size: 0;
 
@@ -106,6 +110,11 @@ $device-type: mobile;
 	
 	.business__item {
 		font-size: fsz($device-type, p);
+	}
+
+	.business__circle {
+		width: 12px;
+		height: 12px;
 	}
 }	
 

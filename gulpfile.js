@@ -3,11 +3,9 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var mqpacker = require("css-mqpacker");
 var server = require("browser-sync").create();
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var del = require("del");
 var pug = require("gulp-pug");
@@ -56,29 +54,7 @@ gulp.task("serve", ["run-src"], function() {
   gulp.watch("src/*.html").on("change", server.reload);
 });
 
-
-// сборка
-// gulp.task("style-build", function() {
-//   gulp.src("build/css/style.css")
-//     .pipe(postcss([
-//       mqpacker({
-//         sort: true
-//         })
-//     ]))
-//     .pipe(gulp.dest("build/css"))
-//     .pipe(minify())
-//     .pipe(rename("style.min.css"))
-//     .pipe(gulp.dest("build/css"));
-// });
-
-gulp.task("images", function() {
-  gulp.src("build/img/**/*.{png,jpg,gif}")
-    .pipe(imagemin([
-       imagemin.optipng({optimizationLevel: 3}),
-       imagemin.jpegtran({progressive: true})
-    ]))
-    .pipe(gulp.dest("build/img"));
-});
+// Сборка
 
 gulp.task("copy", function() {
  return gulp.src([
@@ -99,24 +75,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("run-build", function(fn) {
-  run("clean", "copy", "images", "generate-favicon", "inject-favicon-markups", fn);
-});
-
-// Копирование для Портфолио
-
-gulp.task("copy-portfolio", function() {
- return gulp.src([
-   "build/**/*.*"
-   ])
- .pipe(gulp.dest("../oleynichenko.github.io/resume"));
-});
-
-gulp.task("clean-portfolio", function() {
-  return del(["../oleynichenko.github.io/resume/**", "!../oleynichenko.github.io/resume"], {force: true});
-});
-
-gulp.task("build-portfolio", function(fn) {
-  run("clean-portfolio", "copy-portfolio", fn);
+  run("clean", "copy", "generate-favicon", "inject-favicon-markups", fn);
 });
 
 //favicon

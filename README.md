@@ -1,5 +1,2 @@
-# resume-project
-
-My resume on Designer's school assignment
-
-
+# My Resume
+[Open online](https://oleynichenko.github.io/resume/)
