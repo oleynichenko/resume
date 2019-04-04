@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume Alexandr Oleynichenko</title>
+		<meta name="description" content="Resume Alexandr Oleynichenko">
+		include partials/_styles
+	</head>
+	<body>
+		include partials/_svg-sprite.pug
+		+svg-sprite("phone2", "mail", "magnifier")
+		<main class="page">
+			<a href="/resume" class="page__lang">RU</a>
+			<header class="about">				
+				<div class="about__photo">
+					<picture>
+						<img src="img/alexandr-ds-1x.jpg" srcset="img/alexandr-ds-2x.jpg 2x" alt="Фото" width="376" height="470">
+					</picture>
+				</div>
+				<section class="about__block">
+					<h1 class="about__name">Alexandr Oleynichenko</h1>
+					<b class="about__position">Front-end developer</b>
+					<div class="about__description">
+						<p>Mathematician by education. Until 2003 worked at the Institute of Mathematics of the National Academy of Sciences. Over the next 10 years went from a sales manager to the head of a distribution company (FMCG).</p>
+						<p>In 2013 moved to internet marketing. Participated in the promotion of several educational projects. Since 2016 I`ve been doing what I really like — web development.</p>
+					</div>
+					<table class="info" cellspacing="20px">
+						<tr class="info__method">
+							<td class="info__name">Desired position</td>
+							<td class="info__info">Front-end developer</td>
+						</tr>
+						<tr class="info__method">
+							<td class="info__name">Languages</td>
+							<td class="info__info">English (upper intermediate)</td>
+						</tr>
+						<tr class="info__method">
+							<td class="info__name">Residence</td>
+							<td class="info__info">Kiev</td>
+						</tr>				
+						<tr class="info__method">
+							<td class="info__name">Nationality</td>
+							<td class="info__info">Ukrainian</td>
+						</tr>
+					</table>
+				</section>
+			</header>			
+			<table class="contacts" cellspacing="20px">
+				<h2 class="contacts__title">Contacts</h2>
+				<tr class="contacts__method">
+					<td class="contacts__name"><svg class="contacts__icon" width="32" height="32"><use xlink:href="#phone2"></use></svg>Phone</td>
+					<td class="contacts__info"><a class="no-underline" href="tel: +380508658218">+38 050 865 82 18</a></td>
+				</tr>
+				<tr class="contacts__method">
+					<td class="contacts__name"><svg class="contacts__icon" width="32" height="32"><use xlink:href="#mail"></use></svg>Email</td>
+					<td class="contacts__info"><a href="mailto:oleynichenkos@gmail.com?subject=Invitation to an interview" class="">oleynichenkos@gmail.com</a></td>
+				</tr>
+				<tr class="contacts__method">
+					<td class="contacts__name"><svg class="contacts__icon" width="32" height="32"><use xlink:href="#magnifier"></use></svg>Portfolio</td>
+					<td class="contacts__info"><a href="https://oleynichenko.github.io/">oleynichenko.github.io</a></td>
+				</tr>
+			</table>
+			<div class="page__module">
+				<table class="page__module-item business" cellspacing="20px">
+					<caption class="business__title">Education</caption>
+					<tr class="business__item">
+						<td class="business__key">Winter 2019</td>
+						<td class="business__description">
+							<span class="business__mark">AcadeMind + Angular University</span><br>
+							<ul class="business__list">
+								<li><a target="_blank" href="https://www.udemy.com/angular-course/">Angular Core Deep Dive</a></li>
+								<li><a target="_blank" href="https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/">Full App with Angular Material</a></li>
+								<li><a target="_blank" href="https://www.udemy.com/rxjs-reactive-angular-course">RxJs Reactive Programming</a></li>
+								<li><a target="_blank" href="https://www.udemy.com/ngrx-course/">NgRx In Depth</a></li>
+								<li><a target="_blank" href="https://www.udemy.com/the-complete-guide-to-angular-2">Angular 7 - The Complete Guide</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">Autumn 2018</td>
+						<td class="business__description">
+							<span class="business__mark">HTML Academy</span>
+							<ul class="business__list">
+								<li><a target="_blank" href="https://htmlacademy.ru/intensive/php">Professional PHP</a></li>
+							</ul>								
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">Spring 2018</td>
+						<td class="business__description">
+							<span class="business__mark">MongoDB University</span>
+							<ul class="business__list">
+								<li><a target="_blank"  href="https://university.mongodb.com/courses/M121/about">MongoDB Aggregation Framework</a></li>
+								<li><a target="_blank"  href="M220JS: MongoDB for Javascript Developers">MongoDB for JS Developers</a></li>
+								<li><a target="_blank"  href="https://university.mongodb.com/courses/M001/about">MongoDB Basics</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">Winter 2018</td>
+						<td class="business__description">
+							<span class="business__mark">HTML Academy</span>
+							<ul class="business__list">
+								<li><a target="_blank" href="https://htmlacademy.ru/intensive/nodejs">Professional Node.js</a></li>		
+							</ul>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">Autumn 2017</td>
+						<td class="business__description">
+							<span class="business__mark">School of Designers by Artem Gorbunov</span>
+							<ul class="business__list">
+								<li><a target="_blank" href="https://bureau.ru/school">User Interface Design Course</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">2016 – 2017</td>
+						<td class="business__description">
+						<span class="business__mark">HTML Academy</span>
+							<ul class="business__list">
+								<li><a target="_blank" href="https://htmlacademy.ru/intensive/ecmascript">Advanced JavaScript</a></li>
+								<li><a target="_blank" href="https://htmlacademy.ru/intensive/adaptive">Advanced HTML и CSS</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<table class="page__module-item business" cellspacing="20px">
+					<caption class="business__title">Experience</caption>
+					<tr class="business__item">
+						<td class="business__key">Since November 2017</td>
+						<td class="business__description">
+							<span class="business__mark">Project «Pumping Tests»</a></span>
+							<b class="business__position">Front-end developer</b>
+							<p class="business__text">Layout + JS + Node.js + MongoDB <br>Integration with API of FB, VK, Twitter. <br>Application architecture development. <br><br>Examples:</p>
+								<ul class="business__list">
+									<li><a target="_blank" href="https://intense-chamber-18646.herokuapp.com/links/js-functions-short">Javascript Ninja: Functions</li>
+									<li><a target="_blank" href="https://intense-chamber-18646.herokuapp.com/links/essentialism-short">The Basic of Essentialism</li>
+								</ul>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">2017 (8 months)</td>
+						<td class="business__description">
+							<span class="business__mark">Freelance</span> <br>
+							<b class="business__position">Front-end developer</b>
+							<p class="business__text">Works are presented in the <a href="https://oleynichenko.github.io/">portfolio </a>.
+							</p>
+						</td>
+					</tr>
+					<tr class="business__item">
+						<td class="business__key">11.2015 – 01.2017</td>
+						<td class="business__description">
+							<span class="business__mark">CDM Store</span>
+							<b class="business__position">Website administrator</b>
+							<p class="business__text">Creating, supporting and promoting <span class="no-wrap">6 sites on Joomla and WordPress</span>. 
+								<br>Writing tasks for designers and programmers.
+								<br>Configuring reports from Google Analytics and Yandex Metrics.
+								<br>Organized a system for receiving online payments.
+								<br>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="page__module">
+				<section class="page__module-item hobbies">
+					<h2 class="hobbies__title business__title">Good knowledges</h2>
+					<ul class="hobbies__list">
+						<li class="hobbies__item">Neuromarketing</li>
+						<li class="hobbies__item">Adwords</li>
+						<li class="hobbies__item">SEO</li>
+						<li class="hobbies__item">Webdesign</li>
+						<li class="hobbies__item">Material Design</li>
+						<li class="hobbies__item">UX/UI</li>
+						<li class="hobbies__item">Copywriting</li>
+						<li class="hobbies__item">Psychology</li>
+						<li class="hobbies__item">CPA-Marketing</li>
+					</ul>
+				</section>
+				<table class="page__module-item business" cellspacing="20px">
+					<caption class="business__title">Skills</caption>
+						<tr class="business__item">
+							<td class="business__key">JavaScript</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">HTML + PUG</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">CSS + SCSS</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">Angular + NgRx</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">Node JS</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">MongoDB</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">PHP + SQL</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">PS + AdobeXD</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+						<tr class="business__item">
+							<td class="business__key">UX/UI</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle">+</td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+							<td class="business__circle business__circle--grey"></td>
+						</tr>
+					</h2>
+				</table>
+			</div>
+			<div class="page__footer">
+				<p class="page__footer-updated">Last updated: 03.2019</p>
+				<p><a href="/resume"> Russian version</a></p>
+			</div>			
+		</main>
+	</body>	
+</html>

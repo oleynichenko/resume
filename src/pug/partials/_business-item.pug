@@ -1,0 +1,9 @@
+mixin businessItem(name, level)
+  tr.business__item
+    td.business__key= name
+    each _ in Array(level)
+      td.business__circle +
+
+    each _ in Array(12 - level)
+      td.business__circle.business__circle--grey
+

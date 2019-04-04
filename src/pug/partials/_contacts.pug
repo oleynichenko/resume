@@ -1,0 +1,19 @@
+include _contacts-icon
+table(class="contacts" cellspacing="20px")
+  h2.contacts__title Контакты
+  tr.contacts__method
+    td.contacts__name
+      +contactIcon("#phone2", content.contacts.phone[lang])
+    td.contacts__info
+      a(class="no-underline" href="tel: +380508658218") +38 050 865 82 18
+  tr.contacts__method
+    td.contacts__name
+      +contactIcon("#mail", 'Email')
+    td.contacts__info
+      a(href="mailto:oleynichenkos@gmail.com?subject=Interview invitation")  oleynichenkos@gmail.com
+  tr.contacts__method
+    td.contacts__name
+      +contactIcon("#magnifier", content.contacts.phone[lang])
+    td.contacts__info
+      a(href="https://oleynichenko.github.io/") oleynichenko.github.io
+
