@@ -1,29 +1,29 @@
-<table class="page__module-item business" cellspacing="20px">
-	<caption class="business__title">Образование</caption>
-	<tr class="business__item">
-		<td class="business__key">Зима 2019</td>
+include ../content.pug
+
+table.page__module-item.business(cellspacing="20px")
+	caption.business__title= content.block.education[lang]
+	tr.business__item
+		<td class="business__key">2019</td>
+		<td class="business__description">
+			<span class="business__mark">Udemy</span>
+			<ul class="business__list">
+				<li><a target="_blank" href="https://www.udemy.com/course/design-patterns-javascript/">Design Patterns in JavaScript</a></li>
+				<li><a target="_blank" href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2">The Complete Node.js Developer Course</a></li>
+			</ul>
+		</td>
+	tr.business__item
+		<td class="business__key">2018</td>
 		<td class="business__description">
 			<span class="business__mark">AcadeMind + Angular University</span><br>
 			<ul class="business__list">
 				<li><a target="_blank" href="https://www.udemy.com/angular-course/">Angular Core Deep Dive</a></li>
-				<li><a target="_blank" href="https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/">Full App with Angular Material</a></li>
 				<li><a target="_blank" href="https://www.udemy.com/rxjs-reactive-angular-course">RxJs Reactive Programming</a></li>
 				<li><a target="_blank" href="https://www.udemy.com/ngrx-course/">NgRx In Depth</a></li>
-				<li><a target="_blank" href="https://www.udemy.com/the-complete-guide-to-angular-2">Angular 7 - The Complete Guide</a></li>
+				<li><a target="_blank" href="https://www.udemy.com/the-complete-guide-to-angular-2">Angular - The Complete Guide</a></li>
 			</ul>
 		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">Осень 2018</td>
-		<td class="business__description">
-			<span class="business__mark">HTML Academy</span>
-			<ul class="business__list">
-				<li><a target="_blank" href="https://htmlacademy.ru/intensive/php">Профессиональный PHP</a></li>
-			</ul>
-		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">Весна 2018</td>
+	tr.business__item
+		<td class="business__key"></td>
 		<td class="business__description">
 			<span class="business__mark">MongoDB University</span>
 			<ul class="business__list">
@@ -32,33 +32,35 @@
 				<li><a target="_blank"  href="https://university.mongodb.com/courses/M001/about">MongoDB Basics</a></li>
 			</ul>
 		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">Зима 2018</td>
-		<td class="business__description">
+	tr.business__item
+		td.business__key 2016 – 2017
+		td.business__description
+			span.business__mark= content.courses.gorbunov[lang]
+			ul.business__list
+				li
+					a(
+						target="_blank"
+						href="https://bureau.ru/school"
+					)= content.courses.interface[lang]
+	tr.business__item
+		td.business__key
+		td.business__description
 			<span class="business__mark">HTML Academy</span>
-			<ul class="business__list">
-				<li><a target="_blank" href="https://htmlacademy.ru/intensive/nodejs">Профессиональный Node.js</a></li>
-			</ul>
-		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">Осень 2017</td>
-		<td class="business__description">
-			<span class="business__mark">Школа дизайнеров Горбунова</span>
-			<ul class="business__list">
-				<li><a target="_blank" href="https://bureau.ru/school">Курс интерфейсного дизайна</a></li>
-			</ul>
-		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">2016 – 2017</td>
-		<td class="business__description">
-		<span class="business__mark">HTML Academy</span>
-			<ul class="business__list">
-				<li><a target="_blank" href="https://htmlacademy.ru/intensive/ecmascript">Продвинутый JavaScript</a></li>
-				<li><a target="_blank" href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a></li>
-			</ul>
-		</td>
-	</tr>
-</table>
+			ul.business__list
+				li
+					a(target="_blank"
+						href="https://htmlacademy.ru/intensive/nodejs"
+					)= content.courses.node[lang]
+				li
+					a(target="_blank"
+						href="https://htmlacademy.ru/intensive/php"
+					)= content.courses.php[lang]
+				li
+					a(target="_blank"
+						href="https://htmlacademy.ru/intensive/ecmascript"
+					)= content.courses.js[lang]
+				li
+					a(target="_blank"
+						href="https://htmlacademy.ru/intensive/adaptive"
+					)= content.courses.layout[lang]
+

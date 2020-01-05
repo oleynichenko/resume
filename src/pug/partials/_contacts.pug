@@ -1,6 +1,8 @@
+include ../content.pug
 include _contacts-icon
+
 table(class="contacts" cellspacing="20px")
-  h2.contacts__title Контакты
+  h2.contacts__title= content.block.contacts[lang]
   tr.contacts__method
     td.contacts__name
       +contactIcon("#phone2", content.contacts.phone[lang])
@@ -8,12 +10,13 @@ table(class="contacts" cellspacing="20px")
       a(class="no-underline" href="tel: +380508658218") +38 050 865 82 18
   tr.contacts__method
     td.contacts__name
-      +contactIcon("#mail", 'Email')
+      +contactIcon("#mail", content.contacts.email[lang])
     td.contacts__info
-      a(href="mailto:oleynichenkos@gmail.com?subject=Interview invitation")  oleynichenkos@gmail.com
+      a(href="mailto:oleynichenkos@gmail.com?subject=Interview invitation") oleynichenkos@gmail.com
   tr.contacts__method
     td.contacts__name
-      +contactIcon("#magnifier", content.contacts.phone[lang])
+      - var phone = content.contacts.portfolio[lang];
+      +contactIcon("#magnifier", phone)
     td.contacts__info
       a(href="https://oleynichenko.github.io/") oleynichenko.github.io
 
