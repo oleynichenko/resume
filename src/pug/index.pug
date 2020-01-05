@@ -14,7 +14,7 @@ html(lang=lang)
     +svg-sprite("phone2", "mail", "magnifier")
     include partials/_business-item
     main.page
-      a(href="/resume/en.html" class="page__lang") EN
+      a.page__lang(href=content.version_url[lang])= content.version_lang[lang]
       include partials/_about
       include partials/_contacts
       .page__module
@@ -24,5 +24,6 @@ html(lang=lang)
         include partials/_hobbies
         include partials/_skills
       .page__footer
-        <p class="page__footer-updated">Последнее обновление: 03.2019</p>
-        <p><a href="/resume/en.html">English version</a></p>
+        p.page__footer-updated= content.update[lang]
+        p
+          a(href=content.version_url[lang])= content.version[lang]

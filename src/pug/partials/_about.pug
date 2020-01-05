@@ -1,31 +1,21 @@
+include ../content.pug
+
 header.about
-	<div class="about__photo">
-		<picture>
-			<img src="img/alexandr-ds-1x.jpg" srcset="img/alexandr-ds-2x.jpg 2x" alt="Фото" width="376" height="470">
-		</picture>
-	</div>
+	.about__photo
+		picture
+			img(
+				src="img/alexandr-ds-1x.jpg"
+				srcset="img/alexandr-ds-2x.jpg 2x"
+				alt="Фото"
+				width="376"
+				height="470"
+			)
 	section.about__block
-		<h1 class="about__name">Александр Олейниченко</h1>
-		<b class="about__position">Front-end разработчик</b>
-		<div class="about__description">
-			<p>Математик по образованию. Работал до 2003 года в Институте Математики НАН Украины. <span class="no-wrap">За следующие 10 лет</span> прошел путь от менеджера по продажам до руководителя дистрибуторской компании на FMCG рынке.</p>
-			<p>В 2013 перешел в интернет-маркетинг. Участвовал в продвижении нескольких образовательных проектов. <span class="no-wrap">С 2016 года</span> занимаюсь тем, что по-настоящему нравится — веб-разработкой. </p>
-		</div>
-		<table class="info" cellspacing="20px">
-			<tr class="info__method">
-				<td class="info__name">Желаемая позиция</td>
-				<td class="info__info">Front-End разработчик</td>
-			</tr>
-			<tr class="info__method">
-				<td class="info__name">Знание языков</td>
-				<td class="info__info">English (upper intermediate)</td>
-			</tr>
-			<tr class="info__method">
-				<td class="info__name">Проживание</td>
-				<td class="info__info">Киев</td>
-			</tr>
-			<tr class="info__method">
-				<td class="info__name">Национальность</td>
-				<td class="info__info">Украинец</td>
-			</tr>
-		</table>
+		h1.about__name= content.name[lang]
+		b.about__position= content.position[lang]
+		div.about__description!= content.description[lang]
+		table.info(cellspacing="20px")
+			each val in content.about
+				tr.info__method
+					td.info__name= val.name[lang]
+					td.info__info= val.info[lang]

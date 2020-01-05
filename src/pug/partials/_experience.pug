@@ -1,31 +1,30 @@
 <table class="page__module-item business" cellspacing="20px">
-	<caption class="business__title">Опыт работы</caption>
-	<tr class="business__item">
-		<td class="business__key">С ноября 2017</td>
-		<td class="business__description">
-			<span class="business__mark">Проект «Pumping Tests»</a></span>
-			<b class="business__position">Front-end разработчик</b>
-			<p class="business__text">Верстка + JS + Node.js + MongoDB <br> Интеграция с API FB, VK, Twitter.<br> Разработка архитектуры приложения. <br><br>Примеры тестов:</p>
-				<ul class="business__list">
-					<li><a target="_blank" href="https://intense-chamber-18646.herokuapp.com/links/js-functions-short">Javascript Ninja: функции</li>
-					<li><a target="_blank" href="https://intense-chamber-18646.herokuapp.com/links/essentialism-short">Основы эссенциализма</li>
-				</ul>
-		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">2017 (8 месяцев)</td>
-		<td class="business__description">
-			<span class="business__mark">Freelance</span> <br>
-			<b class="business__position">Front-end разработчик</b>
-			<p class="business__text">Работы предоставлены в <a target="_blank" href="https://oleynichenko.github.io/">портфолио</a>.</p>
-		</td>
-	</tr>
-	<tr class="business__item">
-		<td class="business__key">11.2015 – 01.2017</td>
-		<td class="business__description">
-			<span class="business__mark">CDM Store</span>
-			<b class="business__position">Администратор сайтов</b>
-			<p class="business__text">Создавал, поддерживал и продвигал <span class="no-wrap">6 сайтов на Joomla и WordPress</span>. Составлял техзадания для дизайнеров и программистов. <br>Настраивал отчеты из Google Analytics и Яндекс Метрики. <br>Организовывал систему приема онлайн платежей.</p>
-		</td>
-	</tr>
+	caption.business__title= content.block.experience[lang]
+	tr.business__item
+		td.business__key= content.experience.be.date[lang]
+		td.business__description
+			span.business__mark= content.experience.be.company[lang]
+			br
+			b.business__position= content.position[lang]
+			!= content.experience.be.descr[lang]
+	tr.business__item
+		td.business__key= content.experience.jbook.date[lang]
+		td.business__description
+			span.business__mark= content.experience.jbook.company[lang]
+			b.business__position= content.position[lang]
+			!= content.experience.jbook.descr[lang]
+	tr.business__item
+		td.business__key= content.experience.free.date[lang]
+		td.business__description
+			span.business__mark= content.experience.free.company[lang]
+			b.business__position= content.position[lang]
+			!= content.experience.free.descr[lang]
+	//<tr class="business__item">
+	//	<td class="business__key">11.2015 – 01.2017</td>
+	//	<td class="business__description">
+	//		<span class="business__mark">CDM Store</span>
+	//		<b class="business__position">Администратор сайтов</b>
+	//		<p class="business__text">Создавал, поддерживал и продвигал <span class="no-wrap">6 сайтов на Joomla и WordPress</span>. Составлял техзадания для дизайнеров и программистов. <br>Настраивал отчеты из Google Analytics и Яндекс Метрики. <br>Организовывал систему приема онлайн платежей.</p>
+	//	</td>
+	//</tr>
 </table>
