@@ -1,0 +1,123 @@
+{
+  "name": "Alexandr Oleynichenko",
+  "position": "Frontend-Entwickler",
+  "about": {
+    "description": [
+      "Mathematiker von Beruf. Bis 2003 am Institut für Mathematik der Nationalen Akademie der Wissenschaften tätig. In den nächsten 10 Jahren vom Vertriebsmanager zum Leiter eines Distributionsunternehmens (FMCG) aufgestiegen.",
+      "2013 Wechsel zum Internet-Marketing. Beteiligung an der Förderung mehrerer Bildungsprojekte. Seit 2016 beschäftige ich mich mit dem, was mir wirklich gefällt: Webentwicklung und UX-Design."
+    ],
+    "info": {
+      "desiredPosition": "Gewünschte Position",
+      "desiredPositionValue": "Frontend-Entwickler",
+      "languages": "Sprachkenntnisse",
+      "languagesValue": "Englisch B2",
+      "residence": "Wohnort",
+      "residenceValue": "Kiew",
+      "nationality": "Nationalität",
+      "nationalityValue": "Ukrainer"
+    }
+  },
+  "contacts": {
+    "title": "Kontakte",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "portfolio": "Portfolio"
+  },
+  "education": {
+    "title": "Ausbildung",
+    "items": {
+      "2019": {
+        "institution": "Udemy",
+        "courses": [
+          "Design Patterns in JavaScript",
+          "The Complete Node.js Developer Course"
+        ]
+      },
+      "2018": {
+        "institution": "AcadeMind + Angular University",
+        "courses": [
+          "Angular Core Deep Dive",
+          "RxJs Reactive Programming",
+          "NgRx In Depth",
+          "Angular - The Complete Guide"
+        ]
+      },
+      "mongodb": {
+        "institution": "MongoDB University",
+        "courses": [
+          "MongoDB Aggregation Framework",
+          "MongoDB for JS Developers",
+          "MongoDB Basics"
+        ]
+      },
+      "2016-2017": {
+        "institution": "Schule der Designer von Artem Gorbunov",
+        "courses": ["Interface Design Kurs"]
+      },
+      "htmlacademy": {
+        "institution": "HTML Academy",
+        "courses": [
+          "Professional Node.js",
+          "Professional PHP",
+          "Advanced JavaScript",
+          "Advanced HTML and CSS"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "items": {
+      "beukraine": {
+        "period": "Seit April 2019",
+        "company": "«Be Ukraine» GmbH",
+        "position": "Frontend-Entwickler",
+        "description": "Entwicklung von Bankanwendungen\nScss/Pug + Angular 8 + PrimeNg"
+      },
+      "jbook": {
+        "period": "2016 – 2018",
+        "company": "Projekt «JBOOK» - mehrsprachige Buchlern-App (PWA)",
+        "position": "Frontend-Entwickler",
+        "description": "Entwicklung der Anwendungsarchitektur.\nLayout + Angular 6 + Node.js + MongoDB\nMaterial Design Framework.\nIntegration mit API FB, VK, Twitter.",
+        "examples": ["Buch", "Test «Die Grundlagen des Essentialismus»"]
+      },
+      "freelance": {
+        "period": "2016 (8 Monate)",
+        "company": "Freelance",
+        "position": "Frontend-Entwickler",
+        "description": "Arbeiten sind im Portfolio präsentiert."
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "items": {
+      "javascript": "Javascript",
+      "htmlPug": "HTML + PUG",
+      "cssScss": "CSS + SCSS",
+      "angularNgrx": "Angular + NgRx",
+      "nodejs": "Node JS",
+      "mongodb": "MongoDB",
+      "phpSql": "PHP + SQL",
+      "psAdobeXd": "PS + AdobeXD",
+      "uxui": "UX/UI"
+    }
+  },
+  "knowledge": {
+    "title": "Gute Kenntnisse",
+    "items": [
+      "Neuromarketing",
+      "Adwords",
+      "SEO",
+      "Webdesign",
+      "Material Design",
+      "UX/UI",
+      "Copywriting",
+      "Psychologie",
+      "CPA-Marketing"
+    ]
+  },
+  "footer": {
+    "lastUpdated": "Zuletzt aktualisiert: 01.2020"
+  }
+}

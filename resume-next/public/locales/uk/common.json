@@ -1,0 +1,123 @@
+{
+  "name": "Олександр Олейніченко",
+  "position": "Frontend-розробник",
+  "about": {
+    "description": [
+      "За освітою математик. До 2003 року працював в Інституті математики НАН України. За наступні 10 років пройшов шлях від менеджера з продажів до керівника дистриб'юторської компанії (FMCG).",
+      "2013 рік - перехід в інтернет-маркетинг. Брав участь у просуванні кількох освітніх проектів. З 2016 року займаюсь тим, що мені дійсно подобається: веб-розробкою та UX-дизайном."
+    ],
+    "info": {
+      "desiredPosition": "Бажана посада",
+      "desiredPositionValue": "Frontend-розробник",
+      "languages": "Знання мов",
+      "languagesValue": "Англійська B2",
+      "residence": "Місце проживання",
+      "residenceValue": "Київ",
+      "nationality": "Національність",
+      "nationalityValue": "Українець"
+    }
+  },
+  "contacts": {
+    "title": "Контакти",
+    "phone": "Телефон",
+    "email": "Email",
+    "portfolio": "Портфоліо"
+  },
+  "education": {
+    "title": "Освіта",
+    "items": {
+      "2019": {
+        "institution": "Udemy",
+        "courses": [
+          "Design Patterns in JavaScript",
+          "The Complete Node.js Developer Course"
+        ]
+      },
+      "2018": {
+        "institution": "AcadeMind + Angular University",
+        "courses": [
+          "Angular Core Deep Dive",
+          "RxJs Reactive Programming",
+          "NgRx In Depth",
+          "Angular - The Complete Guide"
+        ]
+      },
+      "mongodb": {
+        "institution": "MongoDB University",
+        "courses": [
+          "MongoDB Aggregation Framework",
+          "MongoDB for JS Developers",
+          "MongoDB Basics"
+        ]
+      },
+      "2016-2017": {
+        "institution": "Школа дизайнерів Артема Горбунова",
+        "courses": ["Курс дизайну інтерфейсів"]
+      },
+      "htmlacademy": {
+        "institution": "HTML Academy",
+        "courses": [
+          "Professional Node.js",
+          "Professional PHP",
+          "Advanced JavaScript",
+          "Advanced HTML and CSS"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Досвід роботи",
+    "items": {
+      "beukraine": {
+        "period": "З квітня 2019",
+        "company": "«Be Ukraine» GmbH",
+        "position": "Frontend-розробник",
+        "description": "Розробка банківських додатків\nScss/Pug + Angular 8 + PrimeNg"
+      },
+      "jbook": {
+        "period": "2016 – 2018",
+        "company": "Проект «JBOOK» - мультимовна книжкова навчальна програма (PWA)",
+        "position": "Frontend-розробник",
+        "description": "Розробка архітектури додатку.\nВерстка + Angular 6 + Node.js + MongoDB\nMaterial Design Framework.\nІнтеграція з API FB, VK, Twitter.",
+        "examples": ["Книга", "Тест «Основи есенціалізму»"]
+      },
+      "freelance": {
+        "period": "2016 (8 місяців)",
+        "company": "Фріланс",
+        "position": "Frontend-розробник",
+        "description": "Роботи представлені в портфоліо."
+      }
+    }
+  },
+  "skills": {
+    "title": "Навички",
+    "items": {
+      "javascript": "Javascript",
+      "htmlPug": "HTML + PUG",
+      "cssScss": "CSS + SCSS",
+      "angularNgrx": "Angular + NgRx",
+      "nodejs": "Node JS",
+      "mongodb": "MongoDB",
+      "phpSql": "PHP + SQL",
+      "psAdobeXd": "PS + AdobeXD",
+      "uxui": "UX/UI"
+    }
+  },
+  "knowledge": {
+    "title": "Добре знаю",
+    "items": [
+      "Нейромаркетинг",
+      "Adwords",
+      "SEO",
+      "Веб-дизайн",
+      "Material Design",
+      "UX/UI",
+      "Копірайтинг",
+      "Психологія",
+      "CPA-маркетинг"
+    ]
+  },
+  "footer": {
+    "lastUpdated": "Останнє оновлення: 01.2020"
+  }
+}
