@@ -1,4 +1,5 @@
 import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
+import LanguagePopover from './LanguagePopover';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
@@ -13,10 +14,14 @@ const Layout = ({ children }) => {
       <Paper
         elevation={elevation}
         sx={{
+          position: 'relative',
           py: { xs: 0, md: 15 },
           px: { xs: 0, md: 8 },
         }}
       >
+        <LanguagePopover
+          sx={{ position: 'absolute', top: '72px', right: '6px' }}
+        />
         {children}
       </Paper>
     </Container>

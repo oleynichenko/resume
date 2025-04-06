@@ -1,4 +1,3 @@
-import Header from './Header.jsx';
 import About from './About.jsx';
 import Contacts from './Contacts.jsx';
 import Education from './Education.jsx';
@@ -9,7 +8,6 @@ import Footer from './Footer.jsx';
 const HomePage = () => {
   return (
     <>
-      <Header />
       <About />
       <Contacts />
       <Education />

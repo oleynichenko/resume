@@ -1,0 +1,32 @@
+{
+  "about": {
+    "title": "About Me",
+    "position": "Front-end developer",
+    "description": [
+      "Mathematician by education. Until 2003 worked at the Institute of Mathematics of the National Academy of Sciences. Over the next 10 years went from a sales manager to the head of a distribution company (FMCG).",
+      "In 2013 moved to internet marketing. Participated in the promotion of several educational projects. Since 2016 I`ve been doing what I really like — web development and UX design."
+    ],
+    "info": {
+      "position": "Desired position",
+      "languages": "Languages",
+      "residence": "Residence",
+      "nationality": "Nationality"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "phone": "Phone",
+    "email": "Email",
+    "portfolio": "Portfolio"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "skills": {
+    "title": "Skills",
+    "goodKnowledge": "Good knowledges"
+  }
+}
