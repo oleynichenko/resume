@@ -1,26 +1,38 @@
 import { Stack, Typography, Box, Link } from '@mui/material';
 import { Phone, Email, Language } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { SectionTitle } from './SectionTitle';
 
 const Contacts = ({ sx }) => {
   const { t } = useTranslation();
 
   const contacts = [
     {
-      icon: <Email fontSize="large" color="primary" />,
+      icon: (
+        <Stack sx={{ bgcolor: 'primary.main', borderRadius: '50%', p: 1 }}>
+          <Email fontSize="large" sx={{ color: 'white' }} />
+        </Stack>
+      ),
       label: t('contacts.email'),
       value: 'oleynichenkos@gmail.com',
       href: 'mailto:oleynichenkos@gmail.com?subject=Interview invitation',
     },
     {
-      icon: <Phone fontSize="large" color="primary" />,
+      icon: (
+        <Stack sx={{ bgcolor: 'primary.main', borderRadius: '50%', p: 1 }}>
+          <Phone fontSize="large" sx={{ color: 'white' }} />
+        </Stack>
+      ),
       label: t('contacts.phone'),
       value: '+38 050 865 82 18',
       href: 'tel:+380508658218',
     },
     {
-      icon: <Language fontSize="large" color="primary" />,
+      icon: (
+        <Stack sx={{ bgcolor: 'primary.main', borderRadius: '50%', p: 1 }}>
+          <Language fontSize="large" sx={{ color: 'white' }} />
+        </Stack>
+      ),
       label: t('contacts.portfolio'),
       value: 'oleynichenko.github.io',
       href: 'https://oleynichenko.github.io/',
@@ -34,16 +46,7 @@ const Contacts = ({ sx }) => {
     //   transition={{ duration: 0.5, delay: 0.2 }}
     // >
     <Box sx={{ ...sx }}>
-      <Typography
-        variant="h4"
-        sx={{
-          mb: 4,
-          textTransform: 'uppercase',
-          borderBottom: '3px solid',
-        }}
-      >
-        {t('contacts.title')}
-      </Typography>
+      <SectionTitle>{t('contacts.title')}</SectionTitle>
       <Stack
         sx={{
           pr: { lg: 1 },

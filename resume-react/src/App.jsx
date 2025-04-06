@@ -42,10 +42,11 @@ let theme = createTheme({
       main: '#ff0000',
     },
     text: {
-      primary: '#4a4a4a',
+      primary: '#4c4c4c',
     },
   },
 });
+console.log(theme);
 
 theme = responsiveFontSizes(theme);
 

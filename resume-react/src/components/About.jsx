@@ -45,8 +45,7 @@ const About = ({ sx }) => {
       <InfoItems
         sx={{
           display: { xs: 'flex', lg: 'none' },
-          // flexDirection: { xs: 'column', md: 'row' },
-          mt: 3,
+          mt: 5,
         }}
       />
     </Box>
