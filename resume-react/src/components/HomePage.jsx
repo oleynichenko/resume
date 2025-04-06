@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <About sx={{ marginBottom: 9 }} />
-      <Contacts />
+      <Contacts sx={{ marginBottom: 8 }} />
       <Education />
       <Experience />
       <Skills />

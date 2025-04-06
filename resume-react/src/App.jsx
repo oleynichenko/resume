@@ -41,6 +41,9 @@ let theme = createTheme({
     primary: {
       main: '#ff0000',
     },
+    text: {
+      primary: '#4a4a4a',
+    },
   },
 });
 
