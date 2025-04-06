@@ -1,66 +1,55 @@
 import { Typography, Box, Grid, Avatar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import alexandrDs1x from '../assets/img/alexandr-ds-1x.jpg';
+import alexandrDs2x from '../assets/img/alexandr-ds-2x.jpg';
+import InfoItems from './InfoItems';
 
-const About = () => {
+const About = ({ sx }) => {
   const { t } = useTranslation();
 
-  const infoItems = [
-    { key: 'position', value: 'Front-end developer' },
-    { key: 'languages', value: 'English B2' },
-    { key: 'residence', value: 'Kiev' },
-    { key: 'nationality', value: 'Ukrainian' },
-  ];
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
-            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-              <Avatar
-                src="/img/alexandr-ds-1x.jpg"
-                srcSet="/img/alexandr-ds-2x.jpg 2x"
-                alt="Alexandr Oleynichenko"
-                sx={{ width: 200, height: 200 }}
-              />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={8}>
-            <Typography variant="h1" gutterBottom>
-              Alexandr Oleynichenko
-            </Typography>
-            <Typography variant="h6" color="primary" gutterBottom>
-              {t('about.position')}
-            </Typography>
-            {t('about.description', { returnObjects: true }).map(
-              (paragraph, index) => (
-                <Typography key={index} paragraph>
-                  {paragraph}
-                </Typography>
-              ),
-            )}
-            <Box sx={{ mt: 2 }}>
-              {infoItems.map(({ key, value }) => (
-                <Box key={key} sx={{ display: 'flex', mb: 1 }}>
-                  <Typography
-                    variant="body1"
-                    sx={{ fontWeight: 'bold', minWidth: 150 }}
-                  >
-                    {t(`about.info.${key}`)}:
-                  </Typography>
-                  <Typography variant="body1">{value}</Typography>
-                </Box>
-              ))}
-            </Box>
-          </Grid>
+    <Box sx={{ ...sx }}>
+      <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 4, lg: 3 }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Avatar
+              src={alexandrDs1x}
+              srcSet={`${alexandrDs2x} 2x`}
+              alt={t('about.name')}
+              sx={{
+                width: 1,
+                height: 1,
+                objectFit: 'contain',
+                borderRadius: 1,
+              }}
+            />
+          </Box>
         </Grid>
-      </>
-    </motion.div>
+        <Grid size={{ xs: 12, md: 8, lg: 9 }}>
+          <Typography sx={{ mb: 0.5, textTransform: 'uppercase' }} variant="h3">
+            {t('about.name')}
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} variant="h5" color="primary">
+            {t('about.position')}
+          </Typography>
+          {t('about.description', { returnObjects: true }).map(
+            (paragraph, index) => (
+              <Typography sx={{ mb: 1 }} variant="body1" key={index}>
+                {paragraph}
+              </Typography>
+            ),
+          )}
+          <InfoItems sx={{ display: { xs: 'none', lg: 'flex' }, mt: 3 }} />
+        </Grid>
+      </Grid>
+      <InfoItems
+        sx={{
+          display: { xs: 'flex', lg: 'none' },
+          // flexDirection: { xs: 'column', md: 'row' },
+          mt: 3,
+        }}
+      />
+    </Box>
   );
 };
 

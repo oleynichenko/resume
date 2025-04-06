@@ -8,7 +8,7 @@ import Footer from './Footer.jsx';
 const HomePage = () => {
   return (
     <>
-      <About />
+      <About sx={{ marginBottom: 9 }} />
       <Contacts />
       <Education />
       <Experience />

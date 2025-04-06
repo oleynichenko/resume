@@ -1,16 +1,28 @@
 {
   "about": {
-    "title": "About Me",
+    "name": "Olexandr Oliiynychenko",
     "position": "Front-end developer",
     "description": [
-      "Mathematician by education. Until 2003 worked at the Institute of Mathematics of the National Academy of Sciences. Over the next 10 years went from a sales manager to the head of a distribution company (FMCG).",
-      "In 2013 moved to internet marketing. Participated in the promotion of several educational projects. Since 2016 I`ve been doing what I really like — web development and UX design."
+      "Mathematician by education. Worked at the Institute of Mathematics of the National Academy of Sciences until 2003. Over the next 10 years, progressed from sales manager to head of a distribution company (FMCG).",
+      "In 2013, shifted to internet marketing, promoting various educational projects. Since 2016, focused on what truly inspires me — web development and UX design."
     ],
     "info": {
-      "position": "Desired position",
-      "languages": "Languages",
-      "residence": "Residence",
-      "nationality": "Nationality"
+      "position": {
+        "key": "Desired position",
+        "value": "Front-end developer"
+      },
+      "languages": {
+        "key": "Languages",
+        "value": "English (B2)"
+      },
+      "location": {
+        "key": "Location",
+        "value": "Kiev, Ukraine"
+      },
+      "availability": {
+        "key": "Availability",
+        "value": "Immediately"
+      }
     }
   },
   "contacts": {

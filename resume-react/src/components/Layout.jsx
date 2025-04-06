@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-      sx={{ my: { xs: 0, md: 6 }, maxWidth: '1180px' }}
+      sx={{ my: { xs: 0, md: 6 }, maxWidth: { xs: '500px', md: '1180px' } }}
       maxWidth={false}
     >
       <Paper
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         }}
       >
         <LanguagePopover
-          sx={{ position: 'absolute', top: '72px', right: '6px' }}
+          sx={{ position: 'absolute', top: '72px', right: '64px' }}
         />
         {children}
       </Paper>

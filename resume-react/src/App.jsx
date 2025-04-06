@@ -1,4 +1,8 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import './global.css';
 import './locales/i18n';
@@ -7,16 +11,40 @@ import { Layout } from './components/Layout.jsx';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';
 
-const theme = createTheme({
+let theme = createTheme({
+  typography: {
+    fontFamily: '"PT Sans Narrow", sans-serif',
+    h1: {
+      fontWeight: 700,
+    },
+    h2: {
+      fontWeight: 700,
+    },
+    h3: {
+      fontWeight: 700,
+      letterSpacing: 1,
+    },
+    h4: {
+      fontWeight: 700,
+    },
+    body1: {
+      fontSize: 18,
+    },
+    // h5: {
+    //   fontWeight: 700,
+    // },
+    h6: {
+      fontWeight: 700,
+    },
+  },
   palette: {
     primary: {
-      main: '#1976d2',
-    },
-    secondary: {
-      main: '#dc004e',
+      main: '#ff0000',
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 function App() {
   const { i18n } = useTranslation();
