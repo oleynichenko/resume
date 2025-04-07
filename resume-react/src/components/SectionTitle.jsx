@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-export const SectionTitle = ({ children }) => {
+export const SectionTitle = ({ children, sx }) => {
   return (
     <Typography
       variant="h4"
@@ -8,6 +8,7 @@ export const SectionTitle = ({ children }) => {
         mb: 4,
         textTransform: 'uppercase',
         borderBottom: '3px solid',
+        ...sx,
       }}
     >
       {children}

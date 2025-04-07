@@ -28,5 +28,8 @@
   "skills": {
     "title": "Навыки",
     "goodKnowledge": "Хорошие знания"
+  },
+  "filters": {
+    "title": "Фильтровать по"
   }
 }

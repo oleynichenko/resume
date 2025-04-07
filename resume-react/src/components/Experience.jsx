@@ -2,7 +2,7 @@ import { Typography, Box, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { SectionTitle } from './SectionTitle';
-
+import { FilterSelect } from './FilterSelect';
 const Experience = ({ sx }) => {
   const { t } = useTranslation();
 
@@ -60,7 +60,8 @@ const Experience = ({ sx }) => {
     //   transition={{ duration: 0.5, delay: 0.4 }}
     // >
     <Box sx={sx}>
-      <SectionTitle>{t('experience.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2.5 }}>{t('experience.title')}</SectionTitle>
+      <FilterSelect sx={{ mb: 2 }} />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {experienceItems.map(
           ({ period, company, position, description, links }) => (

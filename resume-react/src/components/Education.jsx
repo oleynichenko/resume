@@ -2,6 +2,7 @@ import { Paper, Typography, Box, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { SectionTitle } from './SectionTitle';
+import { FilterSelect } from './FilterSelect';
 
 const Education = ({ sx }) => {
   const { t } = useTranslation();
@@ -102,7 +103,8 @@ const Education = ({ sx }) => {
     //   transition={{ duration: 0.5, delay: 0.3 }}
     // >
     <Box sx={sx}>
-      <SectionTitle>{t('education.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2.5 }}>{t('education.title')}</SectionTitle>
+      <FilterSelect sx={{ mb: 2 }} />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {educationItems.map(({ year, institution, courses }) => (
           <Box key={institution}>

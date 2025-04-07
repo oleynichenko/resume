@@ -40,5 +40,8 @@
   "skills": {
     "title": "Skills",
     "goodKnowledge": "Good knowledges"
+  },
+  "filters": {
+    "title": "Filter by"
   }
 }
