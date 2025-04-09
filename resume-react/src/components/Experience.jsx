@@ -61,7 +61,7 @@ const Experience = ({ sx }) => {
     // >
     <Box sx={sx}>
       <SectionTitle sx={{ mb: 2.5 }}>{t('experience.title')}</SectionTitle>
-      <FilterSelect sx={{ mb: 2 }} />
+      {/* <FilterSelect sx={{ mb: 2 }} /> */}
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {experienceItems.map(
           ({ period, company, position, description, links }) => (

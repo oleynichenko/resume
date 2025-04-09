@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Select,
   MenuItem,
@@ -12,34 +11,36 @@ import {
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
-const options = [
-  { value: 'react', label: 'React' },
-  { value: 'angular', label: 'Angular' },
-  { value: 'backend', label: 'Backend' },
-  { value: 'databases', label: 'Databases' },
-];
-
-export const FilterSelect = ({ sx }) => {
+export const FilterSelect = ({ sx, options, selected, onChange }) => {
   const { t } = useTranslation();
-  const [selected, setSelected] = useState([]);
+
+  console.log(options);
 
   const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    setSelected(
+
+    onChange(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
     );
   };
 
   const handleDelete = (valueToDelete) => {
-    setSelected(selected.filter((value) => value !== valueToDelete));
+    onChange(selected.filter((value) => value !== valueToDelete));
   };
 
   return (
-    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, ...sx }}>
-      <FormControl sx={{ width: 160 }} size="small">
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 1,
+        ...sx,
+      }}
+    >
+      <FormControl sx={{ width: 155 }} size="small">
         <InputLabel id="filter-select-label">{t('filters.title')}</InputLabel>
         <Select
           labelId="filter-select-label"
@@ -50,28 +51,25 @@ export const FilterSelect = ({ sx }) => {
           input={<OutlinedInput label={t('filters.title')} />}
           renderValue={(selected) =>
             selected
-              .map((value) => options.find((opt) => opt.value === value)?.label)
+              .map((value) => options.find((opt) => opt.id === value)?.name)
               .join(', ')
           }
         >
           {options.map((option) => (
-            <MenuItem dense key={option.value} value={option.value}>
-              <Checkbox
-                size="small"
-                checked={selected.indexOf(option.value) > -1}
-              />
-              <ListItemText primary={option.label} />
+            <MenuItem key={option.id} value={option.id}>
+              <Checkbox checked={selected.indexOf(option.id) > -1} />
+              <ListItemText primary={option.name} />
             </MenuItem>
           ))}
         </Select>
       </FormControl>
 
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+      <Box sx={{ display: 'flex', gap: 0.5, overflow: 'hidden' }}>
         {selected.map((value) => (
           <Chip
             key={value}
             size="small"
-            label={options.find((opt) => opt.value === value)?.label}
+            label={options.find((opt) => opt.id === value)?.name}
             onDelete={() => handleDelete(value)}
           />
         ))}

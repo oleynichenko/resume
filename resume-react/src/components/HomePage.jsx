@@ -5,10 +5,20 @@ import Experience from './Experience.jsx';
 import Skills from './Skills.jsx';
 import Footer from './Footer.jsx';
 import { Stack } from '@mui/material';
+import 'simplebar-react/dist/simplebar.min.css';
+
+// Add custom styles for SimpleBar scrollbar
+const scrollbarStyles = `
+  .gradient-scrollbar .simplebar-scrollbar::before {
+    background: linear-gradient(to bottom, #4a4a4a, #ff0000) !important;
+    border-radius: 4px !important;
+  }
+`;
 
 const HomePage = () => {
   return (
     <>
+      <style>{scrollbarStyles}</style>
       <About sx={{ marginBottom: 9 }} />
       <Contacts sx={{ marginBottom: 8 }} />
       <Stack
