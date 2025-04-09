@@ -23,7 +23,53 @@
     "title": "Образование"
   },
   "experience": {
-    "title": "Опыт работы"
+    "title": "Опыт работы",
+    "be": {
+      "company": "«Be Ukraine» LLC",
+      "position": "Front-end разработчик",
+      "date": "Апрель 2019",
+      "description": [
+        "Разработка банковского приложения для внутренних операций.",
+        "SCSS/Pug шаблоны + Angular 8 + PrimeNG компоненты.",
+        "Создание пользовательских UI элементов и поддержка расширяемой архитектуры.",
+        "Тесное сотрудничество с командами QA и backend для обеспечения плавной интеграции."
+      ]
+    },
+    "jbook": {
+      "company": "Project «JBOOK» - multilingual book study app (PWA)",
+      "position": "Front-end developer",
+      "date": "October 2016",
+      "description": [
+        "Application architecture and front-end logic for PWA.",
+        "Layout + Angular + Node.js + MongoDB stack.",
+        "Used Material Design framework for UI.",
+        "Integrated share features via Facebook, VK, and Twitter APIs."
+      ]
+    },
+    "kawunu": {
+      "company": "«Kawunu» GmbH, Germany",
+      "position": "Front-end developer",
+      "date": "April 2020",
+      "description": [
+        "Taxi booking platform development for operators and customers.",
+        "Angular for admin dashboard.",
+        "Express.js + Sequelize + Postgres for backend.",
+        "Material Design and MUI frameworks for UI.",
+        "Used React in an app for placing customer orders."
+      ]
+    },
+    "livee": {
+      "company": "«12Planet» LLC, France",
+      "position": "Full-Stack Developer (Tech Owner)",
+      "date": "March 2021",
+      "description": [
+        "React-based admin dashboard for event creation and management.",
+        "Developed internal admin panel for customer support tasks.",
+        "Mobile application development using React Native.",
+        "Maintained and optimized PostgreSQL database structure.",
+        "Set up different marketing campaigns and integrated analytics tools."
+      ]
+    }
   },
   "skills": {
     "title": "Навыки",
