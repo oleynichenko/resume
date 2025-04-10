@@ -1,16 +1,28 @@
 {
   "about": {
-    "title": "О себе",
+    "name": "Александр Олейниченко",
     "position": "Front-end разработчик",
     "description": [
       "По образованию математик. До 2003 года работал в Институте математики НАН Украины. В течение следующих 10 лет прошел путь от менеджера по продажам до руководителя дистрибьюторской компании (FMCG).",
       "В 2013 году перешел в интернет-маркетинг. Участвовал в продвижении нескольких образовательных проектов. С 2016 года занимаюсь тем, что действительно нравится — веб-разработкой и UX-дизайном."
     ],
     "info": {
-      "position": "Желаемая должность",
-      "languages": "Языки",
-      "residence": "Место жительства",
-      "nationality": "Национальность"
+      "position": {
+        "key": "Desired position",
+        "value": "Front-end developer"
+      },
+      "languages": {
+        "key": "Languages",
+        "value": "English (B2)"
+      },
+      "location": {
+        "key": "Location",
+        "value": "Kiev, Ukraine"
+      },
+      "availability": {
+        "key": "Availability",
+        "value": "Immediately"
+      }
     }
   },
   "contacts": {
@@ -72,10 +84,16 @@
     }
   },
   "skills": {
-    "title": "Навыки",
-    "goodKnowledge": "Хорошие знания"
+    "title": "Технические навыки"
   },
-  "filters": {
-    "title": "Фильтровать по"
+  "additionalExperience": {
+    "title": "Дополнительный опыт"
+  },
+  "filter": "Фильтровать по",
+  "lastUpdated": "Последнее обновление",
+  "notFound": {
+    "title": "404",
+    "message": "Страница не найдена",
+    "goHome": "На главную"
   }
 }

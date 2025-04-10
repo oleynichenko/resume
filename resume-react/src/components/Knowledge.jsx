@@ -29,7 +29,9 @@ const Knowledge = () => {
     //       {t('skills.goodKnowledge')}
     //     </Typography>
     <Box>
-      <SectionTitle sx={{ mb: 2.5 }}>{t('skills.goodKnowledge')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2.5 }}>
+        {t('additionalExperience.title')}
+      </SectionTitle>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
         {knowledge.map((item) => (
           <Chip key={item} label={item} color="primary" variant="outlined" />

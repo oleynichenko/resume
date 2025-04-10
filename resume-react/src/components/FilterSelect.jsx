@@ -48,14 +48,14 @@ export const FilterSelect = ({ sx, selected, onChange }) => {
       }}
     >
       <FormControl sx={{ width: 155, flexShrink: 0 }} size="small">
-        <InputLabel id="filter-select-label">{t('filters.title')}</InputLabel>
+        <InputLabel id="filter-select-label">{t('filter')}</InputLabel>
         <Select
           labelId="filter-select-label"
           id="filter-select"
           multiple
           value={selected}
           onChange={handleChange}
-          input={<OutlinedInput label={t('filters.title')} />}
+          input={<OutlinedInput label={t('filter')} />}
           renderValue={(selected) =>
             selected
               .map((value) => options.find((opt) => opt.id === value)?.name)

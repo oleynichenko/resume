@@ -1,7 +1,7 @@
 import { Typography, Box, Grid, Avatar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import alexandrDs1x from '../assets/img/alexandr-ds-1x.jpg';
-import alexandrDs2x from '../assets/img/alexandr-ds-2x.jpg';
+import alexandr from '../assets/img/alexandr.png';
+// import alexandrDs2x from '../assets/img/alexandr-ds-2x.jpg';
 import InfoItems from './InfoItems';
 
 const About = ({ sx }) => {
@@ -9,12 +9,11 @@ const About = ({ sx }) => {
 
   return (
     <Box sx={{ ...sx }}>
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
         <Grid size={{ xs: 12, md: 4, lg: 3 }}>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Avatar
-              src={alexandrDs1x}
-              srcSet={`${alexandrDs2x} 2x`}
+              src={alexandr}
               alt={t('about.name')}
               sx={{
                 width: 1,
@@ -26,7 +25,10 @@ const About = ({ sx }) => {
           </Box>
         </Grid>
         <Grid size={{ xs: 12, md: 8, lg: 9 }}>
-          <Typography sx={{ mb: 0.5, textTransform: 'uppercase' }} variant="h3">
+          <Typography
+            sx={{ mb: 0.5, textTransform: 'uppercase', lineHeight: 1 }}
+            variant="h3"
+          >
             {t('about.name')}
           </Typography>
           <Typography sx={{ mb: 1.5 }} variant="h5" color="primary">
@@ -34,18 +36,22 @@ const About = ({ sx }) => {
           </Typography>
           {t('about.description', { returnObjects: true }).map(
             (paragraph, index) => (
-              <Typography sx={{ mb: 1 }} variant="body1" key={index}>
+              <Typography
+                sx={{ mb: 1.5, textAlign: { xs: 'justify', md: 'left' } }}
+                variant="body1"
+                key={index}
+              >
                 {paragraph}
               </Typography>
             ),
           )}
-          <InfoItems sx={{ display: { xs: 'none', lg: 'flex' }, mt: 3 }} />
+          <InfoItems sx={{ display: { xs: 'none', lg: 'flex' }, mt: 2.5 }} />
         </Grid>
       </Grid>
       <InfoItems
         sx={{
           display: { xs: 'flex', lg: 'none' },
-          mt: 5,
+          mt: 2,
         }}
       />
     </Box>

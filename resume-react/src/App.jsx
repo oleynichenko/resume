@@ -17,6 +17,9 @@ import { HomePage } from './components/HomePage.jsx';
 import { PortfolioPage } from './components/PortfolioPage.jsx';
 import { NotFoundPage } from './components/NotFoundPage.jsx';
 import dayjs from 'dayjs';
+import 'dayjs/locale/en';
+import 'dayjs/locale/ru';
+import 'dayjs/locale/uk';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 

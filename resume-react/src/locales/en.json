@@ -84,10 +84,16 @@
     }
   },
   "skills": {
-    "title": "Skills",
-    "goodKnowledge": "Good knowledges"
+    "title": "Technical Skills"
   },
-  "filters": {
-    "title": "Filter by"
+  "additionalExperience": {
+    "title": "Additional Experience"
+  },
+  "filter": "Filter by",
+  "lastUpdated": "Last updated",
+  "notFound": {
+    "title": "404",
+    "message": "Page Not Found",
+    "goHome": "Go to Home"
   }
 }

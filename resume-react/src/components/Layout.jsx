@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
   return (
     <Container
       sx={{
-        pt: { xs: 0, md: 6 },
-        pb: { xs: 0, md: 10 },
+        pt: { xs: 2, md: 6 },
+        pb: { xs: 3, md: 10 },
         maxWidth: { xs: '500px', md: '1180px' },
       }}
       maxWidth={false}
@@ -19,7 +19,8 @@ const Layout = ({ children }) => {
         elevation={elevation}
         sx={{
           position: 'relative',
-          py: { xs: 0, md: 15 },
+          pt: { xs: 0, md: 15 },
+          pb: { xs: 0, md: 6 },
           px: { xs: 0, md: 8 },
         }}
       >

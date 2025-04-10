@@ -17,17 +17,20 @@ const scrollbarStyles = `
   }
 `;
 
+const MB_MOBILE = 7;
+const MB_DESKTOP = 10;
+
 const HomePage = () => {
   return (
     <Layout>
       <style>{scrollbarStyles}</style>
-      <About sx={{ marginBottom: 9 }} />
-      <Contacts sx={{ marginBottom: 8 }} />
+      <About sx={{ mb: { xs: MB_MOBILE, md: MB_DESKTOP } }} />
+      <Contacts sx={{ mb: { xs: MB_MOBILE, md: MB_DESKTOP } }} />
       <Stack
-        direction="row"
-        spacing={7}
         sx={{
-          marginBottom: 8,
+          flexDirection: { xs: 'column', md: 'row' },
+          mb: { xs: MB_MOBILE, md: MB_DESKTOP },
+          gap: 7,
           '& > *': {
             flex: 1,
             minWidth: 0,
@@ -38,9 +41,10 @@ const HomePage = () => {
         <Experience />
       </Stack>
       <Stack
-        direction="row"
-        spacing={7}
         sx={{
+          flexDirection: { xs: 'column', md: 'row' },
+          mb: { xs: MB_MOBILE, md: MB_DESKTOP },
+          gap: 7,
           '& > *': {
             flex: 1,
             minWidth: 0,

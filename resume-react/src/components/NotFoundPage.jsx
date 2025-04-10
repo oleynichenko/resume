@@ -1,10 +1,12 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate, useParams } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 export const NotFoundPage = () => {
   const navigate = useNavigate();
   const { lang } = useParams();
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -19,17 +21,17 @@ export const NotFoundPage = () => {
       }}
     >
       <Typography variant="h1" sx={{ mb: 2 }}>
-        404
+        {t('notFound.title')}
       </Typography>
       <Typography variant="h4" sx={{ mb: 4 }}>
-        Page Not Found
+        {t('notFound.message')}
       </Typography>
       <Button
         variant="contained"
         color="primary"
         onClick={() => navigate(`/${lang}`)}
       >
-        Go to Home
+        {t('notFound.goHome')}
       </Button>
     </Box>
   );

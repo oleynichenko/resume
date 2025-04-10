@@ -214,4 +214,19 @@ const educationItems = [
   },
 ];
 
-export { experienceItems, educationItems };
+const SKILLS = [
+  { name: 'React + Redux', level: 10 },
+  { name: 'React Native', level: 8 },
+  { name: 'Angular + NgRx', level: 7 },
+  { name: 'Node JS', level: 7 },
+  { name: 'MongoDB', level: 7 },
+  { name: 'Postgres', level: 6 },
+  { name: 'PHP + SQL', level: 4 },
+  { name: 'Docker + Github', level: 8 },
+  { name: 'UX/UI', level: 10 },
+];
+
+const UPDATE_DATE = '2025-04-10';
+const SECTION_HEIGHT = 400;
+
+export { experienceItems, educationItems, SKILLS, UPDATE_DATE, SECTION_HEIGHT };

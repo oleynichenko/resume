@@ -5,7 +5,7 @@ import { Typography, Box, Link, Grid } from '@mui/material';
 import { SectionTitle } from './SectionTitle';
 import { FilterSelect } from './FilterSelect';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import { educationItems } from '../constants';
+import { educationItems, SECTION_HEIGHT } from '../constants';
 
 const getFilteredItems = (selectedTags, educationItems) => {
   // First filter by selected tags
@@ -74,14 +74,14 @@ const Education = ({ sx }) => {
 
   return (
     <Box sx={sx}>
-      <SectionTitle sx={{ mb: 2.5 }}>{t('education.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2 }}>{t('education.title')}</SectionTitle>
       <FilterSelect
-        sx={{ mb: 0.25 }}
+        sx={{ mb: 0.5 }}
         selected={selectedTags}
         onChange={handleFilterChange}
       />
       <Box sx={{ position: 'relative' }} className="gradient-scrollbar">
-        <SimpleBar style={{ height: 500 }}>
+        <SimpleBar style={{ height: SECTION_HEIGHT }}>
           <Box
             sx={{
               position: 'relative',

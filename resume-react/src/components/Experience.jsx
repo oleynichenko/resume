@@ -5,7 +5,7 @@ import { SectionTitle } from './SectionTitle';
 import { FilterSelect } from './FilterSelect';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { useState } from 'react';
-import { experienceItems } from '../constants';
+import { experienceItems, SECTION_HEIGHT } from '../constants';
 
 const getFilteredExperienceItems = (selectedTags, items) => {
   // First filter by selected tags
@@ -41,20 +41,20 @@ const Experience = ({ sx }) => {
     //   transition={{ duration: 0.5, delay: 0.4 }}
     // >
     <Box sx={sx}>
-      <SectionTitle sx={{ mb: 2.5 }}>{t('experience.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2 }}>{t('experience.title')}</SectionTitle>
       <FilterSelect
-        sx={{ mb: 0.25 }}
+        sx={{ mb: 0.5 }}
         selected={selectedTags}
         onChange={handleFilterChange}
       />
       <Box sx={{ position: 'relative' }} className="gradient-scrollbar">
-        <SimpleBar style={{ height: 500 }}>
+        <SimpleBar style={{ height: SECTION_HEIGHT }}>
           <Box
             sx={{
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',
-              gap: 4,
+              gap: 3,
               pr: 2,
               mb: 4,
               mt: 2,
@@ -92,13 +92,16 @@ const Experience = ({ sx }) => {
                     >
                       {t(company)}
                     </Typography>
-                    <Typography sx={{ mb: 1 }} variant="body2">
+                    <Typography sx={{ mt: 0.5, mb: 1 }} variant="body2">
                       {t(position)}
                     </Typography>
                     {t(description, {
                       returnObjects: true,
                     }).map((paragraph, index) => (
-                      <Typography sx={{ mb: 0.25 }} key={index}>
+                      <Typography
+                        sx={{ mb: 1.25, lineHeight: 1.2 }}
+                        key={index}
+                      >
                         {paragraph}
                       </Typography>
                     ))}
