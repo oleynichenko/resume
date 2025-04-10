@@ -87,7 +87,17 @@
     "title": "Technical Skills"
   },
   "additionalExperience": {
-    "title": "Additional Experience"
+    "title": "Additional Experience",
+
+    "copywriting": "Copywriting",
+    "psychology": "Psychology",
+    "gtmGa": "GTM + GA",
+    "webdesign": "Webdesign",
+    "materialDesign": "Material Design",
+    "wordpress": "Wordpress",
+    "videoEditing": "Video editing",
+    "googleAds": "Google Ads",
+    "ai": "Artificial Intelligence"
   },
   "filter": "Filter by",
   "lastUpdated": "Last updated",

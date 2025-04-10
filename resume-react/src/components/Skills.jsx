@@ -36,7 +36,9 @@ const Skills = ({ sx }) => {
 
   return (
     <Box sx={sx}>
-      <SectionTitle sx={{ mb: 2.5 }}>{t('skills.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: { xs: 3, md: 4 } }}>
+        {t('skills.title')}
+      </SectionTitle>
       <Box
         sx={{
           display: 'flex',

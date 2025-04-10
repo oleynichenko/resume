@@ -37,7 +37,10 @@ const About = ({ sx }) => {
           {t('about.description', { returnObjects: true }).map(
             (paragraph, index) => (
               <Typography
-                sx={{ mb: 1.5, textAlign: { xs: 'justify', md: 'left' } }}
+                sx={{
+                  mb: 1.5,
+                  textAlign: { xs: 'justify', md: 'left' },
+                }}
                 variant="body1"
                 key={index}
               >

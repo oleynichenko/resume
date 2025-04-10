@@ -228,5 +228,13 @@ const SKILLS = [
 
 const UPDATE_DATE = '2025-04-10';
 const SECTION_HEIGHT = 400;
+const MIDDLE_BREAKPOINT = 'md';
 
-export { experienceItems, educationItems, SKILLS, UPDATE_DATE, SECTION_HEIGHT };
+export {
+  experienceItems,
+  educationItems,
+  MIDDLE_BREAKPOINT,
+  SKILLS,
+  UPDATE_DATE,
+  SECTION_HEIGHT,
+};

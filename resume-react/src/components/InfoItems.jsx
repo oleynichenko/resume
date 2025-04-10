@@ -1,6 +1,5 @@
 import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-
 const InfoItems = ({ sx }) => {
   const { t } = useTranslation();
 
