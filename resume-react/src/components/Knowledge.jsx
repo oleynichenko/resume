@@ -16,26 +16,46 @@ const phraseStyles = {
   },
 };
 
+const SIZE = {
+  copywriting: 50,
+  psychology: 38,
+  gtmGa: 38,
+  webdesign: 69,
+  materialDesign: 44,
+  wordpress: 32,
+  videoEditing: 32,
+  googleAds: 56,
+  ai: 48,
+};
+
+const getSmallSize = (size) => {
+  return size * 0.75;
+};
+
 const Knowledge = () => {
   const { t } = useTranslation();
 
   return (
-    <Box>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
-        transition={{ duration: 0.3, ease: 'easeOut' }}
-      >
-        <SectionTitle sx={{ mb: { xs: 3, md: 3 }, color: 'primary.main' }}>
-          {t('additionalExperience.title')}
-        </SectionTitle>
-      </motion.div>
+    <Box
+      onMouseEnter={(e) => {
+        e.currentTarget.querySelector('.section-title').style.opacity = '1';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.querySelector('.section-title').style.opacity = '0';
+      }}
+    >
+      <SectionTitle sx={{ mb: { xs: 3, md: 3 }, color: 'primary.main' }}>
+        {t('additionalExperience.title')}
+      </SectionTitle>
       <Grid container rowSpacing={2.5}>
         <Grid size={7}>
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '50px' },
+              fontSize: {
+                xs: getSmallSize(SIZE.copywriting),
+                sm: SIZE.copywriting,
+              },
               opacity: 0.4,
               fontWeight: 400,
             }}
@@ -47,7 +67,10 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '38px' },
+              fontSize: {
+                xs: getSmallSize(SIZE.psychology),
+                sm: SIZE.psychology,
+              },
               opacity: 0.6,
               textAlign: 'right',
             }}
@@ -60,7 +83,10 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '38px' },
+              fontSize: {
+                xs: getSmallSize(SIZE.gtmGa),
+                sm: SIZE.gtmGa,
+              },
               opacity: 0.4,
               pt: 1,
               fontWeight: 400,
@@ -73,7 +99,10 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '70px' },
+              fontSize: {
+                xs: getSmallSize(SIZE.webdesign),
+                sm: SIZE.webdesign,
+              },
               letterSpacing: 2,
               opacity: 0.8,
               textAlign: 'right',
@@ -87,8 +116,11 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '45px' },
-              opacity: 0.4,
+              fontSize: {
+                xs: getSmallSize(SIZE.materialDesign),
+                sm: SIZE.materialDesign,
+              },
+              opacity: 0.5,
             }}
           >
             {t('additionalExperience.materialDesign')}
@@ -98,8 +130,11 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '30px' },
-              opacity: 0.4,
+              fontSize: {
+                xs: getSmallSize(SIZE.wordpress),
+                sm: SIZE.wordpress,
+              },
+              opacity: 0.3,
               textAlign: 'right',
             }}
           >
@@ -111,8 +146,11 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '32px' },
-              opacity: 0.4,
+              fontSize: {
+                xs: getSmallSize(SIZE.videoEditing),
+                sm: SIZE.videoEditing,
+              },
+              opacity: 0.5,
             }}
           >
             {t('additionalExperience.videoEditing')}
@@ -122,7 +160,10 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '56px' },
+              fontSize: {
+                xs: getSmallSize(SIZE.googleAds),
+                sm: SIZE.googleAds,
+              },
               opacity: 0.7,
               textAlign: 'right',
               fontWeight: 400,
@@ -136,8 +177,11 @@ const Knowledge = () => {
           <Typography
             sx={{
               ...phraseStyles,
-              fontSize: { xs: '48px' },
-              opacity: 0.7,
+              fontSize: {
+                xs: getSmallSize(SIZE.ai),
+                sm: SIZE.ai,
+              },
+              opacity: 0.8,
             }}
           >
             {t('additionalExperience.ai')}

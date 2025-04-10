@@ -215,7 +215,7 @@ const educationItems = [
 ];
 
 const SKILLS = [
-  { name: 'React + Redux', level: 10 },
+  { name: 'React + Redux', level: 9 },
   { name: 'React Native', level: 8 },
   { name: 'Angular + NgRx', level: 7 },
   { name: 'Node JS', level: 7 },
@@ -223,7 +223,7 @@ const SKILLS = [
   { name: 'Postgres', level: 6 },
   { name: 'PHP + SQL', level: 4 },
   { name: 'Docker + Github', level: 8 },
-  { name: 'UX/UI', level: 10 },
+  { name: 'UX/UI', level: 9 },
 ];
 
 const UPDATE_DATE = '2025-04-10';

@@ -75,9 +75,9 @@
       "position": "Full-Stack Developer (Tech Owner)",
       "date": "March 2021",
       "description": [
-        "React-based admin dashboard for event creation and management.",
+        "React-based admin dashboard for event creation and management with MUI framework.",
         "Developed internal admin panel for customer support tasks.",
-        "Mobile application development using React Native.",
+        "Mobile application development using React Native + deployment to stores.",
         "Maintained and optimized PostgreSQL database structure.",
         "Set up different marketing campaigns and integrated analytics tools."
       ]
@@ -88,7 +88,6 @@
   },
   "additionalExperience": {
     "title": "Additional Experience",
-
     "copywriting": "Copywriting",
     "psychology": "Psychology",
     "gtmGa": "GTM + GA",

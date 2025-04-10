@@ -1,5 +1,6 @@
 import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
 import LanguagePopover from './LanguagePopover';
+import { ParticlesComponent } from './Particles';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
@@ -11,14 +12,16 @@ const Layout = ({ children }) => {
       sx={{
         pt: { xs: 2, md: 6 },
         pb: { xs: 3, md: 10 },
-        maxWidth: { xs: '500px', md: '1180px' },
+        maxWidth: { xs: '520px', md: '1180px' },
       }}
       maxWidth={false}
     >
+      <ParticlesComponent />
       <Paper
         elevation={elevation}
         sx={{
           position: 'relative',
+          backgroundColor: 'white',
           pt: { xs: 0, md: 15 },
           pb: { xs: 0, md: 6 },
           px: { xs: 0, md: 8 },
