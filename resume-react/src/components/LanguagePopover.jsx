@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import { Button, MenuItem, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router';
 import { LANGS } from '../locales/i18n';
 import MenuPopover from './MenuPopover';
 
 const LanguagePopover = ({ color, sx }) => {
   const {
-    i18n: { language, changeLanguage },
+    i18n: { language },
   } = useTranslation();
   const [open, setOpen] = useState(null);
-  const currentLang = LANGS.find((lang) => lang.value === language);
+  const currentLang = LANGS.find((lang) => lang.value === language) || LANGS[0];
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleOpen = (event) => {
     setOpen(event.currentTarget);
@@ -17,6 +20,12 @@ const LanguagePopover = ({ color, sx }) => {
 
   const handleClose = () => {
     setOpen(null);
+  };
+
+  const handleLanguageChange = (newLang) => {
+    const path = location.pathname.split('/').slice(2).join('/');
+    navigate(`/${newLang}${path ? `/${path}` : ''}`);
+    handleClose();
   };
 
   return (
@@ -51,10 +60,7 @@ const LanguagePopover = ({ color, sx }) => {
             <MenuItem
               key={option.value}
               selected={option.value === currentLang.value}
-              onClick={() => {
-                changeLanguage(option.value);
-                handleClose();
-              }}
+              onClick={() => handleLanguageChange(option.value)}
             >
               {option.label}
             </MenuItem>

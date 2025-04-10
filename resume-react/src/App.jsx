@@ -4,12 +4,21 @@ import {
   responsiveFontSizes,
 } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useParams,
+} from 'react-router';
 import './global.css';
 import './locales/i18n';
 import { HomePage } from './components/HomePage.jsx';
-import { Layout } from './components/Layout.jsx';
+import { PortfolioPage } from './components/PortfolioPage.jsx';
+import { NotFoundPage } from './components/NotFoundPage.jsx';
 import dayjs from 'dayjs';
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 let theme = createTheme({
   typography: {
@@ -46,9 +55,21 @@ let theme = createTheme({
     },
   },
 });
-console.log(theme);
 
 theme = responsiveFontSizes(theme);
+
+const LanguageRoute = ({ children }) => {
+  const { i18n } = useTranslation();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
+  return children;
+};
 
 function App() {
   const { i18n } = useTranslation();
@@ -58,9 +79,31 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Layout>
-        <HomePage />
-      </Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<Navigate to={`/${i18n.language}`} replace />}
+          />
+          <Route
+            path="/:lang"
+            element={
+              <LanguageRoute>
+                <HomePage />
+              </LanguageRoute>
+            }
+          />
+          <Route
+            path="/:lang/portfolio"
+            element={
+              <LanguageRoute>
+                <PortfolioPage />
+              </LanguageRoute>
+            }
+          />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

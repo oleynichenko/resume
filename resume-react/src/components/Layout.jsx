@@ -8,7 +8,11 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-      sx={{ my: { xs: 0, md: 6 }, maxWidth: { xs: '500px', md: '1180px' } }}
+      sx={{
+        pt: { xs: 0, md: 6 },
+        pb: { xs: 0, md: 10 },
+        maxWidth: { xs: '500px', md: '1180px' },
+      }}
       maxWidth={false}
     >
       <Paper

@@ -16,15 +16,15 @@ const experienceItems = [
     description: 'experience.jbook.description',
     tags: ['angular', 'apis', 'database', 'devops'],
   },
-  {
-    year: 2020,
-    date: 'experience.kawunu.date',
-    company: 'experience.kawunu.company',
-    position: 'experience.kawunu.position',
-    description: 'experience.kawunu.description',
-    link: 'https://www.kawunu.com',
-    tags: ['angular', 'react', 'apis', 'database'],
-  },
+  // {
+  //   year: 2020,
+  //   date: 'experience.kawunu.date',
+  //   company: 'experience.kawunu.company',
+  //   position: 'experience.kawunu.position',
+  //   description: 'experience.kawunu.description',
+  //   link: 'https://www.kawunu.com',
+  //   tags: ['angular', 'react', 'apis', 'database'],
+  // },
   {
     year: 2021,
     date: 'experience.livee.date',
@@ -32,7 +32,7 @@ const experienceItems = [
     position: 'experience.livee.position',
     description: 'experience.livee.description',
     link: 'https://www.livee.com/',
-    tags: ['react', 'react-native', 'angular', 'apis', 'database', 'marketing'],
+    tags: ['react', 'angular', 'apis', 'database', 'devops'],
   },
 ];
 
