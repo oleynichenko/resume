@@ -86,7 +86,9 @@ const LanguageRoute = ({ children }) => {
 function App() {
   const { i18n } = useTranslation();
 
-  dayjs.locale(i18n.resolvedLanguage);
+  const lang = i18n.resolvedLanguage === 'ua' ? 'uk' : i18n.resolvedLanguage;
+
+  dayjs.locale(lang);
 
   return (
     <ThemeProvider theme={theme}>
@@ -95,6 +97,10 @@ function App() {
         <Routes>
           <Route
             path="/"
+            element={<Navigate to={`/${i18n.language}`} replace />}
+          />
+          <Route
+            path="/resume"
             element={<Navigate to={`/${i18n.language}`} replace />}
           />
           <Route

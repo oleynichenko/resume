@@ -14,7 +14,7 @@ const Footer = ({ sx }) => {
         color="text.secondary"
       >
         {t('lastUpdated')}:{' '}
-        {dayjs(UPDATE_DATE).locale(i18n.language).format('MMMM, YYYY')}
+        {dayjs(UPDATE_DATE).locale(i18n.language).format('MMMM YYYY')}
       </Typography>
     </Box>
   );
