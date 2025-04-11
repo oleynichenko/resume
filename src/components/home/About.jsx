@@ -1,7 +1,6 @@
 import { Typography, Box, Grid, Avatar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import alexandr from '../assets/img/alexandr.png';
-// import alexandrDs2x from '../assets/img/alexandr-ds-2x.jpg';
+import alexandr from '../../assets/img/alexandr.png';
 import InfoItems from './InfoItems';
 
 const About = ({ sx }) => {

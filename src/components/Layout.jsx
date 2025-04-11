@@ -1,5 +1,5 @@
 import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
-import LanguagePopover from './LanguagePopover';
+import { LanguagePopover } from './LanguagePopover';
 import { ParticlesComponent } from './Particles';
 import { motion } from 'framer-motion';
 

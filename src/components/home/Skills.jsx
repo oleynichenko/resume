@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import LensIcon from '@mui/icons-material/Lens';
 import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
 import { SectionTitle } from './SectionTitle';
-import { SKILLS } from '../constants';
+import { SKILLS } from '../../constants';
 
 const Skills = ({ sx }) => {
   const { t } = useTranslation();

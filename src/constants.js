@@ -225,6 +225,164 @@ const SKILLS = [
   { name: 'Docker + Github', level: 8 },
   { name: 'UX/UI', level: 9 },
 ];
+const portfolioItems = [
+  {
+    id: 'jbook',
+    title: 'SPA "Multilingual Library «JBOOK»"',
+    tags: ['Design', 'Layout', 'Angular', 'Express', 'MongoDB'],
+    image: {
+      desktop: '/img/jbook-ds-1x.jpg',
+      tablet: '/img/jbook-tb-1x.jpg',
+      alt: 'Multilingual Library «JBOOK»',
+    },
+    features: [
+      'Progressive Web Application',
+      'Angular Universal for search engines',
+      'Using "Material Design" framework',
+      'BackEnd with Express + MongoDB',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/book',
+      demo: 'https://pticha.jbook.club/',
+    },
+    color: '#673bb7',
+    colorLight: '#ded8e8',
+  },
+  {
+    id: 'tests',
+    title: 'Educational Quizzes "Pumping Tests"',
+    tags: ['Design', 'Layout', 'Express', 'MongoDB'],
+    image: {
+      desktop: '/img/tests-ds-1x.jpg',
+      tablet: '/img/tests-tb-1x.jpg',
+      alt: 'Educational quizzes "Pumping Tests"',
+    },
+    features: [
+      'Using "Material Design" framework',
+      'BackEnd with Node.js + MongoDB',
+      'Sharing quizz results in 3 social networks',
+      "Admin panel for quizzes's authors",
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/quiz-cms',
+      demo: 'https://intense-chamber-18646.herokuapp.com/links/essentialism',
+    },
+    color: '#e4476c',
+    colorDark: '#621527',
+  },
+  {
+    id: 'words',
+    title: 'SPA "English Words Trainer"',
+    tags: ['Angular 7', 'NGRX', 'ANGULARFIRE2'],
+    image: {
+      desktop: '/img/words-ds-1x.jpg',
+      tablet: '/img/words-tb-1x.jpg',
+      alt: 'English Words Trainer',
+    },
+    features: [
+      'User registration and authentication with Firebase',
+      'Material Design components',
+      'State management with NgRx',
+      'Markup with angular/flex-layout',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/english-words-trainer',
+      demo: 'http://english-words-trainer.s3-website.eu-central-1.amazonaws.com/',
+    },
+    color: '#303030',
+    colorLight: '#F2F2F2',
+  },
+  {
+    id: 'time',
+    title: 'SPA "Time Tracker"',
+    tags: ['Angular 7', 'Bootstrap 3'],
+    image: {
+      desktop: '/img/time-ds-1x.jpg',
+      tablet: '/img/time-tb-1x.jpg',
+      alt: 'Time Tracker',
+    },
+    features: [
+      'Saving data in Local Storage',
+      'Independence on page reloading',
+      'Adding, deleting, pausing functions',
+      'Edited task name',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/time-tracker',
+      demo: 'http://time-tracker-we1r4s.s3-website-us-east-1.amazonaws.com',
+    },
+    color: '#527a51',
+    colorLight: '#dff6de',
+  },
+  {
+    id: 'recipe',
+    title: 'Single Page Application "Recipe Book"',
+    tags: ['Angular 7', 'NGRX', 'firebase', 'Bootstrap 3'],
+    image: {
+      desktop: '/img/recipe-ds-1x.jpg',
+      tablet: '/img/recipe-tb-1x.jpg',
+      alt: 'Recipe Book',
+    },
+    features: [
+      'User registration and authentication with Firebase',
+      'Lazy loading modules',
+      'State management with NgRx',
+      'Using Firebase SDK',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/recipe-book-ngrx',
+      demo: 'http://recipe-book12345.s3-website.eu-central-1.amazonaws.com/',
+    },
+    color: '#e7e7e7',
+    colorDark: '#2f2828',
+  },
+  {
+    id: 'fitness',
+    title: 'SPA "Fitness Tracker"',
+    tags: ['Angular 7', 'NgRx', 'Angularfire2'],
+    image: {
+      desktop: '/img/fitness-ds-1x.jpg',
+      tablet: '/img/fitness-tb-1x.jpg',
+      alt: 'Fitness Tracker',
+    },
+    features: [
+      'Registration and authentication',
+      'Material Design components',
+      'Markup with angular/flex-layout',
+      'Database with angularfire2',
+      'Firebase hosting',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/fitness-tracker-ngrx',
+      demo: 'https://fitness-tracker-221a4.firebaseapp.com',
+    },
+    color: '#3f51b5',
+    colorLight: '#e8eaf9',
+  },
+  {
+    id: 'chat',
+    title: 'Online Chat',
+    tags: ['Node', 'Socket.io', 'mustache.js'],
+    image: {
+      desktop: '/img/chat-ds-1x.jpg',
+      tablet: '/img/chat-tb-1x.jpg',
+      alt: 'Online Chat',
+    },
+    features: [
+      'Using Socket.IO library',
+      'Ability to share your geolocation',
+      'Unlimited number of chat rooms',
+      'No messages raising while reading history',
+      'Templates with mustache.js',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/chat',
+      demo: 'https://intense-chamber-18646.herokuapp.com/',
+    },
+    color: '#276b82',
+    colorLight: '#dce8ec',
+  },
+];
 
 const UPDATE_DATE = '2025-04-10';
 const SECTION_HEIGHT = 400;
@@ -237,4 +395,5 @@ export {
   SKILLS,
   UPDATE_DATE,
   SECTION_HEIGHT,
+  portfolioItems,
 };

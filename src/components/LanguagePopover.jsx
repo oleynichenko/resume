@@ -71,4 +71,4 @@ const LanguagePopover = ({ color, sx }) => {
   );
 };
 
-export default LanguagePopover;
+export { LanguagePopover };

@@ -1,12 +1,12 @@
 import { Stack } from '@mui/material';
 import 'simplebar-react/dist/simplebar.min.css';
-import About from '../components/About.jsx';
-import Contacts from '../components/Contacts.jsx';
-import Education from '../components/Education.jsx';
-import Experience from '../components/Experience.jsx';
-import Skills from '../components/Skills.jsx';
+import About from '../components/home/About.jsx';
+import Contacts from '../components/home/Contacts.jsx';
+import Education from '../components/home/Education.jsx';
+import Experience from '../components/home/Experience.jsx';
+import Skills from '../components/home/Skills.jsx';
 import Footer from '../components/Footer.jsx';
-import Knowledge from '../components/Knowledge.jsx';
+import Knowledge from '../components/home/Knowledge.jsx';
 import { Layout } from '../components/Layout.jsx';
 
 // Add custom styles for SimpleBar scrollbar

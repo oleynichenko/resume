@@ -1,68 +1,28 @@
-import { useState } from 'react';
-import SimpleBar from 'simplebar-react';
-import { useTranslation } from 'react-i18next';
 import { Typography, Box, Link, Grid } from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import SimpleBar from 'simplebar-react';
 import { SectionTitle } from './SectionTitle';
-import { FilterSelect } from './FilterSelect';
+import { FilterSelect } from '../FilterSelect';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import { educationItems, SECTION_HEIGHT } from '../constants';
+import { useState } from 'react';
+import { experienceItems, SECTION_HEIGHT } from '../../constants';
 
-const getFilteredItems = (selectedTags, educationItems) => {
+const getFilteredExperienceItems = (selectedTags, items) => {
   // First filter by selected tags
   const filteredByTags =
     selectedTags.length > 0
-      ? educationItems.filter((item) => selectedTags.includes(item.tag))
-      : educationItems;
+      ? items.filter((item) =>
+          selectedTags.some((tag) => item.tags.includes(tag)),
+        )
+      : items;
 
   // Sort by year in descending order
   const sortedItems = [...filteredByTags].sort((a, b) => b.year - a.year);
 
-  // Group by year and modify the year display
-  const result = [];
-  let currentYear = null;
-  let yearGroup = [];
-
-  // First pass: group items by year
-  sortedItems.forEach((item) => {
-    if (item.year !== currentYear) {
-      // If we have a previous group, process it
-      if (yearGroup.length > 0) {
-        // Set year to empty for all but the last item in the group
-        yearGroup.forEach((groupItem, index) => {
-          if (index < yearGroup.length - 1) {
-            result.push({ ...groupItem, year: '' });
-          } else {
-            // Last item in the group keeps the year
-            result.push({ ...groupItem });
-          }
-        });
-      }
-
-      // Start a new group
-      currentYear = item.year;
-      yearGroup = [item];
-    } else {
-      // Add to current group
-      yearGroup.push(item);
-    }
-  });
-
-  // Process the last group
-  if (yearGroup.length > 0) {
-    yearGroup.forEach((groupItem, index) => {
-      if (index < yearGroup.length - 1) {
-        result.push({ ...groupItem, year: '' });
-      } else {
-        // Last item in the group keeps the year
-        result.push({ ...groupItem });
-      }
-    });
-  }
-
-  return result;
+  return sortedItems;
 };
 
-const Education = ({ sx }) => {
+const Experience = ({ sx }) => {
   const { t } = useTranslation();
   const [selectedTags, setSelectedTags] = useState([]);
 
@@ -70,11 +30,18 @@ const Education = ({ sx }) => {
     setSelectedTags(selectedValues);
   };
 
-  const filteredItems = getFilteredItems(selectedTags, educationItems);
-
+  const filteredItems = getFilteredExperienceItems(
+    selectedTags,
+    experienceItems,
+  );
   return (
+    // <motion.div
+    //   initial={{ opacity: 0, y: 20 }}
+    //   animate={{ opacity: 1, y: 0 }}
+    //   transition={{ duration: 0.5, delay: 0.4 }}
+    // >
     <Box sx={sx}>
-      <SectionTitle sx={{ mb: 2 }}>{t('education.title')}</SectionTitle>
+      <SectionTitle sx={{ mb: 2 }}>{t('experience.title')}</SectionTitle>
       <FilterSelect
         sx={{ mb: 0.5 }}
         selected={selectedTags}
@@ -87,16 +54,16 @@ const Education = ({ sx }) => {
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',
-              gap: 1.5,
+              gap: 3,
               pr: 2,
               mb: 4,
               mt: 2,
             }}
           >
-            {filteredItems.map(({ id, name, year, link }) => (
-              <Grid container key={id} spacing={2} alignItems="center">
-                <Grid size={2}>
-                  {year && (
+            {filteredItems.map(
+              ({ id, company, position, date, link, description }) => (
+                <Grid container key={id} spacing={2} alignItems="center">
+                  <Grid size={2}>
                     <Typography
                       color="primary"
                       variant="body2"
@@ -111,24 +78,37 @@ const Education = ({ sx }) => {
                           color: 'primary.light',
                         }}
                       />
-                      {year}
+                      {t(date)}
                     </Typography>
-                  )}
+                  </Grid>
+                  <Grid size={10}>
+                    <Typography
+                      sx={{ textDecorationColor: 'currentColor', mb: 1 }}
+                      color="primary"
+                      component={Link}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t(company)}
+                    </Typography>
+                    <Typography sx={{ mt: 0.5, mb: 1 }} variant="body2">
+                      {t(position)}
+                    </Typography>
+                    {t(description, {
+                      returnObjects: true,
+                    }).map((paragraph, index) => (
+                      <Typography
+                        sx={{ mb: 1.25, lineHeight: 1.2 }}
+                        key={index}
+                      >
+                        {paragraph}
+                      </Typography>
+                    ))}
+                  </Grid>
                 </Grid>
-                <Grid size={10}>
-                  <Typography
-                    sx={{ textDecorationColor: 'currentColor' }}
-                    color="inherit"
-                    component={Link}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {name}
-                  </Typography>
-                </Grid>
-              </Grid>
-            ))}
+              ),
+            )}
             <Box
               sx={{
                 height: 1,
@@ -166,4 +146,4 @@ const Education = ({ sx }) => {
   );
 };
 
-export default Education;
+export default Experience;

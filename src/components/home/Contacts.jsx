@@ -2,9 +2,11 @@ import { Stack, Typography, Box, Link } from '@mui/material';
 import { Phone, Email, Language } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
+import { Link as RouterLink, useParams } from 'react-router';
 
 const Contacts = ({ sx }) => {
   const { t } = useTranslation();
+  const { lang } = useParams();
 
   const contacts = [
     {
@@ -35,7 +37,8 @@ const Contacts = ({ sx }) => {
       ),
       label: t('contacts.portfolio'),
       value: 'oleynichenko.github.io',
-      href: 'https://oleynichenko.github.io/',
+      href: `/${lang}/portfolio`,
+      isRouterLink: true,
     },
   ];
 
@@ -51,7 +54,7 @@ const Contacts = ({ sx }) => {
           flexWrap: 'wrap',
         }}
       >
-        {contacts.map(({ icon, label, value, href }) => (
+        {contacts.map(({ icon, label, value, href, isRouterLink }) => (
           <Box
             key={label}
             sx={{
@@ -62,16 +65,31 @@ const Contacts = ({ sx }) => {
           >
             {icon}
             <Stack>
-              <Link
-                sx={{ fontWeight: 400 }}
-                color="inherit"
-                variant="h5"
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {value}
-              </Link>
+              {isRouterLink ? (
+                <Link
+                  sx={{
+                    color: 'inherit',
+                    textDecorationColor: 'inherit',
+                    '&:hover': { color: 'primary.main' },
+                  }}
+                  component={RouterLink}
+                  variant="h5"
+                  to={href}
+                >
+                  {value}
+                </Link>
+              ) : (
+                <Link
+                  sx={{ fontWeight: 400, '&:hover': { color: 'primary.main' } }}
+                  color="inherit"
+                  variant="h5"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {value}
+                </Link>
+              )}
               <Typography variant="body1">{label}</Typography>
             </Stack>
           </Box>
