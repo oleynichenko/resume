@@ -1,27 +1,41 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "",
+  "name": "resume-react",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "gulp run-build",
-    "start": "gulp serve"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "author": "Alex Oleynichenko",
-  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/pt-sans-narrow": "^5.2.5",
+    "@mui/icons-material": "^7.0.1",
+    "@mui/material": "^7.0.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.6.3",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^15.4.1",
+    "react-router": "^7.5.0",
+    "simplebar-react": "^3.3.0"
+  },
   "devDependencies": {
-    "autoprefixer": "7.2.6",
-    "browser-sync": "2.26.3",
-    "del": "3.0.0",
-    "gulp": "3.9.1",
-    "gulp-csso": "3.0.1",
-    "gulp-imagemin": "3.4.0",
-    "gulp-plumber": "1.2.0",
-    "gulp-postcss": "7.0.1",
-    "gulp-pug": "3.3.0",
-    "gulp-real-favicon": "0.3.2",
-    "gulp-rename": "1.4.0",
-    "gulp-sass": "3.2.1",
-    "run-sequence": "2.2.1"
-  },
-  "dependencies": {}
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "vite": "^6.2.0"
+  }
 }

@@ -1,8 +1,0 @@
-@mixin padding($width, $proportion) {
-	$left-padding: $width/13;
-  
-	padding-top: $left-padding*$proportion;
-	padding-right: ($left-padding/1.3);
-	padding-bottom: $left-padding*$proportion*1.2;
-	padding-left: $left-padding;
-}
