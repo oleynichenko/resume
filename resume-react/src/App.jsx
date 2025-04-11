@@ -13,9 +13,9 @@ import {
 } from 'react-router';
 import './global.css';
 import './locales/i18n';
-import { HomePage } from './components/HomePage.jsx';
-import { PortfolioPage } from './components/PortfolioPage.jsx';
-import { NotFoundPage } from './components/NotFoundPage.jsx';
+import { HomePage } from './pages/HomePage.jsx';
+import { PortfolioPage } from './pages/PortfolioPage.jsx';
+import { NotFoundPage } from './pages/NotFoundPage.jsx';
 import dayjs from 'dayjs';
 import 'dayjs/locale/en';
 import 'dayjs/locale/ru';

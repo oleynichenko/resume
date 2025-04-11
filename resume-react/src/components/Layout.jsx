@@ -1,6 +1,7 @@
 import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
 import LanguagePopover from './LanguagePopover';
 import { ParticlesComponent } from './Particles';
+import { motion } from 'framer-motion';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
@@ -27,10 +28,16 @@ const Layout = ({ children }) => {
           px: { xs: 0, md: 8 },
         }}
       >
-        <LanguagePopover
-          sx={{ position: 'absolute', top: '72px', right: '64px' }}
-        />
-        {children}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <LanguagePopover
+            sx={{ position: 'absolute', top: '72px', right: '64px' }}
+          />
+          {children}
+        </motion.div>
       </Paper>
     </Container>
   );

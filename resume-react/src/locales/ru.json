@@ -8,20 +8,20 @@
     ],
     "info": {
       "position": {
-        "key": "Desired position",
+        "key": "Желаемая должность",
         "value": "Front-end developer"
       },
       "languages": {
-        "key": "Languages",
-        "value": "English (B2)"
+        "key": "Языки",
+        "value": "Английский (B2)"
       },
       "location": {
-        "key": "Location",
-        "value": "Kiev, Ukraine"
+        "key": "Местоположение",
+        "value": "Киев, Украина"
       },
       "availability": {
-        "key": "Availability",
-        "value": "Immediately"
+        "key": "Доступность",
+        "value": "Сразу"
       }
     }
   },
@@ -52,10 +52,10 @@
       "position": "Front-end developer",
       "date": "October 2016",
       "description": [
-        "Application architecture and front-end logic for PWA.",
-        "Layout + Angular + Node.js + MongoDB stack.",
-        "Used Material Design framework for UI.",
-        "Integrated share features via Facebook, VK, and Twitter APIs."
+        "Архитектура приложения и фронтендная логика для PWA.",
+        "Стек: Layout + Angular + Node.js + MongoDB.",
+        "Использовал Material Design для UI.",
+        "Интеграция функций для обмена через Facebook, VK и Twitter."
       ]
     },
     "kawunu": {
@@ -63,11 +63,11 @@
       "position": "Front-end developer",
       "date": "April 2020",
       "description": [
-        "Taxi booking platform development for operators and customers.",
-        "Angular for admin dashboard.",
-        "Express.js + Sequelize + Postgres for backend.",
-        "Material Design and MUI frameworks for UI.",
-        "Used React in an app for placing customer orders."
+        "Разработка платформы для бронирования такси для операторов и клиентов.",
+        "Angular для админ-панели.",
+        "Express.js + Sequelize + Postgres для бэкенда.",
+        "Material Design и MUI для UI.",
+        "Использовал React в приложении для размещения заказов клиентов."
       ]
     },
     "livee": {
@@ -75,11 +75,11 @@
       "position": "Full-Stack Developer (Tech Owner)",
       "date": "March 2021",
       "description": [
-        "React-based admin dashboard for event creation and management.",
-        "Developed internal admin panel for customer support tasks.",
-        "Mobile application development using React Native.",
-        "Maintained and optimized PostgreSQL database structure.",
-        "Set up different marketing campaigns and integrated analytics tools."
+        "Разработка админки на React для создания и управления мероприятиями с использованием MUI.",
+        "Разработка внутренней админ-панели для поддержки клиентов.",
+        "Разработка мобильного приложения с использованием React Native.",
+        "Поддержание и оптимизация структуры базы данных PostgreSQL.",
+        "Настройка различных маркетинговых кампаний и интеграция аналитических инструментов."
       ]
     }
   },
