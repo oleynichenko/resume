@@ -1,15 +1,15 @@
 {
   "about": {
-    "name": "Olexandr Oliiynychenko",
-    "position": "Front-end developer",
+    "name": "Oleksandr Oliinychenko",
+    "position": "Front-end Developer",
     "description": [
-      "Mathematician by education. Worked at the Institute of Mathematics of the National Academy of Sciences until 2003. Over the next 10 years, progressed from sales manager to head of a distribution company (FMCG).",
-      "In 2013, shifted to internet marketing, promoting various educational projects. Since 2016, focused on what truly inspires me — web development and UX design."
+      "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, went from a sales manager to a distribution company manager (FMCG).",
+      "In 2013, moved to internet marketing. Participated in the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
     ],
     "info": {
       "position": {
         "key": "Desired position",
-        "value": "Front-end developer"
+        "value": "Front-end Developer"
       },
       "languages": {
         "key": "Languages",
@@ -17,7 +17,7 @@
       },
       "location": {
         "key": "Location",
-        "value": "Kiev, Ukraine"
+        "value": "Kyiv, Ukraine"
       },
       "availability": {
         "key": "Availability",
@@ -35,20 +35,20 @@
     "title": "Education"
   },
   "experience": {
-    "title": "Experience",
+    "title": "Work Experience",
     "be": {
-      "company": "«Be Ukraine» LLC",
-      "position": "Front-end developer",
+      "company": "«Be Ukraine» LLC, Italy",
+      "position": "Front-end Developer",
       "date": "April 2019",
       "description": [
-        "Banking application development for internal operations.",
+        "Development of a banking application for internal operations.",
         "SCSS/Pug templates + Angular 8 + PrimeNG components.",
-        "Created custom UI elements and maintained extandable architecture.",
-        "Worked closely with QA and backend teams to ensure smooth integration."
+        "Creation of custom UI elements and support of extensible architecture.",
+        "Close collaboration with QA and backend teams to ensure smooth integration."
       ]
     },
     "jbook": {
-      "company": "Project «JBOOK» - multilingual book study app (PWA)",
+      "company": "Project «JBOOK», Israel",
       "position": "Front-end developer",
       "date": "October 2016",
       "description": [
@@ -104,5 +104,230 @@
     "title": "404",
     "message": "Page Not Found",
     "goHome": "Go to Home"
+  },
+  "portfolio": {
+    "header": {
+      "title": "Portfolio",
+      "goBack": "Back"
+    },
+    "description": {
+      "firstProjects": {
+        "title": "First Projects",
+        "text": "The projects presented here were created between 2016 and 2017, at the very beginning of my professional journey as a developer. Even then, I focused on creating a clean, detailed, and thoughtful user experience and tried to fallow best development practices."
+      },
+      "currentWork": {
+        "title": "How I Work Now",
+        "text1": "Since then, my skills have grown significantly. You can evaluate the quality of my current work by reviewing the <0>source code</0> of this website.",
+        "text2": "It's built on React and the MUI component library, uses React Router for navigation, and supports three languages through localization. Animations are handled by Motion, and code quality is maintained with Prettier and ESLint. The app is automatically deployed to GitHub Pages.",
+        "text3": "Additionally, I actively incorporate AI tools into my development workflow, which significantly increases productivity and speeds up both coding and problem-solving."
+      }
+    },
+    "features": {
+      "websiteFeatures": "Website Features",
+      "usedTechnologies": "Used Technologies"
+    },
+    "workItem": {
+      "projectFeatures": "Project Features",
+      "viewCode": "View Code",
+      "openWebsite": "Open Website"
+    },
+    "grid": {
+      "title": "Projects (2016 - 2017)"
+    },
+    "tags": {
+      "design": "Design",
+      "layout": "Layout",
+      "angular": "Angular",
+      "mongodb": "MongoDB",
+      "ngrx": "NGRX",
+      "angularfire2": "ANGULARFIRE2",
+      "bootstrap": "Bootstrap 3",
+      "firebase": "Firebase",
+      "node": "Node",
+      "yargs": "Yargs",
+      "javascript": "Javascript",
+      "svg": "SVG",
+      "php": "PHP",
+      "react": "React",
+      "gatsby": "Gatsby.js",
+      "cssAnimations": "CSS Animations",
+      "express": "Express.js",
+      "mongoose": "Mongoose",
+      "jsonwebtoken": "JSON Web Token"
+    },
+    "websiteFeatures": {
+      "feature1": "Cross-browser compatibility",
+      "feature2": "Adaptive and responsive design",
+      "feature3": "Semantic markup",
+      "feature4": "Correct work without CSS and JS",
+      "feature5": "Component layout",
+      "feature6": "Image optimization"
+    },
+    "technologies": {
+      "tech1": "HTML5/Pug, CSS3/SASS",
+      "tech2": "Javascript, TypeScript",
+      "tech3": "NodeJS + Express + MongoDB",
+      "tech4": "Angular 7+, RxJs, NgRx",
+      "tech5": "React, Redux",
+      "tech6": "Material Design, MUI, PrimeNg"
+    },
+    "items": {
+      "jbook": {
+        "title": "SPA \"Multilingual Library «JBOOK»\"",
+        "alt": "Multilingual Library «JBOOK»",
+        "features": {
+          "feature1": "Progressive Web Application",
+          "feature2": "Angular Universal for search engines",
+          "feature3": "Using \"Material Design\" framework",
+          "feature4": "BackEnd on Express + MongoDB"
+        }
+      },
+      "tests": {
+        "title": "Educational Quizzes \"Pumping Tests\"",
+        "alt": "Educational Quizzes \"Pumping Tests\"",
+        "features": {
+          "feature1": "Using \"Material Design\" framework",
+          "feature2": "BackEnd on Node.js + MongoDB",
+          "feature3": "Sharing quiz results in 3 social networks",
+          "feature4": "Admin panel for quiz authors"
+        }
+      },
+      "words": {
+        "title": "SPA \"English Words Trainer\"",
+        "alt": "English Words Trainer",
+        "features": {
+          "feature1": "User registration and authentication via Firebase",
+          "feature2": "Material Design components",
+          "feature3": "State management with NgRx",
+          "feature4": "Layout with angular/flex-layout"
+        }
+      },
+      "time": {
+        "title": "SPA \"Time Tracker\"",
+        "alt": "Time Tracker",
+        "features": {
+          "feature1": "Data storage in Local Storage",
+          "feature2": "Independence from page reload",
+          "feature3": "Add, delete, pause functions",
+          "feature4": "Task name editing"
+        }
+      },
+      "recipe": {
+        "title": "SPA \"Recipe Book\"",
+        "alt": "Recipe Book",
+        "features": {
+          "feature1": "User registration and authentication via Firebase",
+          "feature2": "Lazy loading of modules",
+          "feature3": "State management with NgRx",
+          "feature4": "Using Firebase SDK"
+        }
+      },
+      "fitness": {
+        "title": "SPA \"Fitness Tracker\"",
+        "alt": "Fitness Tracker",
+        "features": {
+          "feature1": "Registration and authentication",
+          "feature2": "Material Design components",
+          "feature3": "Layout with angular/flex-layout",
+          "feature4": "Database with angularfire2",
+          "feature5": "Firebase hosting"
+        }
+      },
+      "typing": {
+        "title": "Console Trainer \"Typing Practice\"",
+        "alt": "Console Trainer \"Typing Practice\"",
+        "features": {
+          "feature1": "Adding/removing words for typing practice",
+          "feature2": "Choosing the number of words for a round",
+          "feature3": "Progress tracking in each round",
+          "feature4": "Saving results to a local file",
+          "feature5": "Effective motivation system"
+        }
+      },
+      "azbyka": {
+        "title": "Encyclopedia \"Azbyka Vera\"",
+        "alt": "Encyclopedia \"Azbyka Vera\"",
+        "features": {
+          "feature1": "Analogous color scheme",
+          "feature2": "Canonical book proportions by Jan Tschichold",
+          "feature3": "8px grid",
+          "feature4": "Created in Adobe XD"
+        }
+      },
+      "slider": {
+        "title": "Slider with SVG gradient background",
+        "alt": "Slider with SVG background",
+        "features": {
+          "feature1": "Change to vertical state on small screens",
+          "feature2": "Moving gradient background",
+          "feature3": "Automatic movement to the nearest position",
+          "feature4": "\"Drag and drop\" function"
+        }
+      },
+      "device": {
+        "title": "Online Store \"Device\"",
+        "alt": "Online Store \"Device\"",
+        "features": {
+          "feature1": "Design completion up to 1200 pixels",
+          "feature2": "Sliders without JavaScript",
+          "feature3": "Centered responsive grid on the \"Catalog\" page",
+          "feature4": "Pop-up windows with static pages for disabled JavaScript",
+          "feature5": "Adaptive search form"
+        }
+      },
+      "pixel": {
+        "title": "Browser Game \"Pixel-Hunter\"",
+        "alt": "Browser Game \"Pixel-Hunter\"",
+        "features": {
+          "feature1": "Single Page Application",
+          "feature2": "Saving the last 10 game results",
+          "feature3": "MVP pattern",
+          "feature4": "Using ES-6"
+        }
+      },
+      "brb": {
+        "title": "Website \"Barbershop Borodinski\"",
+        "alt": "Website \"Barbershop Borodinski\"",
+        "features": {
+          "feature1": "Adaptive images for Retina displays",
+          "feature2": "3 breakpoints",
+          "feature3": "Slider without JavaScript",
+          "feature4": "BEM methodology",
+          "feature5": "Semantic HTML markup"
+        }
+      },
+      "pilates": {
+        "title": "Website \"Personal Pilates Training\"",
+        "alt": "Website \"Personal Pilates Training\"",
+        "features": {
+          "feature1": "Adaptive text blocks and images",
+          "feature2": "Animated images",
+          "feature3": "SVG icons",
+          "feature4": "Adaptive feedback form",
+          "feature5": "Single color tone of the project"
+        }
+      },
+      "todo": {
+        "title": "API: Organizer \"ToDo App\"",
+        "alt": "ToDo App",
+        "features": {
+          "feature1": "User registration and authentication",
+          "feature2": "Authorization with JSON Web Tokens",
+          "feature3": "MongoDB with Mlab",
+          "feature4": "bcryptjs for confidential data",
+          "feature5": "Tests with mocha, supertest and expect"
+        }
+      },
+      "daat": {
+        "title": "API: Website \"Daat Agency\"",
+        "alt": "ToDo App",
+        "features": {
+          "feature1": "Animated headers",
+          "feature2": "Smooth appearance",
+          "feature3": "Gatsby.js framework",
+          "feature4": "Dark/light themes"
+        }
+      }
+    }
   }
 }

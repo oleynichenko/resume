@@ -47,7 +47,7 @@ const Skills = ({ sx }) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          gap: { xs: 1.5, md: 2 },
+          gap: 1.5,
         }}
       >
         {SKILLS.map(({ id, name, level }) => (

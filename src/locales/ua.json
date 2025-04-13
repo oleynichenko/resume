@@ -37,49 +37,49 @@
   "experience": {
     "title": "Досвід роботи",
     "be": {
-      "company": "«Be Ukraine» LLC",
+      "company": "«Be Ukraine» LLC, Італія",
       "position": "Front-end розробник",
       "date": "Квітень 2019",
       "description": [
         "Розробка банківського додатку для внутрішніх операцій.",
-        "SCSS/Pug шаблони + Angular 8 + PrimeNG компоненти.",
-        "Створення користувацьких UI елементів та підтримка розширюваної архітектури.",
+        "SCSS/Pug шаблони + Angular 8 + компоненти PrimeNG.",
+        "Створення користувацьких UI-елементів та підтримка розширюваної архітектури.",
         "Тісна співпраця з командами QA та backend для забезпечення плавної інтеграції."
       ]
     },
     "jbook": {
-      "company": "Project «JBOOK» - multilingual book study app (PWA)",
-      "position": "Front-end developer",
-      "date": "October 2016",
+      "company": "Проєкт «JBOOK» — додаток для читання книг, Ізраїль",
+      "position": "Front-end розробник",
+      "date": "Жовтень 2016",
       "description": [
-        "Application architecture and front-end logic for PWA.",
-        "Layout + Angular + Node.js + MongoDB stack.",
-        "Used Material Design framework for UI.",
-        "Integrated share features via Facebook, VK, and Twitter APIs."
+        "Архітектура додатку та логіка front-end для PWA.",
+        "Верстка + Angular + Node.js + MongoDB стек.",
+        "Використання UI-фреймворку Material Design.",
+        "Інтеграція функцій поширення через API Facebook, VK та Twitter."
       ]
     },
     "kawunu": {
-      "company": "«Kawunu» GmbH, Germany",
-      "position": "Front-end developer",
-      "date": "April 2020",
+      "company": "«Kawunu» GmbH, Німеччина",
+      "position": "Front-end розробник",
+      "date": "Квітень 2020",
       "description": [
-        "Taxi booking platform development for operators and customers.",
-        "Angular for admin dashboard.",
-        "Express.js + Sequelize + Postgres for backend.",
-        "Material Design and MUI frameworks for UI.",
-        "Used React in an app for placing customer orders."
+        "Розробка платформи для бронювання таксі для операторів і клієнтів.",
+        "Angular для адмін-панелі.",
+        "Express.js + Sequelize + Postgres для backend.",
+        "Фреймворки Material Design та MUI для UI.",
+        "Використання React у застосунку для оформлення замовлень клієнтами."
       ]
     },
     "livee": {
-      "company": "«12Planet» LLC, France",
-      "position": "Full-Stack Developer (Tech Owner)",
-      "date": "March 2021",
+      "company": "«12Planet» LLC, Франція",
+      "position": "Full-Stack розробник (Tech Owner)",
+      "date": "Березень 2021",
       "description": [
-        "React-based admin dashboard for event creation and management.",
-        "Developed internal admin panel for customer support tasks.",
-        "Mobile application development using React Native.",
-        "Maintained and optimized PostgreSQL database structure.",
-        "Set up different marketing campaigns and integrated analytics tools."
+        "Адмін-панель на базі React для створення та керування подіями.",
+        "Розробка внутрішньої адмін-панелі для задач підтримки клієнтів на базі MUI.",
+        "Розробка та деплой мобільного додатку з використанням React Native.",
+        "Підтримка та оптимізація структури бази даних PostgreSQL.",
+        "Налаштування маркетингових кампаній та інтеграція аналітичних інструментів."
       ]
     }
   },
@@ -104,5 +104,230 @@
     "title": "404",
     "message": "Сторінку не знайдено",
     "goHome": "На головну"
+  },
+  "portfolio": {
+    "header": {
+      "title": "Портфоліо",
+      "goBack": "Назад"
+    },
+    "description": {
+      "firstProjects": {
+        "title": "Перші проекти",
+        "text": "Проекти, представлені тут, були створені між 2016 та 2017 роками, на самому початку мого професійного шляху як розробника. Навіть тоді я зосереджувався на створенні чистого, детального та продуманого користувацького досвіду."
+      },
+      "currentWork": {
+        "title": "Як я працюю зараз",
+        "text1": "Відтоді мої навички помітно зросли. Оцінити рівень моєї поточної роботи можна, переглянувши <0>вихідний код</0> цього веб-сайту.",
+        "text2": "Він побудований на React із використанням бібліотеки компонентів MUI, навігація реалізована через React Router, а локалізація підтримує три мови. За анімацію відповідає Motion, а за чистоту коду — Prettier та ESLint. Додаток автоматично деплоїться на GitHub Pages.",
+        "text3": "Я продовжую розвиватися у напрямку сучасної веброзробки й на квітень 2025 року активно опановую AI-інструменти для прискорення як процесу написання коду, так і вирішення різноманітних задач."
+      }
+    },
+    "features": {
+      "websiteFeatures": "Особливості веб-сайтів",
+      "usedTechnologies": "Використані технології"
+    },
+    "workItem": {
+      "projectFeatures": "Особливості проекту",
+      "viewCode": "Переглянути код",
+      "openWebsite": "Відкрити сайт"
+    },
+    "grid": {
+      "title": "Проекти (2016 - 2017)"
+    },
+    "tags": {
+      "design": "Дизайн",
+      "layout": "Верстка",
+      "angular": "Angular",
+      "mongodb": "MongoDB",
+      "ngrx": "NGRX",
+      "angularfire2": "ANGULARFIRE2",
+      "bootstrap": "Bootstrap 3",
+      "firebase": "Firebase",
+      "node": "Node",
+      "yargs": "Yargs",
+      "javascript": "Javascript",
+      "svg": "SVG",
+      "php": "PHP",
+      "react": "React",
+      "gatsby": "Gatsby.js",
+      "cssAnimations": "CSS Анімації",
+      "express": "Express.js",
+      "mongoose": "Mongoose",
+      "jsonwebtoken": "JSON Web Token"
+    },
+    "websiteFeatures": {
+      "feature1": "Кросс-браузерна сумісність",
+      "feature2": "Адаптивний та респонсивний дизайн",
+      "feature3": "Семантична розмітка",
+      "feature4": "Коректна робота без CSS та JS",
+      "feature5": "Компонентна верстка",
+      "feature6": "Оптимізація зображень"
+    },
+    "technologies": {
+      "tech1": "HTML5/Pug, CSS3/SASS",
+      "tech2": "Javascript, TypeScript",
+      "tech3": "NodeJS + Express + MongoDB",
+      "tech4": "Angular 7+, RxJs, NgRx",
+      "tech5": "React, Redux",
+      "tech6": "Material Design, MUI, PrimeNg"
+    },
+    "items": {
+      "jbook": {
+        "title": "SPA \"Мультимовна бібліотека «JBOOK»\"",
+        "alt": "Мультимовна бібліотека «JBOOK»",
+        "features": {
+          "feature1": "Progressive Web Application",
+          "feature2": "Angular Universal для пошукових систем",
+          "feature3": "Використання фреймворку \"Material Design\"",
+          "feature4": "BackEnd на Express + MongoDB"
+        }
+      },
+      "tests": {
+        "title": "Навчальні вікторини \"Pumping Tests\"",
+        "alt": "Навчальні вікторини \"Pumping Tests\"",
+        "features": {
+          "feature1": "Використання фреймворку \"Material Design\"",
+          "feature2": "BackEnd на Node.js + MongoDB",
+          "feature3": "Поділення результатів вікторини в 3 соціальних мережах",
+          "feature4": "Адмін-панель для авторів вікторин"
+        }
+      },
+      "words": {
+        "title": "SPA \"Тренер англійських слів\"",
+        "alt": "Тренер англійських слів",
+        "features": {
+          "feature1": "Реєстрація та автентифікація користувачів через Firebase",
+          "feature2": "Компоненти Material Design",
+          "feature3": "Управління станом з NgRx",
+          "feature4": "Розмітка з angular/flex-layout"
+        }
+      },
+      "time": {
+        "title": "SPA \"Time Tracker\"",
+        "alt": "Time Tracker",
+        "features": {
+          "feature1": "Збереження даних в Local Storage",
+          "feature2": "Незалежність від перезавантаження сторінки",
+          "feature3": "Функції додавання, видалення, паузи",
+          "feature4": "Редагування назви завдання"
+        }
+      },
+      "recipe": {
+        "title": "SPA \"Книга рецептів\"",
+        "alt": "Книга рецептів",
+        "features": {
+          "feature1": "Реєстрація та автентифікація користувачів через Firebase",
+          "feature2": "Ліниве завантаження модулів",
+          "feature3": "Управління станом з NgRx",
+          "feature4": "Використання Firebase SDK"
+        }
+      },
+      "fitness": {
+        "title": "SPA \"Fitness Tracker\"",
+        "alt": "Fitness Tracker",
+        "features": {
+          "feature1": "Реєстрація та автентифікація",
+          "feature2": "Компоненти Material Design",
+          "feature3": "Розмітка з angular/flex-layout",
+          "feature4": "База даних з angularfire2",
+          "feature5": "Firebase хостинг"
+        }
+      },
+      "typing": {
+        "title": "Консольний тренер \"Typing Practice\"",
+        "alt": "Консольний тренер \"Typing Practice\"",
+        "features": {
+          "feature1": "Додавання/видалення слів для практики друку",
+          "feature2": "Вибір кількості слів для раунду",
+          "feature3": "Відстеження прогресу в кожному раунді",
+          "feature4": "Збереження результатів у локальний файл",
+          "feature5": "Ефективна система мотивації"
+        }
+      },
+      "azbyka": {
+        "title": "Енциклопедія \"Азбука віри\"",
+        "alt": "Енциклопедія \"Азбука віри\"",
+        "features": {
+          "feature1": "Аналогічна колірна схема",
+          "feature2": "Канонічні пропорції книги за Яном Чихольдом",
+          "feature3": "Сітка 8px",
+          "feature4": "Створено в Adobe XD"
+        }
+      },
+      "slider": {
+        "title": "Слайдер з SVG градієнтним фоном",
+        "alt": "Слайдер з SVG фоном",
+        "features": {
+          "feature1": "Зміна на вертикальний стан на малих екранах",
+          "feature2": "Рухомий градієнтний фон",
+          "feature3": "Автоматичне переміщення до найближчої позиції",
+          "feature4": "Функція \"Drag and drop\""
+        }
+      },
+      "device": {
+        "title": "Інтернет-магазин \"Device\"",
+        "alt": "Інтернет-магазин \"Device\"",
+        "features": {
+          "feature1": "Завершення дизайну до 1200 пікселів",
+          "feature2": "Слайдери без JavaScript",
+          "feature3": "Центрована респонсивна сітка на сторінці \"Каталог\"",
+          "feature4": "Спливаючі вікна зі статичними сторінками для вимкненого JavaScript",
+          "feature5": "Адаптивна форма пошуку"
+        }
+      },
+      "pixel": {
+        "title": "Браузерна гра \"Pixel-Hunter\"",
+        "alt": "Браузерна гра \"Pixel-Hunter\"",
+        "features": {
+          "feature1": "Single Page Application",
+          "feature2": "Збереження останніх 10 результатів гри",
+          "feature3": "Паттерн MVP",
+          "feature4": "Використання ES-6"
+        }
+      },
+      "brb": {
+        "title": "Веб-сайт \"Barbershop Borodinski\"",
+        "alt": "Веб-сайт \"Barbershop Borodinski\"",
+        "features": {
+          "feature1": "Адаптивні зображення для Retina дисплеїв",
+          "feature2": "3 точки перелому",
+          "feature3": "Слайдер без JavaScript",
+          "feature4": "BEM-методологія",
+          "feature5": "Семантична HTML розмітка"
+        }
+      },
+      "pilates": {
+        "title": "Веб-сайт \"Персональний тренінг з пілатесу\"",
+        "alt": "Веб-сайт \"Персональний тренінг з пілатесу\"",
+        "features": {
+          "feature1": "Адаптивні текстові блоки та зображення",
+          "feature2": "Анімовані зображення",
+          "feature3": "SVG іконки",
+          "feature4": "Адаптивна форма зворотного зв'язку",
+          "feature5": "Один колірний тон проекту"
+        }
+      },
+      "todo": {
+        "title": "API: Органайзер \"ToDo App\"",
+        "alt": "ToDo App",
+        "features": {
+          "feature1": "Реєстрація та автентифікація користувачів",
+          "feature2": "Авторизація з JSON Web Tokens",
+          "feature3": "MongoDB з Mlab",
+          "feature4": "bcryptjs для конфіденційних даних",
+          "feature5": "Тести з mocha, supertest та expect"
+        }
+      },
+      "daat": {
+        "title": "Веб-сайт \"Daat Agency\"",
+        "alt": "Daat Agency",
+        "features": {
+          "feature1": "Анімовані заголовки",
+          "feature2": "Плавна поява",
+          "feature3": "Фреймворк Gatsby.js",
+          "feature4": "Темна/світла теми"
+        }
+      }
+    }
   }
 }

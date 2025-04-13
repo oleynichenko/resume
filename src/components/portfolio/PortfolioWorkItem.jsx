@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Box, Typography, Stack, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
 import PortfolioWorkButtons from './PortfolioWorkButtons';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioWorkItem = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -16,13 +18,13 @@ const PortfolioWorkItem = ({ item }) => {
           textAlign: 'center',
         }}
       >
-        {item.title}
+        {t(item.title)}
       </Typography>
       <Box sx={{ mb: 2, textAlign: 'center' }}>
         {item.tags.map((tag, index) => (
           <Chip
             key={index}
-            label={tag}
+            label={t(tag)}
             size="small"
             sx={{
               m: 0.5,
@@ -46,7 +48,7 @@ const PortfolioWorkItem = ({ item }) => {
           <source media="(min-width: 769px)" srcSet={item.image.desktop} />
           <img
             src={item.image.tablet}
-            alt={item.image.alt}
+            alt={t(item.image.alt)}
             style={{ display: 'block', width: '100%', height: 'auto' }}
           />
         </Box>

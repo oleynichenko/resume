@@ -222,25 +222,31 @@ const SKILLS = [
   { id: 5, name: 'MongoDB', level: 7 },
   { id: 6, name: 'Postgres', level: 6 },
   { id: 7, name: 'PHP + SQL', level: 4 },
-  { id: 8, name: 'Docker + Github', level: 8 },
+  { id: 8, name: 'Docker + Github', level: 7 },
   { id: 9, name: 'UX/UI', level: 9 },
 ];
 
 const portfolioItems = [
   {
     id: 'jbook',
-    title: 'SPA "Multilingual Library «JBOOK»"',
-    tags: ['Design', 'Layout', 'Angular', 'Express', 'MongoDB'],
+    title: 'portfolio.items.jbook.title',
+    tags: [
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
+      'portfolio.tags.angular',
+      'portfolio.tags.express',
+      'portfolio.tags.mongodb',
+    ],
     image: {
       desktop: '/img/jbook-ds-1x.jpg',
       tablet: '/img/jbook-tb-1x.jpg',
-      alt: 'Multilingual Library «JBOOK»',
+      alt: 'portfolio.items.jbook.alt',
     },
     features: [
-      'Progressive Web Application',
-      'Angular Universal for search engines',
-      'Using "Material Design" framework',
-      'BackEnd with Express + MongoDB',
+      'portfolio.items.jbook.features.feature1',
+      'portfolio.items.jbook.features.feature2',
+      'portfolio.items.jbook.features.feature3',
+      'portfolio.items.jbook.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/book',
@@ -250,18 +256,23 @@ const portfolioItems = [
   },
   {
     id: 'tests',
-    title: 'Educational Quizzes "Pumping Tests"',
-    tags: ['Design', 'Layout', 'Express', 'MongoDB'],
+    title: 'portfolio.items.tests.title',
+    tags: [
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
+      'portfolio.tags.express',
+      'portfolio.tags.mongodb',
+    ],
     image: {
       desktop: '/img/tests-ds-1x.jpg',
       tablet: '/img/tests-tb-1x.jpg',
-      alt: 'Educational quizzes "Pumping Tests"',
+      alt: 'portfolio.items.tests.alt',
     },
     features: [
-      'Using "Material Design" framework',
-      'BackEnd with Node.js + MongoDB',
-      'Sharing quizz results in 3 social networks',
-      "Admin panel for quizzes's authors",
+      'portfolio.items.tests.features.feature1',
+      'portfolio.items.tests.features.feature2',
+      'portfolio.items.tests.features.feature3',
+      'portfolio.items.tests.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/quiz-cms',
@@ -271,18 +282,22 @@ const portfolioItems = [
   },
   {
     id: 'words',
-    title: 'SPA "English Words Trainer"',
-    tags: ['Angular 7', 'NGRX', 'ANGULARFIRE2'],
+    title: 'portfolio.items.words.title',
+    tags: [
+      'portfolio.tags.angular',
+      'portfolio.tags.ngrx',
+      'portfolio.tags.angularfire2',
+    ],
     image: {
       desktop: '/img/words-ds-1x.jpg',
       tablet: '/img/words-tb-1x.jpg',
-      alt: 'English Words Trainer',
+      alt: 'portfolio.items.words.alt',
     },
     features: [
-      'User registration and authentication with Firebase',
-      'Material Design components',
-      'State management with NgRx',
-      'Markup with angular/flex-layout',
+      'portfolio.items.words.features.feature1',
+      'portfolio.items.words.features.feature2',
+      'portfolio.items.words.features.feature3',
+      'portfolio.items.words.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/english-words-trainer',
@@ -293,18 +308,18 @@ const portfolioItems = [
   },
   {
     id: 'time',
-    title: 'SPA "Time Tracker"',
-    tags: ['Angular 7', 'Bootstrap 3'],
+    title: 'portfolio.items.time.title',
+    tags: ['portfolio.tags.angular', 'portfolio.tags.bootstrap'],
     image: {
       desktop: '/img/time-ds-1x.jpg',
       tablet: '/img/time-tb-1x.jpg',
-      alt: 'Time Tracker',
+      alt: 'portfolio.items.time.alt',
     },
     features: [
-      'Saving data in Local Storage',
-      'Independence on page reloading',
-      'Adding, deleting, pausing functions',
-      'Edited task name',
+      'portfolio.items.time.features.feature1',
+      'portfolio.items.time.features.feature2',
+      'portfolio.items.time.features.feature3',
+      'portfolio.items.time.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/time-tracker',
@@ -315,18 +330,23 @@ const portfolioItems = [
   },
   {
     id: 'recipe',
-    title: 'Single Page Application "Recipe Book"',
-    tags: ['Angular 7', 'NGRX', 'firebase', 'Bootstrap 3'],
+    title: 'portfolio.items.recipe.title',
+    tags: [
+      'portfolio.tags.angular',
+      'portfolio.tags.ngrx',
+      'portfolio.tags.firebase',
+      'portfolio.tags.bootstrap',
+    ],
     image: {
       desktop: '/img/recipe-ds-1x.jpg',
       tablet: '/img/recipe-tb-1x.jpg',
-      alt: 'Recipe Book',
+      alt: 'portfolio.items.recipe.alt',
     },
     features: [
-      'User registration and authentication with Firebase',
-      'Lazy loading modules',
-      'State management with NgRx',
-      'Using Firebase SDK',
+      'portfolio.items.recipe.features.feature1',
+      'portfolio.items.recipe.features.feature2',
+      'portfolio.items.recipe.features.feature3',
+      'portfolio.items.recipe.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/recipe-book-ngrx',
@@ -337,19 +357,23 @@ const portfolioItems = [
   },
   {
     id: 'fitness',
-    title: 'SPA "Fitness Tracker"',
-    tags: ['Angular 7', 'NgRx', 'Angularfire2'],
+    title: 'portfolio.items.fitness.title',
+    tags: [
+      'portfolio.tags.angular',
+      'portfolio.tags.ngrx',
+      'portfolio.tags.angularfire2',
+    ],
     image: {
       desktop: '/img/fitness-ds-1x.jpg',
       tablet: '/img/fitness-tb-1x.jpg',
-      alt: 'Fitness Tracker',
+      alt: 'portfolio.items.fitness.alt',
     },
     features: [
-      'Registration and authentication',
-      'Material Design components',
-      'Markup with angular/flex-layout',
-      'Database with angularfire2',
-      'Firebase hosting',
+      'portfolio.items.fitness.features.feature1',
+      'portfolio.items.fitness.features.feature2',
+      'portfolio.items.fitness.features.feature3',
+      'portfolio.items.fitness.features.feature4',
+      'portfolio.items.fitness.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/fitness-tracker-ngrx',
@@ -360,19 +384,19 @@ const portfolioItems = [
   },
   {
     id: 'typing',
-    title: 'Console Trainer “Typing Practice”',
-    tags: ['Node', 'Yargs'],
+    title: 'portfolio.items.typing.title',
+    tags: ['portfolio.tags.node', 'portfolio.tags.yargs'],
     image: {
       desktop: '/img/typing-ds-1x.jpg',
       tablet: '/img/typing-tb-1x.jpg',
-      alt: 'Console trainer “Typing Practice”',
+      alt: 'portfolio.items.typing.alt',
     },
     features: [
-      'Adding/deleting words for typing practice',
-      'Selecting the number of words for the round',
-      'Tracking progress in each round',
-      'Saving results to a local file',
-      'Effective motivation system',
+      'portfolio.items.typing.features.feature1',
+      'portfolio.items.typing.features.feature2',
+      'portfolio.items.typing.features.feature3',
+      'portfolio.items.typing.features.feature4',
+      'portfolio.items.typing.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/typing-practice',
@@ -382,18 +406,18 @@ const portfolioItems = [
   },
   {
     id: 'azbyka',
-    title: 'Encyclopedia “Alphabet of Faith”',
-    tags: ['Design'],
+    title: 'portfolio.items.azbyka.title',
+    tags: ['portfolio.tags.design'],
     image: {
       desktop: '/img/azb-ds-1x.jpg',
       tablet: '/img/azb-tb-1x.jpg',
-      alt: 'Encyclopedia “Alphabet of Faith”',
+      alt: 'portfolio.items.azbyka.alt',
     },
     features: [
-      'Analog color scheme',
-      'Canonical book proportions according Jan Tschichold',
-      'Grid 8px',
-      'Made with Adobe XD',
+      'portfolio.items.azbyka.features.feature1',
+      'portfolio.items.azbyka.features.feature2',
+      'portfolio.items.azbyka.features.feature3',
+      'portfolio.items.azbyka.features.feature4',
     ],
     links: {
       code: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
@@ -403,18 +427,18 @@ const portfolioItems = [
   },
   {
     id: 'slider',
-    title: 'Slider with SVG Gradient Background',
-    tags: ['Javascript', 'SVG'],
+    title: 'portfolio.items.slider.title',
+    tags: ['portfolio.tags.javascript', 'portfolio.tags.svg'],
     image: {
       desktop: '/img/slider-ds-1x.jpg',
       tablet: '/img/slider-tb-1x.jpg',
-      alt: 'Slider with SVG background',
+      alt: 'portfolio.items.slider.alt',
     },
     features: [
-      'Changing to vertical state on small screens',
-      'Moving gradient background',
-      'Automatic moving to the nearest position',
-      '"Drag and drop" feature',
+      'portfolio.items.slider.features.feature1',
+      'portfolio.items.slider.features.feature2',
+      'portfolio.items.slider.features.feature3',
+      'portfolio.items.slider.features.feature4',
     ],
     links: {
       code: 'https://codepen.io/oleynichenkos/pen/BMQVgg',
@@ -424,19 +448,19 @@ const portfolioItems = [
   },
   {
     id: 'device',
-    title: 'Online Store “Device”',
-    tags: ['layout', 'Design'],
+    title: 'portfolio.items.device.title',
+    tags: ['portfolio.tags.layout', 'portfolio.tags.design'],
     image: {
       desktop: '/img/device-ds-1x.jpg',
       tablet: '/img/device-tb-1x.jpg',
-      alt: 'Online Store “Device”',
+      alt: 'portfolio.items.device.alt',
     },
     features: [
-      'Design completion to 1200 px',
-      'Sliders without JavaScript',
-      'Centered responsive grid on "Catalog" page',
-      'Pop-ups with static pages for disabled JavaScript',
-      'Adaptive search form',
+      'portfolio.items.device.features.feature1',
+      'portfolio.items.device.features.feature2',
+      'portfolio.items.device.features.feature3',
+      'portfolio.items.device.features.feature4',
+      'portfolio.items.device.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/device',
@@ -447,18 +471,18 @@ const portfolioItems = [
   },
   {
     id: 'pixel',
-    title: 'Browser Game “Pixel-Hunter”',
-    tags: ['javascript'],
+    title: 'portfolio.items.pixel.title',
+    tags: ['portfolio.tags.javascript'],
     image: {
       desktop: '/img/pixel-ds-1x.jpg',
       tablet: '/img/pixel-tb-1x.jpg',
-      alt: 'Browser Game “Pixel-Hunter”',
+      alt: 'portfolio.items.pixel.alt',
     },
     features: [
-      'Single Page Application',
-      'Saving last 10 game results',
-      'MVP pattern',
-      'Using ES-6',
+      'portfolio.items.pixel.features.feature1',
+      'portfolio.items.pixel.features.feature2',
+      'portfolio.items.pixel.features.feature3',
+      'portfolio.items.pixel.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/pixel-hunter',
@@ -469,19 +493,19 @@ const portfolioItems = [
   },
   {
     id: 'brb',
-    title: 'Website “Barbershop Borodinski”',
-    tags: ['layout'],
+    title: 'portfolio.items.brb.title',
+    tags: ['portfolio.tags.layout'],
     image: {
       desktop: '/img/brb-ds-1x.jpg',
       tablet: '/img/brb-tb-1x.jpg',
-      alt: 'Website “Barbershop Borodinski”',
+      alt: 'portfolio.items.brb.alt',
     },
     features: [
-      'Adaptive images for Retina displays',
-      '3 breakpoints',
-      'Slider without JavaScript',
-      'BEM-methodology',
-      'Semantiс HTML markup',
+      'portfolio.items.brb.features.feature1',
+      'portfolio.items.brb.features.feature2',
+      'portfolio.items.brb.features.feature3',
+      'portfolio.items.brb.features.feature4',
+      'portfolio.items.brb.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/barbershop',
@@ -492,19 +516,24 @@ const portfolioItems = [
   },
   {
     id: 'pilates',
-    title: 'Website “Personal Pilates Training”',
-    tags: ['Design', 'layout', 'Php', 'javascript'],
+    title: 'portfolio.items.pilates.title',
+    tags: [
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
+      'portfolio.tags.php',
+      'portfolio.tags.javascript',
+    ],
     image: {
       desktop: '/img/pilates-ds-1x.jpg',
       tablet: '/img/pilates-tb-1x.jpg',
-      alt: 'Website “Personal Pilates Training”',
+      alt: 'portfolio.items.pilates.alt',
     },
     features: [
-      'Adaptive text blocks and images',
-      'Animated images',
-      'SVG icons',
-      'Adaptive feedback form',
-      'One color tone of the project',
+      'portfolio.items.pilates.features.feature1',
+      'portfolio.items.pilates.features.feature2',
+      'portfolio.items.pilates.features.feature3',
+      'portfolio.items.pilates.features.feature4',
+      'portfolio.items.pilates.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/pilates',
@@ -515,19 +544,24 @@ const portfolioItems = [
   },
   {
     id: 'todo',
-    title: 'API: Organizer “ToDo App”',
-    tags: ['Node', 'Express.js', 'mongoose', 'jsonwebtoken'],
+    title: 'portfolio.items.todo.title',
+    tags: [
+      'portfolio.tags.node',
+      'portfolio.tags.express',
+      'portfolio.tags.mongoose',
+      'portfolio.tags.jsonwebtoken',
+    ],
     image: {
       desktop: '/img/todo-ds-1x.jpg',
       tablet: '/img/todo-tb-1x.jpg',
-      alt: 'ToDo App',
+      alt: 'portfolio.items.todo.alt',
     },
     features: [
-      'User registration and authentication',
-      'Authorization with JSON Web Tokens',
-      'MongoDB from Mlab',
-      'bcryptjs for confidential data',
-      'Tests with mocha, supertest и expect',
+      'portfolio.items.todo.features.feature1',
+      'portfolio.items.todo.features.feature2',
+      'portfolio.items.todo.features.feature3',
+      'portfolio.items.todo.features.feature4',
+      'portfolio.items.todo.features.feature5',
     ],
     links: {
       code: 'https://github.com/oleynichenko/Todo-App',
@@ -537,18 +571,22 @@ const portfolioItems = [
   },
   {
     id: 'daat',
-    title: 'API: Website “Daat Agency”',
-    tags: ['React', 'Gatsby.js', 'CSS Animations'],
+    title: 'portfolio.items.daat.title',
+    tags: [
+      'portfolio.tags.react',
+      'portfolio.tags.gatsby',
+      'portfolio.tags.cssAnimations',
+    ],
     image: {
       desktop: '/img/daat-ds-1x.jpg',
       tablet: '/img/daat-tb-1x.jpg',
-      alt: 'ToDo App',
+      alt: 'portfolio.items.daat.alt',
     },
     features: [
-      'Animated titles',
-      'Smooth appearance',
-      'Gatsby.js framework',
-      'Dark/light themes',
+      'portfolio.items.daat.features.feature1',
+      'portfolio.items.daat.features.feature2',
+      'portfolio.items.daat.features.feature3',
+      'portfolio.items.daat.features.feature4',
     ],
     links: {
       code: 'https://github.com/oleynichenko/daat',
@@ -560,21 +598,21 @@ const portfolioItems = [
 ];
 
 const WEBSITE_FEATURES = [
-  'Cross-browser compatibility (IE11+)',
-  'Responsive vs. Adaptive Design',
-  'Semantic markup',
-  'Correct work without CSS и JS',
-  'Component Layout',
-  'Image Optimization',
+  'portfolio.websiteFeatures.feature1',
+  'portfolio.websiteFeatures.feature2',
+  'portfolio.websiteFeatures.feature3',
+  'portfolio.websiteFeatures.feature4',
+  'portfolio.websiteFeatures.feature5',
+  'portfolio.websiteFeatures.feature6',
 ];
 
 const TECHNOLOGIES = [
-  'HTML5/Pug, CSS3/SASS',
-  'Javascript, TypeScript',
-  'NodeJS + Express + MongoDB',
-  'Angular 7+, RxJs, NgRx',
-  'React, Redux',
-  'Material Design, Material-UI, PrimeNg frameworks',
+  'portfolio.technologies.tech1',
+  'portfolio.technologies.tech2',
+  'portfolio.technologies.tech3',
+  'portfolio.technologies.tech4',
+  'portfolio.technologies.tech5',
+  'portfolio.technologies.tech6',
 ];
 
 const UPDATE_DATE = '2025-04-10';

@@ -1,6 +1,9 @@
 import { Box, Button, Typography, Stack } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
+  const { t } = useTranslation();
+
   return (
     <Stack
       sx={{
@@ -13,7 +16,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
     >
       <Box>
         <Typography variant="h5" sx={{ mb: 0.5 }}>
-          Project features
+          {t('portfolio.workItem.projectFeatures')}
         </Typography>
         <Stack>
           {features.map((feature, index) => (
@@ -24,7 +27,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
               }}
               variant="body1"
             >
-              {feature}
+              {t(feature)}
             </Typography>
           ))}
         </Stack>
@@ -43,7 +46,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
             backgroundColor: colorDark || color,
           }}
         >
-          View Code
+          {t('portfolio.workItem.viewCode')}
         </Button>
         {links.demo && (
           <Button
@@ -58,7 +61,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
               backgroundColor: colorDark || color,
             }}
           >
-            Open website
+            {t('portfolio.workItem.openWebsite')}
           </Button>
         )}
       </Stack>

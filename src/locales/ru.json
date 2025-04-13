@@ -4,7 +4,7 @@
     "position": "Front-end разработчик",
     "description": [
       "По образованию математик. До 2003 года работал в Институте математики НАН Украины. В течение следующих 10 лет прошел путь от менеджера по продажам до руководителя дистрибьюторской компании (FMCG).",
-      "В 2013 году перешел в интернет-маркетинг. Участвовал в продвижении нескольких образовательных проектов. С 2016 года занимаюсь тем, что действительно нравится — веб-разработкой и UX-дизайном."
+      "В 2013 году перешел в интернет-маркетинг. Участвовал в продвижении нескольких образовательных проектов. С 2016 года занимаюсь тем, что по-настоящему нравится — веб-разработкой и UX-дизайном."
     ],
     "info": {
       "position": {
@@ -37,48 +37,48 @@
   "experience": {
     "title": "Опыт работы",
     "be": {
-      "company": "«Be Ukraine» LLC",
+      "company": "«Be Ukraine» LLC, Италия",
       "position": "Front-end разработчик",
       "date": "Апрель 2019",
       "description": [
         "Разработка банковского приложения для внутренних операций.",
-        "SCSS/Pug шаблоны + Angular 8 + PrimeNG компоненты.",
-        "Создание пользовательских UI элементов и поддержка расширяемой архитектуры.",
+        "SCSS/Pug шаблоны + Angular 8 + компоненты PrimeNG.",
+        "Создание пользовательских UI-элементов и поддержка расширяемой архитектуры.",
         "Тесное сотрудничество с командами QA и backend для обеспечения плавной интеграции."
       ]
     },
     "jbook": {
-      "company": "Project «JBOOK» - multilingual book study app (PWA)",
-      "position": "Front-end developer",
-      "date": "October 2016",
+      "company": "Проект «JBOOK» — приложение для чтения книг, Израиль",
+      "position": "Front-end разработчик",
+      "date": "Октябрь 2016",
       "description": [
-        "Архитектура приложения и фронтендная логика для PWA.",
-        "Стек: Layout + Angular + Node.js + MongoDB.",
-        "Использовал Material Design для UI.",
-        "Интеграция функций для обмена через Facebook, VK и Twitter."
+        "Архитектура приложения и фронтенд-логика для PWA.",
+        "Вёрстка + Angular + Node.js + MongoDB стек.",
+        "Использовался UI-фреймворк Material Design.",
+        "Интеграция функций поделиться через API Facebook, VK и Twitter."
       ]
     },
     "kawunu": {
-      "company": "«Kawunu» GmbH, Germany",
-      "position": "Front-end developer",
-      "date": "April 2020",
+      "company": "«Kawunu» GmbH, Германия",
+      "position": "Front-end разработчик",
+      "date": "Апрель 2020",
       "description": [
-        "Разработка платформы для бронирования такси для операторов и клиентов.",
+        "Разработка платформы бронирования такси для операторов и клиентов.",
         "Angular для админ-панели.",
-        "Express.js + Sequelize + Postgres для бэкенда.",
-        "Material Design и MUI для UI.",
-        "Использовал React в приложении для размещения заказов клиентов."
+        "Express.js + Sequelize + Postgres для backend.",
+        "Material Design и MUI фреймворки для UI.",
+        "Использовался React в приложении для оформления заказов клиентами."
       ]
     },
     "livee": {
-      "company": "«12Planet» LLC, France",
-      "position": "Full-Stack Developer (Tech Owner)",
-      "date": "March 2021",
+      "company": "«12Planet» LLC, Франция",
+      "position": "Full-Stack разработчик (Tech Owner)",
+      "date": "Март 2021",
       "description": [
-        "Разработка админки на React для создания и управления мероприятиями с использованием MUI.",
-        "Разработка внутренней админ-панели для поддержки клиентов.",
-        "Разработка мобильного приложения с использованием React Native.",
-        "Поддержание и оптимизация структуры базы данных PostgreSQL.",
+        "Админ-панель на React для создания и управления мероприятиями с использованием MUI.",
+        "Разработка внутренней админ-панели для задач службы поддержки на базе MUI.",
+        "Разработка и деплой мобильного приложения на React Native.",
+        "Поддержка и оптимизация структуры базы данных PostgreSQL.",
         "Настройка различных маркетинговых кампаний и интеграция аналитических инструментов."
       ]
     }
@@ -104,5 +104,231 @@
     "title": "404",
     "message": "Страница не найдена",
     "goHome": "На главную"
+  },
+  "portfolio": {
+    "header": {
+      "title": "Портфолио",
+      "goBack": "Назад"
+    },
+    "description": {
+      "firstProjects": {
+        "title": "Первые проекты",
+        "text": "Проекты, представленные здесь, были созданы в 2016–2017 годах, в самом начале моего пути как профессионального разработчика. Уже тогда я стремился делать интерфейсы чистыми, аккуратными и продуманными до мелочей — с упором на удобство для пользователя."
+      },
+      "currentWork": {
+        "title": "Как я работаю сейчас",
+        "text1": "С тех пор мои навыки заметно выросли. Оценить уровень моей текущей работы можно, заглянув в исходный код этого сайта. <0>исходный код</0> этого веб-сайта.",
+        "text2": "Он построен на React с использованием библиотеки компонентов MUI, навигация реализована через React Router, а локализация поддерживает три языка. За анимации отвечает Motion, а за чистоту кода — Prettier и ESLint. Приложение автоматически развертывается на GitHub Pages.",
+        "text3": "Я продолжаю развиваться в направлении современной веб-разработки и на апрель 2025 года активно осваиваю AI-инструменты для ускорения как процесса кодинга, так и решения задач."
+      }
+    },
+    "features": {
+      "websiteFeatures": "Особенности веб-сайтов",
+      "usedTechnologies": "Использованные технологии"
+    },
+    "workItem": {
+      "projectFeatures": "Особенности проекта",
+      "viewCode": "Посмотреть код",
+      "openWebsite": "Открыть сайт"
+    },
+    "grid": {
+      "title": "Проекты (2016 - 2017)"
+    },
+    "tags": {
+      "design": "Дизайн",
+      "layout": "Верстка",
+      "angular": "Angular",
+      "express": "Express",
+      "mongodb": "MongoDB",
+      "ngrx": "NGRX",
+      "angularfire2": "ANGULARFIRE2",
+      "bootstrap": "Bootstrap 3",
+      "firebase": "Firebase",
+      "node": "Node",
+      "yargs": "Yargs",
+      "javascript": "Javascript",
+      "svg": "SVG",
+      "php": "PHP",
+      "react": "React",
+      "gatsby": "Gatsby.js",
+      "cssAnimations": "CSS Анимации",
+      "express": "Express.js",
+      "mongoose": "Mongoose",
+      "jsonwebtoken": "JSON Web Token"
+    },
+    "websiteFeatures": {
+      "feature1": "Кросс-браузерная совместимость",
+      "feature2": "Адаптивный и отзывчивый дизайн",
+      "feature3": "Семантическая разметка",
+      "feature4": "Корректная работа без CSS и JS",
+      "feature5": "Компонентная верстка",
+      "feature6": "Оптимизация изображений"
+    },
+    "technologies": {
+      "tech1": "HTML5/Pug, CSS3/SASS",
+      "tech2": "Javascript, TypeScript",
+      "tech3": "NodeJS + Express + MongoDB",
+      "tech4": "Angular 7+, RxJs, NgRx",
+      "tech5": "React, Redux",
+      "tech6": "Material Design, MUI, PrimeNg"
+    },
+    "items": {
+      "jbook": {
+        "title": "SPA \"Многоязычная библиотека «JBOOK»\"",
+        "alt": "Многоязычная библиотека «JBOOK»",
+        "features": {
+          "feature1": "Progressive Web Application",
+          "feature2": "Angular Universal для поисковых систем",
+          "feature3": "Использование фреймворка \"Material Design\"",
+          "feature4": "BackEnd на Express + MongoDB"
+        }
+      },
+      "tests": {
+        "title": "Образовательные викторины \"Pumping Tests\"",
+        "alt": "Образовательные викторины \"Pumping Tests\"",
+        "features": {
+          "feature1": "Использование фреймворка \"Material Design\"",
+          "feature2": "BackEnd на Node.js + MongoDB",
+          "feature3": "Поделиться результатами викторины в 3 социальных сетях",
+          "feature4": "Админ-панель для авторов викторин"
+        }
+      },
+      "words": {
+        "title": "SPA \"Тренер английских слов\"",
+        "alt": "Тренер английских слов",
+        "features": {
+          "feature1": "Регистрация и аутентификация пользователей через Firebase",
+          "feature2": "Компоненты Material Design",
+          "feature3": "Управление состоянием с NgRx",
+          "feature4": "Верстка с angular/flex-layout"
+        }
+      },
+      "time": {
+        "title": "SPA \"Time Tracker\"",
+        "alt": "Time Tracker",
+        "features": {
+          "feature1": "Хранение данных в Local Storage",
+          "feature2": "Независимость от перезагрузки страницы",
+          "feature3": "Функции добавления, удаления, паузы",
+          "feature4": "Редактирование названия задачи"
+        }
+      },
+      "recipe": {
+        "title": "SPA \"Книга рецептов\"",
+        "alt": "Книга рецептов",
+        "features": {
+          "feature1": "Регистрация и аутентификация пользователей через Firebase",
+          "feature2": "Ленивая загрузка модулей",
+          "feature3": "Управление состоянием с NgRx",
+          "feature4": "Использование Firebase SDK"
+        }
+      },
+      "fitness": {
+        "title": "SPA \"Fitness Tracker\"",
+        "alt": "Fitness Tracker",
+        "features": {
+          "feature1": "Регистрация и аутентификация",
+          "feature2": "Компоненты Material Design",
+          "feature3": "Верстка с angular/flex-layout",
+          "feature4": "База данных с angularfire2",
+          "feature5": "Firebase хостинг"
+        }
+      },
+      "typing": {
+        "title": "Консольный тренер \"Typing Practice\"",
+        "alt": "Консольный тренер \"Typing Practice\"",
+        "features": {
+          "feature1": "Добавление/удаление слов для практики печати",
+          "feature2": "Выбор количества слов для раунда",
+          "feature3": "Отслеживание прогресса в каждом раунде",
+          "feature4": "Сохранение результатов в локальный файл",
+          "feature5": "Эффективная система мотивации"
+        }
+      },
+      "azbyka": {
+        "title": "Энциклопедия \"Азбука веры\"",
+        "alt": "Энциклопедия \"Азбука веры\"",
+        "features": {
+          "feature1": "Аналогичная цветовая схема",
+          "feature2": "Канонические пропорции книги по Яну Чихольду",
+          "feature3": "Сетка 8px",
+          "feature4": "Создано в Adobe XD"
+        }
+      },
+      "slider": {
+        "title": "Слайдер с SVG градиентным фоном",
+        "alt": "Слайдер с SVG фоном",
+        "features": {
+          "feature1": "Изменение на вертикальное состояние на малых экранах",
+          "feature2": "Движущийся градиентный фон",
+          "feature3": "Автоматическое перемещение к ближайшей позиции",
+          "feature4": "Функция \"Drag and drop\""
+        }
+      },
+      "device": {
+        "title": "Интернет-магазин \"Device\"",
+        "alt": "Интернет-магазин \"Device\"",
+        "features": {
+          "feature1": "Завершение дизайна до 1200 пикселей",
+          "feature2": "Слайдеры без JavaScript",
+          "feature3": "Центрированная отзывчивая сетка на странице \"Каталог\"",
+          "feature4": "Всплывающие окна со статическими страницами для отключенного JavaScript",
+          "feature5": "Адаптивная форма поиска"
+        }
+      },
+      "pixel": {
+        "title": "Браузерная игра \"Pixel-Hunter\"",
+        "alt": "Браузерная игра \"Pixel-Hunter\"",
+        "features": {
+          "feature1": "Single Page Application",
+          "feature2": "Сохранение последних 10 результатов игры",
+          "feature3": "Паттерн MVP",
+          "feature4": "Использование ES-6"
+        }
+      },
+      "brb": {
+        "title": "Веб-сайт \"Barbershop Borodinski\"",
+        "alt": "Веб-сайт \"Barbershop Borodinski\"",
+        "features": {
+          "feature1": "Адаптивные изображения для Retina дисплеев",
+          "feature2": "3 точки перелома",
+          "feature3": "Слайдер без JavaScript",
+          "feature4": "BEM-методология",
+          "feature5": "Семантическая HTML разметка"
+        }
+      },
+      "pilates": {
+        "title": "Веб-сайт \"Персональный тренинг по пилатесу\"",
+        "alt": "Веб-сайт \"Персональный тренинг по пилатесу\"",
+        "features": {
+          "feature1": "Адаптивные текстовые блоки и изображения",
+          "feature2": "Анимированные изображения",
+          "feature3": "SVG иконки",
+          "feature4": "Адаптивная форма обратной связи",
+          "feature5": "Единый цветовой тон проекта"
+        }
+      },
+      "todo": {
+        "title": "API: Органайзер \"ToDo App\"",
+        "alt": "ToDo App",
+        "features": {
+          "feature1": "Регистрация и аутентификация пользователей",
+          "feature2": "Авторизация с JSON Web Tokens",
+          "feature3": "MongoDB с Mlab",
+          "feature4": "bcryptjs для конфиденциальных данных",
+          "feature5": "Тесты с mocha, supertest и expect"
+        }
+      },
+      "daat": {
+        "title": "Веб-сайт \"Daat Agency\"",
+        "alt": "Daat Agency",
+        "features": {
+          "feature1": "Анимированные заголовки",
+          "feature2": "Плавное появление",
+          "feature3": "Фреймворк Gatsby.js",
+          "feature4": "Темная/светлая темы"
+        }
+      }
+    }
   }
 }

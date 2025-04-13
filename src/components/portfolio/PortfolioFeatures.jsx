@@ -1,13 +1,16 @@
 import React from 'react';
 import { Typography, Grid, Divider } from '@mui/material';
 import { TECHNOLOGIES, WEBSITE_FEATURES } from '../../constants.js';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioFeatures = () => {
+  const { t } = useTranslation();
+
   return (
     <Grid container spacing={4}>
       <Grid size={{ xs: 12, md: 6 }}>
         <Typography variant="h6" sx={{ fontWeight: 400, textAlign: 'center' }}>
-          Websites Features
+          {t('portfolio.features.websiteFeatures')}
         </Typography>
         <Divider sx={{ mt: 0.5, mb: 1 }} />
         <Grid container spacing={1}>
@@ -17,7 +20,7 @@ const PortfolioFeatures = () => {
                 sx={{ textAlign: { xs: 'center', md: 'left' } }}
                 variant="body2"
               >
-                {feature}
+                {t(feature)}
               </Typography>
             </Grid>
           ))}
@@ -25,7 +28,7 @@ const PortfolioFeatures = () => {
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
         <Typography variant="h6" sx={{ fontWeight: 400, textAlign: 'center' }}>
-          Used Technologies
+          {t('portfolio.features.usedTechnologies')}
         </Typography>
         <Divider sx={{ mt: 0.5, mb: 1 }} />
         <Grid container spacing={1}>
@@ -35,7 +38,7 @@ const PortfolioFeatures = () => {
                 sx={{ textAlign: { xs: 'center', md: 'left' } }}
                 variant="body2"
               >
-                {tech}
+                {t(tech)}
               </Typography>
             </Grid>
           ))}

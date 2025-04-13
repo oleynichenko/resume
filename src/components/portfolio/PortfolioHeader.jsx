@@ -3,9 +3,11 @@ import { Stack, Box, Typography } from '@mui/material';
 import { Button } from '@mui/material';
 import { Link, useParams } from 'react-router';
 import { LanguagePopover } from '../LanguagePopover';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioHeader = ({ sx }) => {
   const { lang } = useParams();
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -23,7 +25,7 @@ const PortfolioHeader = ({ sx }) => {
         }}
       >
         <Button component={Link} to={`/${lang}`} size="small">
-          Go back
+          {t('portfolio.header.goBack')}
         </Button>
         <LanguagePopover />
       </Stack>
@@ -31,7 +33,7 @@ const PortfolioHeader = ({ sx }) => {
         sx={{ textTransform: 'uppercase', lineHeight: 1, textAlign: 'center' }}
         variant="h3"
       >
-        Portfolio
+        {t('portfolio.header.title')}
       </Typography>
     </Box>
   );
