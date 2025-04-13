@@ -28,8 +28,12 @@ const Skills = ({ sx }) => {
           justifyContent: 'space-between',
         }}
       >
-        {filled.map((dot) => dot)}
-        {empty.map((dot) => dot)}
+        {filled.map((dot, index) => (
+          <span key={index}>{dot}</span>
+        ))}
+        {empty.map((dot, index) => (
+          <span key={index}>{dot}</span>
+        ))}
       </Box>
     );
   };
@@ -46,14 +50,14 @@ const Skills = ({ sx }) => {
           gap: { xs: 1.5, md: 2 },
         }}
       >
-        {SKILLS.map(({ name, level }) => (
-          <Grid container key={name} spacing={2} alignItems="center">
-            <Grid item size={{ xs: 4, md: 3 }}>
+        {SKILLS.map(({ id, name, level }) => (
+          <Grid container key={id} spacing={2} alignItems="center">
+            <Grid size={{ xs: 4, md: 3 }}>
               <Typography sx={{ lineHeight: 1.2 }} variant="body1">
                 {name}
               </Typography>
             </Grid>
-            <Grid item size={{ xs: 8, md: 9 }}>
+            <Grid size={{ xs: 8, md: 9 }}>
               <SkillBar level={level} />
             </Grid>
           </Grid>

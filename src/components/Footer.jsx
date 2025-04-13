@@ -9,7 +9,7 @@ const Footer = ({ sx }) => {
   return (
     <Box sx={sx}>
       <Typography
-        sx={{ textAlign: { xs: 'center', md: 'left' } }}
+        sx={{ textAlign: { xs: 'center' } }}
         variant="body2"
         color="text.secondary"
       >

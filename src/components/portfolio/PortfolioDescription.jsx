@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Grid, List, ListItem } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { PortfolioFeatures } from './PortfolioFeatures';
 
 const PortfolioDescription = ({ sx }) => {
@@ -9,7 +9,7 @@ const PortfolioDescription = ({ sx }) => {
         <Typography variant="h4" sx={{ mb: 2, textAlign: 'center' }}>
           First Projects
         </Typography>
-        <Typography variant="body1" sx={{ mb: 1, textAlign: 'justify' }}>
+        <Typography variant="body1" sx={{ mb: 2, textAlign: 'justify' }}>
           The projects showcased here were created between 2016 and 2017, at the
           very beginning of my professional journey as a developer. Even then, I
           focused on delivering clean, detail-oriented work and thoughtful user

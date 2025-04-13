@@ -4,6 +4,7 @@ import { PortfolioDescription } from '../components/portfolio/PortfolioDescripti
 import PortfolioGrid from '../components/portfolio/PortfolioGrid';
 import { motion } from 'framer-motion';
 import { Container } from '@mui/material';
+import Footer from '../components/Footer.jsx';
 
 const PortfolioPage = () => {
   return (
@@ -13,17 +14,17 @@ const PortfolioPage = () => {
       transition={{ duration: 0.5 }}
     >
       <Container
-        // TODO: check this
         sx={{
-          pt: { xs: 2, md: 10 },
-          pb: { xs: 3, md: 10 },
+          pt: { xs: 2, md: 4 },
+          pb: 4,
           maxWidth: { xs: '520px', md: '1500px' },
         }}
         maxWidth={false}
       >
-        <PortfolioHeader sx={{ mb: 10 }} />
-        <PortfolioDescription sx={{ mb: 10 }} />
-        <PortfolioGrid />
+        <PortfolioHeader sx={{ mb: { xs: 5, md: 10 } }} />
+        <PortfolioDescription sx={{ mb: { xs: 5, md: 11 } }} />
+        <PortfolioGrid sx={{ mb: { xs: 10, md: 15 } }} />
+        <Footer />
       </Container>
     </motion.div>
   );

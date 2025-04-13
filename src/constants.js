@@ -215,16 +215,17 @@ const educationItems = [
 ];
 
 const SKILLS = [
-  { name: 'React + Redux', level: 9 },
-  { name: 'React Native', level: 8 },
-  { name: 'Angular + NgRx', level: 7 },
-  { name: 'Node JS', level: 7 },
-  { name: 'MongoDB', level: 7 },
-  { name: 'Postgres', level: 6 },
-  { name: 'PHP + SQL', level: 4 },
-  { name: 'Docker + Github', level: 8 },
-  { name: 'UX/UI', level: 9 },
+  { id: 1, name: 'React + Redux', level: 9 },
+  { id: 2, name: 'React Native', level: 8 },
+  { id: 3, name: 'Angular + NgRx', level: 7 },
+  { id: 4, name: 'Node JS', level: 7 },
+  { id: 5, name: 'MongoDB', level: 7 },
+  { id: 6, name: 'Postgres', level: 6 },
+  { id: 7, name: 'PHP + SQL', level: 4 },
+  { id: 8, name: 'Docker + Github', level: 8 },
+  { id: 9, name: 'UX/UI', level: 9 },
 ];
+
 const portfolioItems = [
   {
     id: 'jbook',
@@ -243,7 +244,6 @@ const portfolioItems = [
     ],
     links: {
       code: 'https://github.com/oleynichenko/book',
-      demo: 'https://pticha.jbook.club/',
     },
     color: '#673bb7',
     colorLight: '#ded8e8',
@@ -265,7 +265,6 @@ const portfolioItems = [
     ],
     links: {
       code: 'https://github.com/oleynichenko/quiz-cms',
-      demo: 'https://intense-chamber-18646.herokuapp.com/links/essentialism',
     },
     color: '#e4476c',
     colorDark: '#621527',
@@ -360,40 +359,234 @@ const portfolioItems = [
     colorLight: '#e8eaf9',
   },
   {
-    id: 'chat',
-    title: 'Online Chat',
-    tags: ['Node', 'Socket.io', 'mustache.js'],
+    id: 'typing',
+    title: 'Console Trainer “Typing Practice”',
+    tags: ['Node', 'Yargs'],
     image: {
-      desktop: '/img/chat-ds-1x.jpg',
-      tablet: '/img/chat-tb-1x.jpg',
-      alt: 'Online Chat',
+      desktop: '/img/typing-ds-1x.jpg',
+      tablet: '/img/typing-tb-1x.jpg',
+      alt: 'Console trainer “Typing Practice”',
     },
     features: [
-      'Using Socket.IO library',
-      'Ability to share your geolocation',
-      'Unlimited number of chat rooms',
-      'No messages raising while reading history',
-      'Templates with mustache.js',
+      'Adding/deleting words for typing practice',
+      'Selecting the number of words for the round',
+      'Tracking progress in each round',
+      'Saving results to a local file',
+      'Effective motivation system',
     ],
     links: {
-      code: 'https://github.com/oleynichenko/chat',
-      demo: 'https://intense-chamber-18646.herokuapp.com/',
+      code: 'https://github.com/oleynichenko/typing-practice',
     },
-    color: '#276b82',
-    colorLight: '#dce8ec',
+    color: '#8b9a62',
+    colorDark: '#2a2b25',
   },
+  {
+    id: 'azbyka',
+    title: 'Encyclopedia “Alphabet of Faith”',
+    tags: ['Design'],
+    image: {
+      desktop: '/img/azb-ds-1x.jpg',
+      tablet: '/img/azb-tb-1x.jpg',
+      alt: 'Encyclopedia “Alphabet of Faith”',
+    },
+    features: [
+      'Analog color scheme',
+      'Canonical book proportions according Jan Tschichold',
+      'Grid 8px',
+      'Made with Adobe XD',
+    ],
+    links: {
+      code: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
+    },
+    color: '#6E4B0B',
+    colorLight: '#FFF6E5',
+  },
+  {
+    id: 'slider',
+    title: 'Slider with SVG Gradient Background',
+    tags: ['Javascript', 'SVG'],
+    image: {
+      desktop: '/img/slider-ds-1x.jpg',
+      tablet: '/img/slider-tb-1x.jpg',
+      alt: 'Slider with SVG background',
+    },
+    features: [
+      'Changing to vertical state on small screens',
+      'Moving gradient background',
+      'Automatic moving to the nearest position',
+      '"Drag and drop" feature',
+    ],
+    links: {
+      code: 'https://codepen.io/oleynichenkos/pen/BMQVgg',
+    },
+    color: '#ebdcff',
+    colorDark: '#35303c',
+  },
+  {
+    id: 'device',
+    title: 'Online Store “Device”',
+    tags: ['layout', 'Design'],
+    image: {
+      desktop: '/img/device-ds-1x.jpg',
+      tablet: '/img/device-tb-1x.jpg',
+      alt: 'Online Store “Device”',
+    },
+    features: [
+      'Design completion to 1200 px',
+      'Sliders without JavaScript',
+      'Centered responsive grid on "Catalog" page',
+      'Pop-ups with static pages for disabled JavaScript',
+      'Adaptive search form',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/device',
+      demo: 'https://oleynichenko.github.io/device/index.html',
+    },
+    color: '#ffe27f',
+    colorDark: '#665A32',
+  },
+  {
+    id: 'pixel',
+    title: 'Browser Game “Pixel-Hunter”',
+    tags: ['javascript'],
+    image: {
+      desktop: '/img/pixel-ds-1x.jpg',
+      tablet: '/img/pixel-tb-1x.jpg',
+      alt: 'Browser Game “Pixel-Hunter”',
+    },
+    features: [
+      'Single Page Application',
+      'Saving last 10 game results',
+      'MVP pattern',
+      'Using ES-6',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/pixel-hunter',
+      demo: 'https://oleynichenko.github.io/pixel-hunter/',
+    },
+    color: '#b3cfd0',
+    colorDark: '#475252',
+  },
+  {
+    id: 'brb',
+    title: 'Website “Barbershop Borodinski”',
+    tags: ['layout'],
+    image: {
+      desktop: '/img/brb-ds-1x.jpg',
+      tablet: '/img/brb-tb-1x.jpg',
+      alt: 'Website “Barbershop Borodinski”',
+    },
+    features: [
+      'Adaptive images for Retina displays',
+      '3 breakpoints',
+      'Slider without JavaScript',
+      'BEM-methodology',
+      'Semantiс HTML markup',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/barbershop',
+      demo: 'https://oleynichenko.github.io/barbershop/index.html',
+    },
+    color: '#000',
+    colorLight: '#F2F2F2',
+  },
+  {
+    id: 'pilates',
+    title: 'Website “Personal Pilates Training”',
+    tags: ['Design', 'layout', 'Php', 'javascript'],
+    image: {
+      desktop: '/img/pilates-ds-1x.jpg',
+      tablet: '/img/pilates-tb-1x.jpg',
+      alt: 'Website “Personal Pilates Training”',
+    },
+    features: [
+      'Adaptive text blocks and images',
+      'Animated images',
+      'SVG icons',
+      'Adaptive feedback form',
+      'One color tone of the project',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/pilates',
+      demo: 'https://pilates-trainer.github.io',
+    },
+    color: '#c7ade9',
+    colorDark: '#40374B',
+  },
+  {
+    id: 'todo',
+    title: 'API: Organizer “ToDo App”',
+    tags: ['Node', 'Express.js', 'mongoose', 'jsonwebtoken'],
+    image: {
+      desktop: '/img/todo-ds-1x.jpg',
+      tablet: '/img/todo-tb-1x.jpg',
+      alt: 'ToDo App',
+    },
+    features: [
+      'User registration and authentication',
+      'Authorization with JSON Web Tokens',
+      'MongoDB from Mlab',
+      'bcryptjs for confidential data',
+      'Tests with mocha, supertest и expect',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/Todo-App',
+    },
+    color: '#695EB8',
+    colorLight: '#E6E2FF',
+  },
+  {
+    id: 'daat',
+    title: 'API: Website “Daat Agency”',
+    tags: ['React', 'Gatsby.js', 'CSS Animations'],
+    image: {
+      desktop: '/img/daat-ds-1x.jpg',
+      tablet: '/img/daat-tb-1x.jpg',
+      alt: 'ToDo App',
+    },
+    features: [
+      'Animated titles',
+      'Smooth appearance',
+      'Gatsby.js framework',
+      'Dark/light themes',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/daat',
+      demo: 'https://daat.agency',
+    },
+    color: '#000',
+    colorLight: '#F2F2F2',
+  },
+];
+
+const WEBSITE_FEATURES = [
+  'Cross-browser compatibility (IE11+)',
+  'Responsive vs. Adaptive Design',
+  'Semantic markup',
+  'Correct work without CSS и JS',
+  'Component Layout',
+  'Image Optimization',
+];
+
+const TECHNOLOGIES = [
+  'HTML5/Pug, CSS3/SASS',
+  'Javascript, TypeScript',
+  'NodeJS + Express + MongoDB',
+  'Angular 7+, RxJs, NgRx',
+  'React, Redux',
+  'Material Design, Material-UI, PrimeNg frameworks',
 ];
 
 const UPDATE_DATE = '2025-04-10';
 const SECTION_HEIGHT = 400;
-const MIDDLE_BREAKPOINT = 'md';
 
 export {
   experienceItems,
   educationItems,
-  MIDDLE_BREAKPOINT,
   SKILLS,
   UPDATE_DATE,
   SECTION_HEIGHT,
+  TECHNOLOGIES,
+  WEBSITE_FEATURES,
   portfolioItems,
 };

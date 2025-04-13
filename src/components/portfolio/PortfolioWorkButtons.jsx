@@ -4,22 +4,22 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
   return (
     <Stack
       sx={{
-        width: '80%',
+        width: { xs: '85%', md: '80%', lg: '70%' },
         flexDirection: 'row',
         alignItems: 'center',
+        gap: 1.5,
         justifyContent: 'space-between',
       }}
     >
-      <Box sx={{}}>
-        <Typography variant="h5" sx={{ mb: 1 }}>
+      <Box>
+        <Typography variant="h5" sx={{ mb: 0.5 }}>
           Project features
         </Typography>
-        <Stack sx={{ pl: 1 }}>
+        <Stack>
           {features.map((feature, index) => (
             <Typography
               key={index}
               sx={{
-                // py: 0.5,
                 px: 0,
               }}
               variant="body1"
@@ -30,7 +30,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
         </Stack>
       </Box>
 
-      <Stack sx={{ gap: 3, flexShrink: 0 }}>
+      <Stack sx={{ gap: { xs: 2, md: 3 }, flexShrink: 0 }}>
         <Button
           variant="contained"
           href={links.code}
@@ -40,33 +40,27 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
             fontSize: '0.8rem',
             textTransform: 'uppercase',
             letterSpacing: '0.5px',
-            backgroundColor: color,
-            color: colorDark || '#fff',
-            '&:hover': {
-              backgroundColor: colorDark || 'primary.dark',
-            },
+            backgroundColor: colorDark || color,
           }}
         >
           View Code
         </Button>
-        <Button
-          variant="contained"
-          href={links.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{
-            fontSize: '0.8rem',
-            textTransform: 'uppercase',
-            letterSpacing: '0.5px',
-            backgroundColor: color,
-            color: colorDark || '#fff',
-            '&:hover': {
-              backgroundColor: colorDark || 'primary.dark',
-            },
-          }}
-        >
-          Open website
-        </Button>
+        {links.demo && (
+          <Button
+            variant="contained"
+            href={links.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              fontSize: '0.8rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              backgroundColor: colorDark || color,
+            }}
+          >
+            Open website
+          </Button>
+        )}
       </Stack>
     </Stack>
   );

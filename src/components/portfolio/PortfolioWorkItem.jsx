@@ -38,20 +38,17 @@ const PortfolioWorkItem = ({ item }) => {
           position: 'relative',
           border: '1px solid',
           borderColor: 'divider',
-          mb: 2,
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Box sx={{ mb: 2 }}>
-          <picture>
-            <source media="(min-width: 769px)" srcSet={item.image.desktop} />
-            <img
-              src={item.image.tablet}
-              alt={item.image.alt}
-              style={{ display: 'block', width: '100%', height: 'auto' }}
-            />
-          </picture>
+        <Box component="picture">
+          <source media="(min-width: 769px)" srcSet={item.image.desktop} />
+          <img
+            src={item.image.tablet}
+            alt={item.image.alt}
+            style={{ display: 'block', width: '100%', height: 'auto' }}
+          />
         </Box>
         <Stack
           component={motion.div}
@@ -67,7 +64,7 @@ const PortfolioWorkItem = ({ item }) => {
             color: item.colorDark || '#000',
           }}
           initial={{ opacity: 1 }}
-          animate={{ opacity: isHovered ? 0.95 : 1 }}
+          animate={{ opacity: isHovered ? 0.95 : 0 }}
           transition={{ duration: 0.3 }}
         >
           <PortfolioWorkButtons

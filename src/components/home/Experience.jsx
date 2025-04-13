@@ -1,4 +1,4 @@
-import { Typography, Box, Link, Grid } from '@mui/material';
+import { Box, Grid, Link, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import SimpleBar from 'simplebar-react';
 import { SectionTitle } from './SectionTitle';
@@ -17,9 +17,7 @@ const getFilteredExperienceItems = (selectedTags, items) => {
       : items;
 
   // Sort by year in descending order
-  const sortedItems = [...filteredByTags].sort((a, b) => b.year - a.year);
-
-  return sortedItems;
+  return [...filteredByTags].sort((a, b) => b.year - a.year);
 };
 
 const Experience = ({ sx }) => {
@@ -61,8 +59,8 @@ const Experience = ({ sx }) => {
             }}
           >
             {filteredItems.map(
-              ({ id, company, position, date, link, description }) => (
-                <Grid container key={id} spacing={2} alignItems="center">
+              ({ company, position, date, link, description }) => (
+                <Grid container key={date} spacing={2} alignItems="center">
                   <Grid size={2}>
                     <Typography
                       color="primary"

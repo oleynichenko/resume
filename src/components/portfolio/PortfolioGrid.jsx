@@ -5,11 +5,14 @@ import { portfolioItems } from '../../constants';
 
 const PortfolioGrid = ({ sx }) => {
   return (
-    <Box sx={{ sx }}>
-      <Typography variant="h4" sx={{ mb: 4, textAlign: 'center' }}>
-        Projects
+    <Box sx={sx}>
+      <Typography
+        variant="h4"
+        sx={{ mb: { xs: 3, md: 5 }, textAlign: 'center' }}
+      >
+        Projects (2016 - 2017)
       </Typography>
-      <Grid container rowSpacing={6} columnSpacing={5} sx={{ mb: 4 }}>
+      <Grid container rowSpacing={8} columnSpacing={5}>
         {portfolioItems.map((item) => (
           <Grid size={{ xs: 12, md: 6 }} key={item.id}>
             <PortfolioWorkItem item={item} />
