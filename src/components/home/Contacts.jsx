@@ -1,5 +1,7 @@
 import { Stack, Typography, Box, Link } from '@mui/material';
-import { Phone, Email, Language } from '@mui/icons-material';
+import Phone from '@mui/icons-material/Phone';
+import Email from '@mui/icons-material/Email';
+import Language from '@mui/icons-material/Language';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
 import { Link as RouterLink, useParams } from 'react-router';

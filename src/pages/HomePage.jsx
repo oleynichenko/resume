@@ -23,7 +23,6 @@ const MB_MOBILE = 12;
 const MB_DESKTOP = 10;
 
 const HomePage = () => {
-  console.log('HomePage');
   return (
     <Layout>
       <style>{scrollbarStyles}</style>

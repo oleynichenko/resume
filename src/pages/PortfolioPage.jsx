@@ -30,4 +30,4 @@ const PortfolioPage = () => {
   );
 };
 
-export { PortfolioPage };
+export default PortfolioPage;

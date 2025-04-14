@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           px: { xs: 0, md: 8 },
         }}
       >
-        <MotionViewport>
+        <MotionViewport disabled={isMobile}>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

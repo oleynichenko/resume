@@ -13,9 +13,9 @@ import 'dayjs/locale/en';
 import 'dayjs/locale/ru';
 import 'dayjs/locale/uk';
 import { HomePage } from './pages/HomePage.jsx';
-import { PortfolioPage } from './pages/PortfolioPage.jsx';
 import { NotFoundPage } from './pages/NotFoundPage.jsx';
 import { LanguageGuard } from './LanguageGuard.jsx';
+import React, { Suspense } from 'react';
 
 let theme = createTheme({
   typography: {
@@ -64,6 +64,14 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
+const PortfolioPage = React.lazy(() => import('./pages/PortfolioPage.jsx'));
+
+const portfolioContent = (
+  <Suspense fallback={null}>
+    <PortfolioPage />
+  </Suspense>
+);
+
 function App() {
   const { i18n } = useTranslation();
 
@@ -82,7 +90,7 @@ function App() {
           />
           <Route path="/:lang" element={<LanguageGuard />}>
             <Route index element={<HomePage />} />
-            <Route path="portfolio" element={<PortfolioPage />} />
+            <Route path="portfolio" element={portfolioContent} />
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Route>
           <Route path="/404" element={<NotFoundPage />} />
