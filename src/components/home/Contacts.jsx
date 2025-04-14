@@ -3,6 +3,8 @@ import { Phone, Email, Language } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
 import { Link as RouterLink, useParams } from 'react-router';
+import { motion } from 'motion/react';
+import { varFade } from '../animate/variants/fade';
 
 const Contacts = ({ sx }) => {
   const { t } = useTranslation();
@@ -43,7 +45,11 @@ const Contacts = ({ sx }) => {
   ];
 
   return (
-    <Box sx={{ ...sx }}>
+    <Box
+      sx={{ ...sx }}
+      component={motion.div}
+      variants={varFade('inUp', { distance: 24 })}
+    >
       <SectionTitle>{t('contacts.title')}</SectionTitle>
       <Stack
         sx={{

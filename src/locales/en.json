@@ -117,7 +117,7 @@
       },
       "currentWork": {
         "title": "How I Work Now",
-        "text1": "Since then, my skills have grown significantly. You can evaluate the quality of my current work by reviewing the <0>source code</0> of this website.",
+        "text1": "Since my first projects, my skills have grown significantly. You can evaluate the quality of my current work by reviewing the <0>source code</0> of this website.",
         "text2": "It's built on React and the MUI component library, uses React Router for navigation, and supports three languages through localization. Animations are handled by Motion, and code quality is maintained with Prettier and ESLint. The app is automatically deployed to GitHub Pages.",
         "text3": "Additionally, I actively incorporate AI tools into my development workflow, which significantly increases productivity and speeds up both coding and problem-solving."
       }

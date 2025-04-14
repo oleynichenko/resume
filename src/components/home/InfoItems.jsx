@@ -1,5 +1,8 @@
 import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { varFade } from '../animate/variants/fade';
+import { motion } from 'motion/react';
+
 const InfoItems = ({ sx }) => {
   const { t } = useTranslation();
 
@@ -16,6 +19,8 @@ const InfoItems = ({ sx }) => {
         columnGap: { xs: 6, md: 4 },
         ...sx,
       }}
+      component={motion.div}
+      variants={varFade('inUp', { distance: 24 })}
     >
       {infoItems.map((item) => (
         <Stack key={item}>

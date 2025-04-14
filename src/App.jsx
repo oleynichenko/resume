@@ -1,27 +1,21 @@
+import { useTranslation } from 'react-i18next';
 import {
   createTheme,
   ThemeProvider,
   responsiveFontSizes,
 } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  useParams,
-} from 'react-router';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 import './global.css';
 import './locales/i18n';
-import { HomePage } from './pages/HomePage.jsx';
-import { PortfolioPage } from './pages/PortfolioPage.jsx';
-import { NotFoundPage } from './pages/NotFoundPage.jsx';
 import dayjs from 'dayjs';
 import 'dayjs/locale/en';
 import 'dayjs/locale/ru';
 import 'dayjs/locale/uk';
-import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
+import { HomePage } from './pages/HomePage.jsx';
+import { PortfolioPage } from './pages/PortfolioPage.jsx';
+import { NotFoundPage } from './pages/NotFoundPage.jsx';
+import { LanguageGuard } from './LanguageGuard.jsx';
 
 let theme = createTheme({
   typography: {
@@ -70,19 +64,6 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
-const LanguageRoute = ({ children }) => {
-  const { i18n } = useTranslation();
-  const { lang } = useParams();
-
-  useEffect(() => {
-    if (lang && i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-    }
-  }, [lang, i18n]);
-
-  return children;
-};
-
 function App() {
   const { i18n } = useTranslation();
 
@@ -99,27 +80,12 @@ function App() {
             path="/"
             element={<Navigate to={`/${i18n.language}`} replace />}
           />
-          <Route
-            path="/resume"
-            element={<Navigate to={`/${i18n.language}`} replace />}
-          />
-          <Route
-            path="/:lang"
-            element={
-              <LanguageRoute>
-                <HomePage />
-              </LanguageRoute>
-            }
-          />
-          <Route
-            path="/:lang/portfolio"
-            element={
-              <LanguageRoute>
-                <PortfolioPage />
-              </LanguageRoute>
-            }
-          />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="/:lang" element={<LanguageGuard />}>
+            <Route index element={<HomePage />} />
+            <Route path="portfolio" element={<PortfolioPage />} />
+            <Route path="*" element={<Navigate to="/404" replace />} />
+          </Route>
+          <Route path="/404" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

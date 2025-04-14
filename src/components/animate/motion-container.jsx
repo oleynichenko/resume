@@ -1,15 +1,20 @@
 // @ts-nocheck
-import { motion } from 'framer-motion';
-import { forwardRef } from 'react';
+import { motion } from 'motion/react';
 import Box from '@mui/material/Box';
 import { varContainer } from './variants/container';
 
-const MotionContainer = forwardRef((props, ref) => {
-  const { animate, action = false, transitionIn, sx, children, ...other } = props;
+const MotionContainer = (props) => {
+  const {
+    animate,
+    action = false,
+    transitionIn,
+    sx,
+    children,
+    ...other
+  } = props;
 
   return (
     <Box
-      ref={ref}
       component={motion.div}
       variants={varContainer({ transitionIn })}
       initial={action ? false : 'initial'}
@@ -21,6 +26,6 @@ const MotionContainer = forwardRef((props, ref) => {
       {children}
     </Box>
   );
-});
+};
 
 export { MotionContainer };

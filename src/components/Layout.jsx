@@ -1,7 +1,8 @@
 import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
 import { LanguagePopover } from './LanguagePopover';
 import { ParticlesComponent } from './Particles';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
+import { MotionViewport } from './animate/motion-viewport';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
@@ -17,7 +18,7 @@ const Layout = ({ children }) => {
       }}
       maxWidth={false}
     >
-      <ParticlesComponent />
+      <ParticlesComponent isMobile={isMobile} />
       <Paper
         elevation={elevation}
         sx={{
@@ -28,16 +29,23 @@ const Layout = ({ children }) => {
           px: { xs: 0, md: 8 },
         }}
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <LanguagePopover
-            sx={{ position: 'absolute', top: '72px', right: '64px' }}
-          />
-          {children}
-        </motion.div>
+        <MotionViewport>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 1 }}
+          >
+            <LanguagePopover
+              sx={{
+                position: 'absolute',
+                top: isMobile ? '16px' : '72px',
+                right: isMobile ? '16px' : '64px',
+                zIndex: 1,
+              }}
+            />
+            {children}
+          </motion.div>
+        </MotionViewport>
       </Paper>
     </Container>
   );

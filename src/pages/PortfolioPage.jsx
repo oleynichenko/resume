@@ -2,7 +2,7 @@ import React from 'react';
 import PortfolioHeader from '../components/portfolio/PortfolioHeader';
 import { PortfolioDescription } from '../components/portfolio/PortfolioDescription';
 import PortfolioGrid from '../components/portfolio/PortfolioGrid';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Container } from '@mui/material';
 import Footer from '../components/Footer.jsx';
 

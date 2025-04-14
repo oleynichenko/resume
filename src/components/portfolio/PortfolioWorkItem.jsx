@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Stack, Chip } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import PortfolioWorkButtons from './PortfolioWorkButtons';
 import { useTranslation } from 'react-i18next';
 

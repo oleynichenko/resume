@@ -2,6 +2,8 @@ import { Typography, Box, Grid, Avatar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import alexandr from '../../assets/img/alexandr.png';
 import InfoItems from './InfoItems';
+import { motion } from 'motion/react';
+import { varFade } from '../animate/variants/fade';
 
 const About = ({ sx }) => {
   const { t } = useTranslation();
@@ -27,10 +29,18 @@ const About = ({ sx }) => {
           <Typography
             sx={{ mb: 0.5, textTransform: 'uppercase', lineHeight: 1 }}
             variant="h3"
+            component={motion.h3}
+            variants={varFade('inUp', { distance: 48 })}
           >
             {t('about.name')}
           </Typography>
-          <Typography sx={{ mb: 1.5 }} variant="h5" color="primary">
+          <Typography
+            sx={{ mb: 1.5 }}
+            variant="h5"
+            color="primary"
+            component={motion.h5}
+            variants={varFade('inUp', { distance: 24 })}
+          >
             {t('about.position')}
           </Typography>
           {t('about.description', { returnObjects: true }).map(
@@ -42,6 +52,8 @@ const About = ({ sx }) => {
                 }}
                 variant="body1"
                 key={index}
+                component={motion.p}
+                variants={varFade('inUp', { distance: 24 })}
               >
                 {paragraph}
               </Typography>

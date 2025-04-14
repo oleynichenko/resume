@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
 // import { KNOWLEDGE } from '../constants';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const phraseStyles = {
   fontWeight: 700,

@@ -2,20 +2,22 @@ import { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 
-const ParticlesComponent = () => {
+const ParticlesComponent = ({ isMobile }) => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
+    if (isMobile) return;
+
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [isMobile]);
 
-  const particlesLoaded = (container) => {
-    // console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
 
   const options = useMemo(
     () => ({
@@ -91,8 +93,7 @@ const ParticlesComponent = () => {
   if (init) {
     return (
       <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
+        // particlesLoaded={particlesLoaded}
         options={options}
       />
     );

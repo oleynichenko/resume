@@ -1,4 +1,5 @@
 import { Stack } from '@mui/material';
+import { motion } from 'motion/react';
 import 'simplebar-react/dist/simplebar.min.css';
 import About from '../components/home/About.jsx';
 import Contacts from '../components/home/Contacts.jsx';
@@ -8,6 +9,7 @@ import Skills from '../components/home/Skills.jsx';
 import Footer from '../components/Footer.jsx';
 import Knowledge from '../components/home/Knowledge.jsx';
 import { Layout } from '../components/Layout.jsx';
+import { varFade } from '../components/animate/variants/fade';
 
 // Add custom styles for SimpleBar scrollbar
 const scrollbarStyles = `
@@ -17,10 +19,11 @@ const scrollbarStyles = `
   }
 `;
 
-const MB_MOBILE = 7;
+const MB_MOBILE = 12;
 const MB_DESKTOP = 10;
 
 const HomePage = () => {
+  console.log('HomePage');
   return (
     <Layout>
       <style>{scrollbarStyles}</style>
@@ -30,12 +33,14 @@ const HomePage = () => {
         sx={{
           flexDirection: { xs: 'column', md: 'row' },
           mb: { xs: MB_MOBILE, md: MB_DESKTOP },
-          gap: 7,
+          gap: { xs: 12, md: 7 },
           '& > *': {
             flex: 1,
             minWidth: 0,
           },
         }}
+        component={motion.div}
+        variants={varFade('inUp', { distance: 24 })}
       >
         <Education />
         <Experience />
@@ -44,12 +49,14 @@ const HomePage = () => {
         sx={{
           flexDirection: { xs: 'column', md: 'row' },
           mb: { xs: MB_MOBILE, md: MB_DESKTOP },
-          gap: 7,
+          gap: { xs: 12, md: 7 },
           '& > *': {
             flex: 1,
             minWidth: 0,
           },
         }}
+        component={motion.div}
+        variants={varFade('inUp', { distance: 24 })}
       >
         <Knowledge />
         <Skills />

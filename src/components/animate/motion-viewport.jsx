@@ -1,11 +1,10 @@
-import { motion } from 'framer-motion';
-import { forwardRef } from 'react';
+import { motion } from 'motion/react';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { varContainer } from './variants/container';
 
-export const MotionViewport = forwardRef((props, ref) => {
+const MotionViewport = (props) => {
   const { children, viewport, disableAnimate = true, ...other } = props;
 
   const theme = useTheme();
@@ -24,8 +23,10 @@ export const MotionViewport = forwardRef((props, ref) => {
       };
 
   return (
-    <Box ref={ref} {...baseProps} {...other}>
+    <Box {...baseProps} {...other}>
       {children}
     </Box>
   );
-});
+};
+
+export { MotionViewport };
