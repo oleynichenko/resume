@@ -96,7 +96,18 @@
     "wordpress": "Wordpress",
     "videoEditing": "Video editing",
     "googleAds": "Google Ads",
-    "ai": "Artificial Intelligence"
+    "ai": "Artificial Intelligence",
+    "details": {
+      "copywriting": "Took many copywriting courses. Able to clearly and concisely convey the essence in texts. Regularly applies this skill in UI creation.",
+      "psychology": "Interested in how people make decisions and how desires work. Applies knowledge in practice, e.g., when creating landing pages.",
+      "gtmGa": "Worked with these tools on several projects. Able to set up integrations and link them, e.g., with Google Ads.",
+      "webdesign": "Completed quality web design courses and keeps up with current trends through resources like Awwwards and CSS Design Awards. Knows how to create modern, visually strong, and user-friendly interfaces.",
+      "materialDesign": "Well-versed in Material Design principles and applies them in interface development. Regularly works with Material Design from Angular and MUI.",
+      "wordpress": "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed.",
+      "videoEditing": "Can write scripts and create videos using modern video editing tools. Can provide work samples if needed.",
+      "googleAds": "Completed professional certification in 2016. Set up and optimized many ad campaigns. Can significantly improve the conversion rate of existing campaigns.",
+      "ai": "Uses AI tools in development and keeps up with the latest innovations. Works with CURSOR AI."
+    }
   },
   "filter": "Filter by",
   "lastUpdated": "Last updated",

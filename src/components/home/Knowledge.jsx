@@ -1,8 +1,24 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, Tooltip } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
-// import { KNOWLEDGE } from '../constants';
 import { motion } from 'motion/react';
+
+const KnowledgeTooltip = ({ title, children }) => (
+  <Tooltip
+    arrow
+    title={title}
+    slotProps={{
+      tooltip: {
+        sx: {
+          letterSpacing: 0.75,
+          fontSize: 14,
+        },
+      },
+    }}
+  >
+    {children}
+  </Tooltip>
+);
 
 const phraseStyles = {
   fontWeight: 700,
@@ -49,143 +65,173 @@ const Knowledge = () => {
       </SectionTitle>
       <Grid container rowSpacing={2.5}>
         <Grid size={7}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.copywriting),
-                sm: SIZE.copywriting,
-              },
-              opacity: 0.4,
-              fontWeight: 400,
-            }}
+          <KnowledgeTooltip
+            sx={{ letterSpacing: 0.5 }}
+            arrow
+            title={t('additionalExperience.details.copywriting')}
           >
-            {t('additionalExperience.copywriting')}
-          </Typography>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.copywriting),
+                  sm: SIZE.copywriting,
+                },
+                opacity: 0.4,
+                fontWeight: 400,
+              }}
+            >
+              {t('additionalExperience.copywriting')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
         <Grid sx={{ alignSelf: 'center' }} size={5}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.psychology),
-                sm: SIZE.psychology,
-              },
-              opacity: 0.6,
-              textAlign: 'right',
-            }}
+          <KnowledgeTooltip
+            title={t('additionalExperience.details.psychology')}
           >
-            {t('additionalExperience.psychology')}
-          </Typography>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.psychology),
+                  sm: SIZE.psychology,
+                },
+                opacity: 0.6,
+                textAlign: 'right',
+              }}
+            >
+              {t('additionalExperience.psychology')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
 
         <Grid size={4}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.gtmGa),
-                sm: SIZE.gtmGa,
-              },
-              opacity: 0.4,
-              pt: 1,
-              fontWeight: 400,
-            }}
-          >
-            {t('additionalExperience.gtmGa')}
-          </Typography>
+          <KnowledgeTooltip title={t('additionalExperience.details.gtmGa')}>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.gtmGa),
+                  sm: SIZE.gtmGa,
+                },
+                opacity: 0.4,
+                pt: 1,
+                fontWeight: 400,
+              }}
+            >
+              {t('additionalExperience.gtmGa')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
         <Grid size={8}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.webdesign),
-                sm: SIZE.webdesign,
-              },
-              letterSpacing: 2,
-              opacity: 0.8,
-              textAlign: 'right',
-            }}
-          >
-            {t('additionalExperience.webdesign')}
-          </Typography>
+          <KnowledgeTooltip title={t('additionalExperience.details.webdesign')}>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.webdesign),
+                  sm: SIZE.webdesign,
+                },
+                letterSpacing: 2,
+                opacity: 0.8,
+                textAlign: 'right',
+              }}
+            >
+              {t('additionalExperience.webdesign')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
 
         <Grid size={8}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.materialDesign),
-                sm: SIZE.materialDesign,
-              },
-              opacity: 0.5,
-            }}
+          <KnowledgeTooltip
+            arrow
+            title={t('additionalExperience.details.materialDesign')}
           >
-            {t('additionalExperience.materialDesign')}
-          </Typography>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.materialDesign),
+                  sm: SIZE.materialDesign,
+                },
+                opacity: 0.5,
+              }}
+            >
+              {t('additionalExperience.materialDesign')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
         <Grid sx={{ alignSelf: 'center' }} size={4}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.wordpress),
-                sm: SIZE.wordpress,
-              },
-              opacity: 0.3,
-              textAlign: 'right',
-            }}
-          >
-            {t('additionalExperience.wordpress')}
-          </Typography>
+          <KnowledgeTooltip title={t('additionalExperience.details.wordpress')}>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.wordpress),
+                  sm: SIZE.wordpress,
+                },
+                opacity: 0.3,
+                textAlign: 'right',
+              }}
+            >
+              {t('additionalExperience.wordpress')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
 
         <Grid sx={{ alignSelf: 'center' }} size={5}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.videoEditing),
-                sm: SIZE.videoEditing,
-              },
-              opacity: 0.5,
-            }}
+          <KnowledgeTooltip
+            title={t('additionalExperience.details.videoEditing')}
           >
-            {t('additionalExperience.videoEditing')}
-          </Typography>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.videoEditing),
+                  sm: SIZE.videoEditing,
+                },
+                opacity: 0.5,
+              }}
+            >
+              {t('additionalExperience.videoEditing')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
         <Grid sx={{ alignSelf: 'center' }} size={7}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.googleAds),
-                sm: SIZE.googleAds,
-              },
-              opacity: 0.7,
-              textAlign: 'right',
-              fontWeight: 400,
-            }}
-          >
-            {t('additionalExperience.googleAds')}
-          </Typography>
+          <KnowledgeTooltip title={t('additionalExperience.details.googleAds')}>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.googleAds),
+                  sm: SIZE.googleAds,
+                },
+                opacity: 0.7,
+                textAlign: 'right',
+                fontWeight: 400,
+              }}
+            >
+              {t('additionalExperience.googleAds')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
 
         <Grid size={12}>
-          <Typography
-            sx={{
-              ...phraseStyles,
-              fontSize: {
-                xs: getSmallSize(SIZE.ai),
-                sm: SIZE.ai,
-              },
-              opacity: 0.8,
-            }}
-          >
-            {t('additionalExperience.ai')}
-          </Typography>
+          <KnowledgeTooltip title={t('additionalExperience.details.ai')}>
+            <Typography
+              sx={{
+                ...phraseStyles,
+                fontSize: {
+                  xs: getSmallSize(SIZE.ai),
+                  sm: SIZE.ai,
+                },
+                textAlign: 'center',
+                opacity: 0.8,
+              }}
+            >
+              {t('additionalExperience.ai')}
+            </Typography>
+          </KnowledgeTooltip>
         </Grid>
       </Grid>
     </Box>
