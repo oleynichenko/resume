@@ -7,8 +7,6 @@ export const NotFoundPage = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  console.log('NotFoundPage');
-
   return (
     <Box
       sx={{

@@ -86,7 +86,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to={`/${i18n.language}`} replace />}
+            element={<Navigate to={`/${i18n.resolvedLanguage}`} replace />}
           />
           <Route path="/:lang" element={<LanguageGuard />}>
             <Route index element={<HomePage />} />
