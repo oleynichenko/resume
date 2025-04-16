@@ -11,7 +11,7 @@ const LanguageGuard = () => {
 
   useEffect(() => {
     if (LANGS.find((l) => l.value === lang)) {
-      if (i18n.language !== lang) {
+      if (i18n.resolvedLanguage !== lang) {
         i18n.changeLanguage(lang);
       }
 
