@@ -7,30 +7,20 @@ const LanguageGuard = () => {
   const { i18n } = useTranslation();
   const { lang } = useParams();
   const navigate = useNavigate();
-  const [languageValid, setLanguageValid] = useState(null);
+  const [languageValid, setLanguageValid] = useState(false);
 
   useEffect(() => {
-    if (!lang) {
+    if (LANGS.find((l) => l.value === lang)) {
+      if (i18n.language !== lang) {
+        i18n.changeLanguage(lang);
+      }
+
       setLanguageValid(true);
-      return;
-    }
-
-    if (!LANGS.find((l) => l.value === lang)) {
+    } else {
       navigate('/404', { replace: true });
-
       setLanguageValid(false);
-      return;
     }
-
-    if (i18n.resolvedLanguage !== lang) {
-      i18n.changeLanguage(lang);
-    }
-    setLanguageValid(true);
   }, [lang, i18n, navigate]);
-
-  if (languageValid === null) {
-    return null;
-  }
 
   if (!languageValid) {
     return null;

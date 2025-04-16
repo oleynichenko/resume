@@ -24,10 +24,6 @@ export const LANGS = [
   },
 ];
 
-// const langStorage = localStorage.getItem('i18nextLng');
-// const currentLang =
-//   LANGS.find((lang) => lang.value === langStorage) || LANGS[1];
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -41,6 +37,12 @@ i18n
     debug: false,
     interpolation: {
       escapeValue: false,
+    },
+    supportedLngs: ['en', 'ru', 'ua'],
+    nonExplicitSupportedLngs: true, // handles 'fr-FR' as 'fr'
+    detection: {
+      order: ['path', 'localStorage', 'navigator'],
+      caches: ['localStorage'],
     },
   });
 
