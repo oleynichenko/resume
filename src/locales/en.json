@@ -27,8 +27,8 @@
   },
   "contacts": {
     "title": "Contacts",
-    "phone": "Phone",
     "email": "Email",
+    "linkedin": "LinkedIn",
     "portfolio": "Portfolio"
   },
   "education": {

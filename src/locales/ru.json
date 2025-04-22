@@ -27,8 +27,8 @@
   },
   "contacts": {
     "title": "Контакты",
-    "phone": "Телефон",
     "email": "Email",
+    "linkedin": "LinkedIn",
     "portfolio": "Портфолио"
   },
   "education": {

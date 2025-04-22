@@ -1,7 +1,7 @@
 import { Stack, Typography, Box, Link } from '@mui/material';
-import Phone from '@mui/icons-material/Phone';
 import Email from '@mui/icons-material/Email';
 import Language from '@mui/icons-material/Language';
+import LinkedIn from '@mui/icons-material/LinkedIn';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
 import { Link as RouterLink, useParams } from 'react-router';
@@ -26,12 +26,12 @@ const Contacts = ({ sx }) => {
     {
       icon: (
         <Stack sx={{ bgcolor: 'primary.main', borderRadius: '50%', p: 1 }}>
-          <Phone fontSize="large" sx={{ color: 'white' }} />
+          <LinkedIn fontSize="large" sx={{ color: 'white' }} />
         </Stack>
       ),
-      label: t('contacts.phone'),
-      value: '+38 050 865 82 18',
-      href: 'tel:+380508658218',
+      label: t('contacts.linkedin'),
+      value: 'linkedin.com/in/oliinychenko',
+      href: 'https://www.linkedin.com/in/oliinychenko/',
     },
     {
       icon: (
