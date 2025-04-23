@@ -1,15 +1,30 @@
 {
   "about": {
     "name": "Александр Олейниченко",
-    "position": "Front-end разработчик",
+    "position": "Full-Stack разработчик",
     "description": [
       "По образованию математик. До 2003 года работал в Институте математики НАН Украины. В течение следующих 10 лет прошел путь от менеджера по продажам до руководителя дистрибьюторской компании (FMCG).",
       "В 2013 году перешел в интернет-маркетинг. Участвовал в продвижении нескольких образовательных проектов. С 2016 года занимаюсь тем, что по-настоящему нравится — веб-разработкой и UX-дизайном."
+    ],
+    "lastDescription": "В последней роли я руководил разработкой нескольких административных платформ и мобильных приложений — проектировал пользовательский интерфейс, управлял всей кодовой базой и контролировал развертывание... <0>Читать дальше</0>",
+    "achievements": [
+      "Led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment.",
+      "Developed a multilingual library with a PWA.",
+      "Developed a React-based taxi booking platform.",
+      "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed."
+    ],
+    "expectations": [
+      "I'm looking for a new challenge to expand my skills and take on more complex projects.",
+      "I'm looking for a new challenge to expand my skills and take on more complex projects."
     ],
     "info": {
       "position": {
         "key": "Желаемая должность",
         "value": "Front-end developer"
+      },
+      "experience": {
+        "key": "Опыт работы",
+        "value": "Больше 8 лет в IT"
       },
       "languages": {
         "key": "Языки",
@@ -20,7 +35,7 @@
         "value": "Киев, Украина"
       },
       "availability": {
-        "key": "Доступность",
+        "key": "Готовность к работе",
         "value": "Сразу"
       }
     }
@@ -38,48 +53,45 @@
     "title": "Опыт работы",
     "be": {
       "company": "«Be Ukraine» LLC, Италия",
-      "position": "Front-end разработчик",
+      "position": "Front-end разработчик  (Full-time, ~2 года)",
       "date": "Апрель 2019",
       "description": [
         "Разработка банковского приложения для внутренних операций.",
         "SCSS/Pug шаблоны + Angular 8 + компоненты PrimeNG.",
-        "Создание пользовательских UI-элементов и поддержка расширяемой архитектуры.",
         "Тесное сотрудничество с командами QA и backend для обеспечения плавной интеграции."
       ]
     },
     "jbook": {
       "company": "Проект «JBOOK» — приложение для чтения книг, Израиль",
-      "position": "Front-end разработчик",
+      "position": "Front-end разработчик (Full-time, 3+ года)",
       "date": "Октябрь 2016",
       "description": [
-        "Архитектура приложения и фронтенд-логика для PWA.",
+        "Разработал многоязычную библиотеку с PWA.",
         "Вёрстка + Angular + Node.js + MongoDB стек.",
         "Использовался UI-фреймворк Material Design.",
-        "Интеграция функций поделиться через API Facebook, VK и Twitter."
+        "Интеграция функций поделиться через API социальных сетей."
       ]
     },
     "kawunu": {
-      "company": "«Kawunu» GmbH, Германия",
-      "position": "Front-end разработчик",
+      "company": "«Kawunu» GmbH + «Bytabo» GmbH, Германия",
+      "position": "Full-Stack разработчик (Part-time, 5+ лет)",
       "date": "Апрель 2020",
       "description": [
-        "Разработка платформы бронирования такси для операторов и клиентов.",
-        "Angular для админ-панели.",
-        "Express.js + Sequelize + Postgres для backend.",
-        "Material Design и MUI фреймворки для UI.",
-        "Использовался React в приложении для оформления заказов клиентами."
+        "Разработка платформы бронирования такси на базе React.",
+        "Создание и поддержка админ-панели на Angular и Material Design (MUI).",
+        "Участие в разработке бэкенда с использованием Express.js, Sequelize и PostgreSQL.",
+        "После закрытия Kawunu GmbH проект продолжился под Bytabo GmbH, где я остался частью того же цикла разработки."
       ]
     },
     "livee": {
-      "company": "«12Planet» LLC, Франция",
-      "position": "Full-Stack разработчик (Tech Owner)",
+      "company": "Livee LLC, Франция",
+      "position": "Full-Stack разработчик/Tech Owner (Full-time, 4+ года)",
       "date": "Март 2021",
       "description": [
-        "Админ-панель на React для создания и управления мероприятиями с использованием MUI.",
-        "Разработка внутренней админ-панели для задач службы поддержки на базе MUI.",
+        "Разработка нескольких админ-панелей на React для создания и управления мероприятиями с использованием MUI.",
+        "Создание и поддержка бэкенда на Express.js/Hapi.js/PostgREST с PostgreSQL.",
         "Разработка и деплой мобильного приложения на React Native.",
-        "Поддержка и оптимизация структуры базы данных PostgreSQL.",
-        "Настройка различных маркетинговых кампаний и интеграция аналитических инструментов."
+        "Настройка различных маркетинговых кампаний и интеграция ряда маркетинговых и аналитических инструментов."
       ]
     }
   },
@@ -149,7 +161,6 @@
       "design": "Дизайн",
       "layout": "Верстка",
       "angular": "Angular",
-      "express": "Express",
       "mongodb": "MongoDB",
       "ngrx": "NGRX",
       "angularfire2": "ANGULARFIRE2",

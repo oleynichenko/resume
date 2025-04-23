@@ -6,7 +6,13 @@ import { motion } from 'motion/react';
 const InfoItems = ({ sx }) => {
   const { t } = useTranslation();
 
-  const infoItems = ['position', 'languages', 'location', 'availability'];
+  const infoItems = [
+    'position',
+    'experience',
+    'languages',
+    'location',
+    'availability',
+  ];
 
   return (
     <Stack

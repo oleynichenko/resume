@@ -1,26 +1,41 @@
 {
   "about": {
     "name": "Олександр Олійниченко",
-    "position": "Front-end розробник",
+    "position": "Full-Stack розробник",
     "description": [
       "За освітою математик. До 2003 року працював в Інституті математики НАН України. Протягом наступних 10 років пройшов шлях від менеджера з продажів до керівника дистриб'юторської компанії (FMCG).",
       "У 2013 році перейшов в інтернет-маркетинг. Брав участь в просуванні кількох освітніх проектів. З 2016 року займаюся тим, що дійсно подобається — веб-розробкою та UX-дизайном."
     ],
+    "lastDescription": "В останній ролі я керував розробкою кількох адміністративних платформ та мобільних додатків — проектував інтерфейс користувача, керував усією кодовою базою та контролював розгортання... <0>Читати далі</0>",
+    "achievements": [
+      "Led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment.",
+      "Developed a multilingual library with a PWA.",
+      "Developed a React-based taxi booking platform.",
+      "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed."
+    ],
+    "expectations": [
+      "I'm looking for a new challenge to expand my skills and take on more complex projects.",
+      "I'm looking for a new challenge to expand my skills and take on more complex projects."
+    ],
     "info": {
       "position": {
         "key": "Бажана посада",
-        "value": "Front-end розробник"
+        "value": "Full-Stack розробник"
+      },
+      "experience": {
+        "key": "Досвід",
+        "value": "Більше 8 років в IT"
       },
       "languages": {
         "key": "Мови",
-        "value": "English (B2)"
+        "value": "Англійська (B2)"
       },
       "location": {
         "key": "Місцезнаходження",
         "value": "Київ, Україна"
       },
       "availability": {
-        "key": "Доступність",
+        "key": "Готовність до роботи",
         "value": "Зразу"
       }
     }
@@ -38,48 +53,45 @@
     "title": "Досвід роботи",
     "be": {
       "company": "«Be Ukraine» LLC, Італія",
-      "position": "Front-end розробник",
+      "position": "Front-end розробник (Full-time, ~2 роки)",
       "date": "Квітень 2019",
       "description": [
         "Розробка банківського додатку для внутрішніх операцій.",
         "SCSS/Pug шаблони + Angular 8 + компоненти PrimeNG.",
-        "Створення користувацьких UI-елементів та підтримка розширюваної архітектури.",
         "Тісна співпраця з командами QA та backend для забезпечення плавної інтеграції."
       ]
     },
     "jbook": {
       "company": "Проєкт «JBOOK» — додаток для читання книг, Ізраїль",
-      "position": "Front-end розробник",
+      "position": "Front-end розробник (Full-time, 3+ роки)",
       "date": "Жовтень 2016",
       "description": [
-        "Архітектура додатку та логіка front-end для PWA.",
+        "Розробив багатомовну бібліотеку з PWA.",
         "Верстка + Angular + Node.js + MongoDB стек.",
         "Використання UI-фреймворку Material Design.",
-        "Інтеграція функцій поширення через API Facebook, VK та Twitter."
+        "Інтеграція функцій поширення через API соціальних мереж."
       ]
     },
     "kawunu": {
-      "company": "«Kawunu» GmbH, Німеччина",
-      "position": "Front-end розробник",
+      "company": "«Kawunu» GmbH + «Bytabo» GmbH, Німеччина",
+      "position": "Full-Stack розробник (Part-time, 5+ років)",
       "date": "Квітень 2020",
       "description": [
-        "Розробка платформи для бронювання таксі для операторів і клієнтів.",
-        "Angular для адмін-панелі.",
-        "Express.js + Sequelize + Postgres для backend.",
-        "Фреймворки Material Design та MUI для UI.",
-        "Використання React у застосунку для оформлення замовлень клієнтами."
+        "Розробка платформи для бронювання таксі на базі React.",
+        "Створення та підтримка адмін-панелі на Angular та Material Design (MUI).",
+        "Участь у розробці бекенду з використанням Express.js, Sequelize та PostgreSQL.",
+        "Після закриття Kawunu GmbH проєкт продовжився під Bytabo GmbH, де я залишився частиною того ж циклу розробки."
       ]
     },
     "livee": {
-      "company": "«12Planet» LLC, Франція",
-      "position": "Full-Stack розробник (Tech Owner)",
+      "company": "Livee LLC, Франція",
+      "position": "Full-Stack розробник/Tech Owner (Full-time, 4+ роки)",
       "date": "Березень 2021",
       "description": [
-        "Адмін-панель на базі React для створення та керування подіями.",
-        "Розробка внутрішньої адмін-панелі для задач підтримки клієнтів на базі MUI.",
+        "Розробка кількох адмін-панелей на React для створення та керування подіями з використанням MUI.",
+        "Створення та підтримка бекенду на Express.js/Hapi.js/PostgREST з PostgreSQL.",
         "Розробка та деплой мобільного додатку з використанням React Native.",
-        "Підтримка та оптимізація структури бази даних PostgreSQL.",
-        "Налаштування маркетингових кампаній та інтеграція аналітичних інструментів."
+        "Налаштування різних маркетингових кампаній та інтеграція низки маркетингових та аналітичних інструментів."
       ]
     }
   },

@@ -1,15 +1,30 @@
 {
   "about": {
     "name": "Oleksandr Oliinychenko",
-    "position": "Front-end Developer",
+    "position": "Full-Stack Developer",
     "description": [
-      "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, went from a sales manager to a distribution company manager (FMCG).",
+      "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, I progressed from a sales manager to the managing director of a distribution company (FMCG).",
       "In 2013, moved to internet marketing. Participated in the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
+    ],
+    "lastDescription": "In my latest role, I led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment... <0>Read more</0>",
+    "achievements": [
+      "Led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment.",
+      "Developed a multilingual library with a PWA.",
+      "Developed a React-based taxi booking platform.",
+      "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed."
+    ],
+    "expectations": [
+      "I'm looking for a new challenge to expand my skills and take on more complex projects.",
+      "I'm looking for a new challenge to expand my skills and take on more complex projects."
     ],
     "info": {
       "position": {
         "key": "Desired position",
-        "value": "Front-end Developer"
+        "value": "Full-Stack Developer"
+      },
+      "experience": {
+        "key": "Experience",
+        "value": "Over 8 years in IT"
       },
       "languages": {
         "key": "Languages",
@@ -38,48 +53,45 @@
     "title": "Work Experience",
     "be": {
       "company": "«Be Ukraine» LLC, Italy",
-      "position": "Front-end Developer",
+      "position": "Front-end Developer  (Full-time, ~2 years)",
       "date": "April 2019",
       "description": [
-        "Development of a banking application for internal operations.",
+        "Development of a banking app for internal operations.",
         "SCSS/Pug templates + Angular 8 + PrimeNG components.",
-        "Creation of custom UI elements and support of extensible architecture.",
         "Close collaboration with QA and backend teams to ensure smooth integration."
       ]
     },
     "jbook": {
       "company": "Project «JBOOK», Israel",
-      "position": "Front-end developer",
+      "position": "Front-end developer (Full-time, 3+ years)",
       "date": "October 2016",
       "description": [
-        "Application architecture and front-end logic for PWA.",
+        "Developed a multilingual library with a PWA.",
         "Layout + Angular + Node.js + MongoDB stack.",
         "Used Material Design framework for UI.",
-        "Integrated share features via Facebook, VK, and Twitter APIs."
+        "Integrated share features via social media APIs."
       ]
     },
     "kawunu": {
-      "company": "«Kawunu» GmbH, Germany",
-      "position": "Front-end developer",
+      "company": "«Kawunu» GmbH + «Bytabo» GmbH, Germany",
+      "position": "Full-Stack Developer (Part-time, 5+ years)",
       "date": "April 2020",
       "description": [
-        "Taxi booking platform development for operators and customers.",
-        "Angular for admin dashboard.",
-        "Express.js + Sequelize + Postgres for backend.",
-        "Material Design and MUI frameworks for UI.",
-        "Used React in an app for placing customer orders."
+        "Developed a React-based taxi booking platform.",
+        "Built and maintained an admin dashboard using Angular and Material Design (MUI).",
+        "Contributed to the backend using Express.js, Sequelize, and PostgreSQL.",
+        "After Kawunu GmbH closed, the project continued under Bytabo GmbH, where I remained part of the same development cycle."
       ]
     },
     "livee": {
-      "company": "«12Planet» LLC, France",
-      "position": "Full-Stack Developer (Tech Owner)",
+      "company": "Livee LLC, France",
+      "position": "Full-Stack Developer/Tech Owner (Full-time, 4+ years)",
       "date": "March 2021",
       "description": [
-        "React-based admin dashboard for event creation and management with MUI framework.",
-        "Developed internal admin panel for customer support tasks.",
+        "Developed several React-based admin dashboards for event creation and management using the MUI framework",
+        "Built and maintained Express.js/Hapi.js/PostgREST backend with PostgreSQL",
         "Mobile application development using React Native + deployment to stores.",
-        "Maintained and optimized PostgreSQL database structure.",
-        "Set up different marketing campaigns and integrated analytics tools."
+        "Set up different marketing campaigns and integrated a range marketing and analytics tools."
       ]
     }
   },

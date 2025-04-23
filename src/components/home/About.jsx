@@ -1,12 +1,18 @@
 import { Typography, Box, Grid, Avatar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'motion/react';
 import alexandr from '../../assets/img/alexandr.png';
 import InfoItems from './InfoItems';
-import { motion } from 'motion/react';
+import { Description } from './Description';
 import { varFade } from '../animate/variants/fade';
 
 const About = ({ sx }) => {
   const { t } = useTranslation();
+  const description = t('about.description', { returnObjects: true });
+
+  const onReadMoreClick = () => {
+    console.log('read more clicked');
+  };
 
   return (
     <Box sx={{ ...sx }}>
@@ -27,7 +33,12 @@ const About = ({ sx }) => {
         </Grid>
         <Grid size={{ xs: 12, md: 8, lg: 9 }}>
           <Typography
-            sx={{ mb: 0.5, textTransform: 'uppercase', lineHeight: 1 }}
+            sx={{
+              mt: -0.5,
+              mb: 0.5,
+              textTransform: 'uppercase',
+              lineHeight: 1,
+            }}
             variant="h3"
             component={motion.h3}
             variants={varFade('inUp', { distance: 48 })}
@@ -35,7 +46,7 @@ const About = ({ sx }) => {
             {t('about.name')}
           </Typography>
           <Typography
-            sx={{ mb: 1.5 }}
+            sx={{ mb: 1 }}
             variant="h5"
             color="primary"
             component={motion.h5}
@@ -43,31 +54,10 @@ const About = ({ sx }) => {
           >
             {t('about.position')}
           </Typography>
-          {t('about.description', { returnObjects: true }).map(
-            (paragraph, index) => (
-              <Typography
-                sx={{
-                  mb: 1.5,
-                  textAlign: { xs: 'justify', md: 'left' },
-                }}
-                variant="body1"
-                key={index}
-                component={motion.p}
-                variants={varFade('inUp', { distance: 24 })}
-              >
-                {paragraph}
-              </Typography>
-            ),
-          )}
-          <InfoItems sx={{ display: { xs: 'none', lg: 'flex' }, mt: 2.5 }} />
+          <Description description={description} onClick={onReadMoreClick} />
         </Grid>
       </Grid>
-      <InfoItems
-        sx={{
-          display: { xs: 'flex', lg: 'none' },
-          mt: 2,
-        }}
-      />
+      <InfoItems sx={{ mt: 4 }} />
     </Box>
   );
 };
