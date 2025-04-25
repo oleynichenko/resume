@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-export const SectionTitle = ({ children, sx }) => {
+const SectionTitle = ({ children, sx }) => {
   return (
     <Typography
       className="section-title"
@@ -17,3 +17,5 @@ export const SectionTitle = ({ children, sx }) => {
     </Typography>
   );
 };
+
+export { SectionTitle };

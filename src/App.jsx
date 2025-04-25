@@ -63,6 +63,7 @@ let theme = createTheme({
 });
 
 theme = responsiveFontSizes(theme);
+console.log(theme);
 
 const PortfolioPage = React.lazy(() => import('./pages/PortfolioPage.jsx'));
 

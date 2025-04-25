@@ -1,16 +1,18 @@
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { motion } from 'motion/react';
+import { useState } from 'react';
 import { Trans } from 'react-i18next';
 import { varFade } from '../animate/variants/fade';
+import { MoreInfoModal } from './MoreInfoModal';
 
 const ReadMoreLink = ({ children, onClick }) => {
   return (
     <Typography
       sx={{
         ml: 0.5,
-        color: 'primary.dark',
+        color: 'primary.main',
         cursor: 'pointer',
-        '&:hover': { textDecoration: 'underline', color: 'primary.main' },
+        '&:hover': { textDecoration: 'underline' },
       }}
       variant="body1"
       component="span"
@@ -38,7 +40,13 @@ const DescriptionItem = ({ children }) => {
   );
 };
 
-const Description = ({ description, onClick }) => {
+const Description = ({ description }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       {description.map((paragraph, index) => (
@@ -47,9 +55,11 @@ const Description = ({ description, onClick }) => {
       <DescriptionItem>
         <Trans
           i18nKey="about.lastDescription"
-          components={[<ReadMoreLink onClick={onClick} />]}
+          components={[<ReadMoreLink onClick={handleClick} />]}
         />
       </DescriptionItem>
+
+      <MoreInfoModal open={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
 };

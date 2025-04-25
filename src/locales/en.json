@@ -6,17 +6,34 @@
       "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, I progressed from a sales manager to the managing director of a distribution company (FMCG).",
       "In 2013, moved to internet marketing. Participated in the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
     ],
-    "lastDescription": "In my latest role, I led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment... <0>Read more</0>",
-    "achievements": [
-      "Led the development of multiple admin platforms and mobile apps — designing the UI, managing the full codebase, and overseeing deployment.",
-      "Developed a multilingual library with a PWA.",
-      "Developed a React-based taxi booking platform.",
-      "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed."
-    ],
-    "expectations": [
-      "I'm looking for a new challenge to expand my skills and take on more complex projects.",
-      "I'm looking for a new challenge to expand my skills and take on more complex projects."
-    ],
+    "lastDescription": "With experience across front-end, back-end, and DevOps, I bring both technical ownership and a strong product mindset to every project. My stack over the past 3 years includes... <0>Read more</0>",
+    "modal": {
+      "stack": {
+        "title": "Tech stack (last 3 years)",
+        "text": [
+          "React, Angular and React Native",
+          "Node.js, MongoDB, PostgreSQL",
+          "Docker, GitHub, Heroku, Netlify",
+          "Material Design, MUI, Atlassian",
+          "Adobe XD, Synthesia"
+        ]
+      },
+      "experience": {
+        "title": "My Latest Role Overview",
+        "text": [
+          "In my most recent role in the event services industry, I started as part of a small team (3 devs). After the product launched, I gradually became the sole developer — taking full responsibility for evolving the platform over the last 3 years (see \"Experience\" section).",
+          "Beyond coding, I played a key role in shaping the product vision and enhancing the customer experience. I built a WordPress-based knowledge base, produced video tutorials using Synthesia, created custom reports with ApexCharts for company management and more."
+        ],
+        "lastText": "I also handled all UI/UX design for new features and websites myself — including <0>this one</0>."
+      },
+      "vision": {
+        "title": "Vision for the Future",
+        "text": [
+          "I’d like to keep my main focus on front-end development with React, but I’m also comfortable handling back-end and CI/CD tasks when needed.",
+          "I value opportunities where I can continue combining development with a product-focused approach — helping shape solutions that are both technically solid and strategically effective."
+        ]
+      }
+    },
     "info": {
       "position": {
         "key": "Desired position",
@@ -88,10 +105,11 @@
       "position": "Full-Stack Developer/Tech Owner (Full-time, 4+ years)",
       "date": "March 2021",
       "description": [
-        "Developed several React-based admin dashboards for event creation and management using the MUI framework",
-        "Built and maintained Express.js/Hapi.js/PostgREST backend with PostgreSQL",
-        "Mobile application development using React Native + deployment to stores.",
-        "Set up different marketing campaigns and integrated a range marketing and analytics tools."
+        "Developed several React-based admin platforms and websites using MUI framework.",
+        "Built and maintained Express.js/Hapi.js/PostgREST backend with PostgreSQL.",
+        "Mobile application development using React Native + deployment to Play Market and App Store.",
+        "Managed infrastructure on Heroku and Netlify.",
+        "Set up a structured GitHub-based release process."
       ]
     }
   },
