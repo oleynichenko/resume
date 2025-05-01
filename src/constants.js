@@ -32,7 +32,7 @@ const experienceItems = [
     position: 'experience.livee.position',
     description: 'experience.livee.description',
     link: 'https://www.livee.com/',
-    tags: ['react', 'angular', 'apis', 'database', 'devops'],
+    tags: ['react', 'apis', 'database', 'devops'],
   },
 ];
 
@@ -217,12 +217,12 @@ const educationItems = [
 const SKILLS = [
   { id: 1, name: 'React + Redux', level: 9 },
   { id: 2, name: 'React Native', level: 8 },
-  { id: 3, name: 'Angular + NgRx', level: 7 },
+  { id: 3, name: 'Angular + NgRx', level: 6 },
   { id: 4, name: 'Node JS', level: 7 },
   { id: 5, name: 'MongoDB', level: 7 },
   { id: 6, name: 'Postgres', level: 6 },
-  { id: 7, name: 'PHP + SQL', level: 4 },
-  { id: 8, name: 'Docker + Github', level: 7 },
+  { id: 7, name: 'WordPress', level: 4 },
+  { id: 8, name: 'Docker + Github', level: 6 },
   { id: 9, name: 'UX/UI', level: 9 },
 ];
 

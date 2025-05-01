@@ -17,11 +17,12 @@ const InfoItems = ({ sx }) => {
   return (
     <Stack
       sx={{
-        flexDirection: 'row',
+        flexDirection: { xs: 'column', md: 'row' },
+        textAlign: { xs: 'center', md: 'left' },
         justifyContent: 'space-between',
-        pr: 2,
+        pr: { xs: 0, md: 2 },
         flexWrap: 'wrap',
-        rowGap: 2,
+        rowGap: 3,
         columnGap: { xs: 6, md: 4 },
         ...sx,
       }}

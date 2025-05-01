@@ -1,7 +1,7 @@
 {
   "about": {
     "name": "Oleksandr Oliinychenko",
-    "position": "Full-Stack Developer",
+    "position": "Full-Stack Web Developer",
     "description": [
       "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, I progressed from a sales manager to the managing director of a distribution company (FMCG).",
       "In 2013, moved to internet marketing. Participated in the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
@@ -37,7 +37,7 @@
     "info": {
       "position": {
         "key": "Desired position",
-        "value": "Full-Stack Developer"
+        "value": "Full-Stack Web Developer"
       },
       "experience": {
         "key": "Experience",
@@ -95,7 +95,7 @@
       "date": "April 2020",
       "description": [
         "Developed a React-based taxi booking platform.",
-        "Built and maintained an admin dashboard using Angular and Material Design (MUI).",
+        "Built and maintained an admin dashboard using Angular and Material Design.",
         "Contributed to the backend using Express.js, Sequelize, and PostgreSQL.",
         "After Kawunu GmbH closed, the project continued under Bytabo GmbH, where I remained part of the same development cycle."
       ]
@@ -105,11 +105,11 @@
       "position": "Full-Stack Developer/Tech Owner (Full-time, 4+ years)",
       "date": "March 2021",
       "description": [
-        "Developed several React-based admin platforms and websites using MUI framework.",
+        "Developed several React-based admin platforms using MUI framework and Atlassian.",
         "Built and maintained Express.js/Hapi.js/PostgREST backend with PostgreSQL.",
-        "Mobile application development using React Native + deployment to Play Market and App Store.",
-        "Managed infrastructure on Heroku and Netlify.",
-        "Set up a structured GitHub-based release process."
+        "Mobile application development using React Native with Expo + deployment to Play Market and App Store.",
+        "Managed infrastructure on Heroku, Netlify and GitHub.",
+        "Set up and integrated a range of marketing and analytics tools."
       ]
     }
   },
@@ -154,7 +154,7 @@
     "description": {
       "firstProjects": {
         "title": "First Projects",
-        "text": "The projects presented here were created between 2016 and 2017, at the very beginning of my professional journey as a developer. Even then, I focused on creating a clean, detailed, and thoughtful user experience and tried to fallow best development practices."
+        "text": "The projects presented here were created between 2016 and 2017, at the very beginning of my professional journey as a developer. Even then, I focused on creating a clean, detailed, and thoughtful user experience and tried to follow best development practices."
       },
       "currentWork": {
         "title": "How I Work Now",

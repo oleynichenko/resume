@@ -19,7 +19,7 @@ const scrollbarStyles = `
   }
 `;
 
-const MB_MOBILE = 12;
+const MB_MOBILE = 11;
 const MB_DESKTOP = 10;
 
 const HomePage = () => {
