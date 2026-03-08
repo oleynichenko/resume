@@ -3,7 +3,7 @@
     "name": "Oleksandr Oliinychenko",
     "position": "Full-Stack Web Developer",
     "description": [
-      "Mathematician by education. After graduating from Taras Shevchenko National University of Kyiv, I worked for several years at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Later, I built a career in FMCG, progressing from sales manager to managing director of a distribution company.",
+      "Mathematician by education. After graduating from Taras Shevchenko National University of Kyiv, worked for several years at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Later, I built a career in FMCG, progressing from sales manager to managing director of a distribution company.",
       "In 2013, I moved to internet marketing. Launched and led the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
     ],
     "lastDescription": "I have experience in both front-end and back-end development, as well as DevOps and usually strive to influence overall product development. My stack over the past 4 years includes... <0>Read more</0>",
@@ -29,8 +29,8 @@
       "vision": {
         "title": "Vision for the Future",
         "text": [
-          "I’d like to keep my main focus on front-end development with React, but I’m also comfortable handling back-end and CI/CD tasks when needed.",
-          "I value opportunities where I can continue combining development with a product-focused approach — helping shape solutions that are both technically solid and strategically effective."
+          "I’d like to keep my main focus on fullstack development and take full responsibility for the product — from idea and architecture to deployment and support.",
+          "I am primarily interested in product-oriented projects where I can maintain a strong connection with the end user. This allows me to build solutions that are both technically robust and strategically aligned with business goals."
         ]
       }
     },
@@ -154,11 +154,11 @@
     "description": {
       "firstProjects": {
         "title": "First Projects",
-        "text": "The projects presented here were created between 2016 and 2017, at the very beginning of my professional journey as a developer. Even then, I focused on creating a clean, detailed, and thoughtful user experience and tried to follow best development practices."
+        "text": "The projects presented here were mainly created between 2016 and 2017, at the very beginning of my professional journey as a developer. Even then, for me it was important to create clean, detailed, and thoughtful interfaces."
       },
       "currentWork": {
         "title": "How I Work Now",
-        "text1": "Since my first projects, my skills have grown significantly. You can evaluate the quality of my current work by reviewing the <0>source code</0> of this website.",
+        "text1": "Since the early stages of my career, there has been significant professional growth. The <0>source code</0> of this project serves as a testament to current standards of quality and architecture.",
         "text2": "It's built on React and the MUI component library, uses React Router for navigation, and supports three languages through localization. Animations are handled by Motion, and code quality is maintained with Prettier and ESLint. The app is automatically deployed to GitHub Pages.",
         "text3": "Additionally, I actively incorporate AI tools into my development workflow, which significantly increases productivity and allows me to often perform the work of a whole team."
       }
@@ -170,10 +170,12 @@
     "workItem": {
       "projectFeatures": "Project Features",
       "viewCode": "View Code",
-      "openWebsite": "Open Website"
+      "openWebsite": "Open Website",
+      "openProject": "Open Project"
     },
     "grid": {
-      "title": "Projects (2016 - 2017)"
+      "title2016_2017": "Projects (2016 – 2017)",
+      "title2025_2026": "Projects (2025 – 2026)"
     },
     "tags": {
       "design": "Design",
@@ -367,6 +369,16 @@
           "feature2": "Smooth appearance",
           "feature3": "Gatsby.js framework",
           "feature4": "Dark/light themes"
+        }
+      },
+      "conf": {
+        "title": "Event Service Platform",
+        "alt": "Event Service Platform",
+        "features": {
+          "feature1": "Adaptive layout",
+          "feature2": "Material design 2",
+          "feature3": "MUI framework",
+          "feature4": "Separate mobile design"
         }
       }
     }

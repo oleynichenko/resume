@@ -36,7 +36,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
       <Stack sx={{ gap: { xs: 2, md: 3 }, flexShrink: 0 }}>
         <Button
           variant="contained"
-          href={links.code}
+          href={ links.code ? links.code : links.project}
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -46,7 +46,7 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
             backgroundColor: colorDark || color,
           }}
         >
-          {t('portfolio.workItem.viewCode')}
+          {t(links.code ? 'portfolio.workItem.viewCode' : 'portfolio.workItem.openProject')}
         </Button>
         {links.demo && (
           <Button

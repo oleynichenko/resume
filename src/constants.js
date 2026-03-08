@@ -240,7 +240,7 @@ const SKILLS = [
   { id: 9, name: 'UX/UI', level: 9 },
 ];
 
-const portfolioItems = [
+const portfolioItems2016_2017 = [
   {
     id: 'jbook',
     title: 'portfolio.items.jbook.title',
@@ -434,7 +434,7 @@ const portfolioItems = [
       'portfolio.items.azbyka.features.feature4',
     ],
     links: {
-      code: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
+      project: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
     },
     color: '#6E4B0B',
     colorLight: '#FFF6E5',
@@ -583,6 +583,9 @@ const portfolioItems = [
     color: '#695EB8',
     colorLight: '#E6E2FF',
   },
+];
+
+const portfolioItems2025_2026 = [
   {
     id: 'daat',
     title: 'portfolio.items.daat.title',
@@ -608,6 +611,29 @@ const portfolioItems = [
     },
     color: '#000',
     colorLight: '#F2F2F2',
+  },
+  {
+    id: 'conf',
+    title: 'portfolio.items.conf.title',
+    tags: [
+      'portfolio.tags.design',
+    ],
+    image: {
+      desktop: '/img/conf-ds-1x.jpg',
+      tablet: '/img/conf-tb-1x.jpg',
+      alt: 'portfolio.items.conf.alt',
+    },
+    features: [
+      'portfolio.items.conf.features.feature1',
+      'portfolio.items.conf.features.feature2',
+      'portfolio.items.conf.features.feature3',
+      'portfolio.items.conf.features.feature4',
+    ],
+    links: {
+      project: 'https://www.behance.net/gallery/245323777/Redesign-of-Event-Service-Platform',
+    },
+    color: '#358bf0',
+    colorLight: '#deedff',
   },
 ];
 
@@ -640,5 +666,6 @@ export {
   SECTION_HEIGHT,
   TECHNOLOGIES,
   WEBSITE_FEATURES,
-  portfolioItems,
+  portfolioItems2016_2017,
+  portfolioItems2025_2026,
 };

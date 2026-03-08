@@ -5,6 +5,7 @@ import PortfolioGrid from '../components/portfolio/PortfolioGrid';
 import { motion } from 'motion/react';
 import { Container } from '@mui/material';
 import Footer from '../components/Footer.jsx';
+import { portfolioItems2016_2017, portfolioItems2025_2026 } from '../constants';
 
 const PortfolioPage = () => {
   return (
@@ -23,7 +24,8 @@ const PortfolioPage = () => {
       >
         <PortfolioHeader sx={{ mb: { xs: 5, md: 10 } }} />
         <PortfolioDescription sx={{ mb: { xs: 5, md: 11 } }} />
-        <PortfolioGrid sx={{ mb: { xs: 10, md: 15 } }} />
+        <PortfolioGrid title="portfolio.grid.title2025_2026" items={portfolioItems2025_2026} sx={{ mb: { xs: 8, md: 12 } }} />
+        <PortfolioGrid title="portfolio.grid.title2016_2017" items={portfolioItems2016_2017} sx={{ mb: { xs: 10, md: 15 } }} />
         <Footer />
       </Container>
     </motion.div>
