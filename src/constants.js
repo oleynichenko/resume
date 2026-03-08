@@ -32,7 +32,7 @@ const experienceItems = [
     position: 'experience.livee.position',
     description: 'experience.livee.description',
     link: 'https://www.livee.com/',
-    tags: ['react', 'apis', 'database', 'devops'],
+    tags: ['react', 'apis', 'database', 'devops', 'next'],
   },
 ];
 
@@ -43,6 +43,20 @@ const educationItems = [
     year: 2025,
     tag: 'react',
     link: 'https://www.udemy.com/course/cursorai-nextjs/',
+  },
+  {
+    id: 26,
+    name: 'Next.js & React - The Complete Guide',
+    year: 2026,
+    tag: 'next',
+    link: 'https://webpros.udemy.com/course/nextjs-react-the-complete-guide',
+  },
+  {
+    id: 27,
+    name: "Next JS: The Complete Developer's Guide",
+    year: 2026,
+    tag: 'next',
+    link: 'https://webpros.udemy.com/course/next-js-the-complete-developers-guide',
   },
   {
     id: 2,
@@ -215,12 +229,12 @@ const educationItems = [
 ];
 
 const SKILLS = [
-  { id: 1, name: 'React + Redux', level: 9 },
+  { id: 1, name: 'React + Redux', level: 10 },
   { id: 2, name: 'React Native', level: 8 },
   { id: 3, name: 'Angular + NgRx', level: 6 },
   { id: 4, name: 'Node JS', level: 7 },
-  { id: 5, name: 'MongoDB', level: 7 },
-  { id: 6, name: 'Postgres', level: 6 },
+  { id: 5, name: 'Mongo/Postgres', level: 7 },
+  { id: 6, name: 'Next.js', level: 5 },
   { id: 7, name: 'WordPress', level: 4 },
   { id: 8, name: 'Docker + Github', level: 6 },
   { id: 9, name: 'UX/UI', level: 9 },
@@ -615,7 +629,7 @@ const TECHNOLOGIES = [
   'portfolio.technologies.tech6',
 ];
 
-const UPDATE_DATE = '2025-04-10';
+const UPDATE_DATE = '2026-03-10';
 const SECTION_HEIGHT = 400;
 
 export {

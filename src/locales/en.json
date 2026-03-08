@@ -3,25 +3,25 @@
     "name": "Oleksandr Oliinychenko",
     "position": "Full-Stack Web Developer",
     "description": [
-      "Mathematician by education. Until 2003, worked at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Over the next 10 years, I progressed from a sales manager to the managing director of a distribution company (FMCG).",
-      "In 2013, moved to internet marketing. Participated in the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
+      "Mathematician by education. After graduating from Taras Shevchenko National University of Kyiv, I worked for several years at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Later, I built a career in FMCG, progressing from sales manager to managing director of a distribution company.",
+      "In 2013, I moved to internet marketing. Launched and led the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
     ],
-    "lastDescription": "With experience across front-end, back-end, and DevOps, I bring both technical ownership and a strong product mindset to every project. My stack over the past 3 years includes... <0>Read more</0>",
+    "lastDescription": "I have experience in both front-end and back-end development, as well as DevOps and usually strive to influence overall product development. My stack over the past 4 years includes... <0>Read more</0>",
     "modal": {
       "stack": {
-        "title": "Tech stack (last 3 years)",
+        "title": "Tech stack (last 4 years)",
         "text": [
-          "React, Angular and React Native",
-          "Node.js, MongoDB, PostgreSQL",
+          "React, Angular, Next.js and React Native",
+          "Express.js, Nest.js, Hapi.js, MongoDB, PostgreSQL",
           "Docker, GitHub, Heroku, Netlify",
-          "Material Design, MUI, Atlassian",
-          "Adobe XD, Synthesia"
+          "MUI, Angular Material, PrimeNG, Atlassian",
+          "Figma, Adobe XD, Synthesia"
         ]
       },
       "experience": {
         "title": "My Latest Role Overview",
         "text": [
-          "In my most recent role in the event services industry, I started as part of a small team (3 devs). After the product launched, I gradually became the sole developer — taking full responsibility for evolving the platform over the last 3 years (see \"Experience\" section).",
+          "In my most recent role in the event services industry, I started as part of a small team (3 devs). After the product launched, I gradually became the sole developer — taking full responsibility for evolving the platform over the last 4 years (see \"Experience\" section).",
           "Beyond coding, I played a key role in shaping the product vision and enhancing the customer experience. I built a WordPress-based knowledge base, produced video tutorials using Synthesia, created custom reports with ApexCharts for company management and more."
         ],
         "lastText": "I also handled all UI/UX design for new features and websites myself — including <0>this one</0>."
@@ -160,7 +160,7 @@
         "title": "How I Work Now",
         "text1": "Since my first projects, my skills have grown significantly. You can evaluate the quality of my current work by reviewing the <0>source code</0> of this website.",
         "text2": "It's built on React and the MUI component library, uses React Router for navigation, and supports three languages through localization. Animations are handled by Motion, and code quality is maintained with Prettier and ESLint. The app is automatically deployed to GitHub Pages.",
-        "text3": "Additionally, I actively incorporate AI tools into my development workflow, which significantly increases productivity and speeds up both coding and problem-solving."
+        "text3": "Additionally, I actively incorporate AI tools into my development workflow, which significantly increases productivity and allows me to often perform the work of a whole team."
       }
     },
     "features": {

@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 
 const options = [
   { id: 'react', name: 'React' },
+  { id: 'next', name: 'Next.js' },
   { id: 'angular', name: 'Angular' },
   { id: 'apis', name: 'APIs' },
   { id: 'database', name: 'Databases' },
