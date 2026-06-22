@@ -1,13 +1,25 @@
-import { Container, Paper, useMediaQuery, useTheme } from '@mui/material';
+import {
+  Container,
+  Paper,
+  useMediaQuery,
+  useTheme,
+  Button,
+  Stack,
+} from '@mui/material';
+import { Link as RouterLink, useParams } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { LanguagePopover } from './LanguagePopover';
 import { ParticlesComponent } from './Particles';
 import { motion } from 'motion/react';
 import { MotionViewport } from './animate/motion-viewport';
+import { RESUME_PDF_URL } from '../constants';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const elevation = isMobile ? 0 : 3;
+  const { lang } = useParams();
+  const { t } = useTranslation();
 
   return (
     <Container
@@ -24,7 +36,7 @@ const Layout = ({ children }) => {
         sx={{
           position: 'relative',
           backgroundColor: 'white',
-          pt: { xs: 0, md: 15 },
+          pt: { xs: 5, md: 15 },
           pb: { xs: 0, md: 6 },
           px: { xs: 0, md: 8 },
         }}
@@ -35,14 +47,35 @@ const Layout = ({ children }) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <LanguagePopover
+            <Stack
+              direction="row"
               sx={{
                 position: 'absolute',
-                top: isMobile ? '16px' : '72px',
-                right: isMobile ? '16px' : '64px',
+                top: isMobile ? '0px' : '56px',
+                right: isMobile ? '0px' : '64px',
                 zIndex: 1,
               }}
-            />
+            >
+              <Button
+                component="a"
+                href={RESUME_PDF_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="small"
+                sx={{ px: 1.5 }}
+              >
+                {t('layout.resumePdf')}
+              </Button>
+              <Button
+                component={RouterLink}
+                to={`/${lang}/portfolio`}
+                size="small"
+                sx={{ px: 1.5 }}
+              >
+                {t('layout.portfolio')}
+              </Button>
+              <LanguagePopover />
+            </Stack>
             {children}
           </motion.div>
         </MotionViewport>

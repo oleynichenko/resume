@@ -11,11 +11,11 @@
       "stack": {
         "title": "Tech stack (last 4 years)",
         "text": [
-          "React, Angular, Next.js and React Native",
-          "Express.js, Nest.js, Hapi.js, MongoDB, PostgreSQL",
-          "Docker, GitHub, Heroku, Netlify",
-          "MUI, Angular Material, PrimeNG, Atlassian",
-          "Figma, Adobe XD, Synthesia"
+          "React, Redux, React Query, Next.js and React Native with Expo",
+          "Express.js, Nest.js, Hapi.js, Redis, PostgreSQL, OpenAI API",
+          "Docker, GitHub, Heroku, Netlify, AWS",
+          "Material UI, Atlassian, Figma",
+          "Cursor AI, Claude Code, GitHub Copilot"
         ]
       },
       "experience": {
@@ -61,7 +61,11 @@
     "title": "Contacts",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "portfolio": "Portfolio"
+    "whatsapp": "WhatsApp"
+  },
+  "layout": {
+    "resumePdf": "Download Resume (PDF)",
+    "portfolio": "Portfolio & GitHub"
   },
   "education": {
     "title": "Education"
@@ -69,13 +73,13 @@
   "experience": {
     "title": "Work Experience",
     "be": {
-      "company": "«Be Ukraine» LLC, Italy",
+      "company": "«Be Ukraine» LLC, Ukraine",
       "position": "Front-end Developer  (Full-time, ~2 years)",
       "date": "April 2019",
       "description": [
-        "Development of a banking app for internal operations.",
-        "SCSS/Pug templates + Angular 8 + PrimeNG components.",
-        "Close collaboration with QA and backend teams to ensure smooth integration."
+        "Technologies: Angular, PrimeNG, Pug, SCSS",
+        "Worked on a fintech banking app with complex multi-form screens and heavy business logic, requiring product-level understanding of banking workflows.",
+        "Transitioned to a full Node.js stack role to deepen backend expertise and grow as a full-stack developer."
       ]
     },
     "jbook": {
@@ -83,33 +87,37 @@
       "position": "Front-end developer (Full-time, 3+ years)",
       "date": "October 2016",
       "description": [
-        "Developed a multilingual library with a PWA.",
-        "Layout + Angular + Node.js + MongoDB stack.",
-        "Used Material Design framework for UI.",
-        "Integrated share features via social media APIs."
+        "Technologies: PWA, Angular, Express.js, MongoDB, Material Design.",
+        "Built a multilingual library enabling paragraph-level translation with side-by-side comparison of multiple author translations."
       ]
     },
     "kawunu": {
       "company": "«Kawunu» GmbH + «Bytabo» GmbH, Germany",
-      "position": "Full-Stack Developer (Part-time, 5+ years)",
-      "date": "April 2020",
+      "position": "Full-Stack Developer (1 year Contract, 4 years Support)",
+      "date": "March 2021",
       "description": [
-        "Developed a React-based taxi booking platform.",
-        "Built and maintained an admin dashboard using Angular and Material Design.",
-        "Contributed to the backend using Express.js, Sequelize, and PostgreSQL.",
-        "After Kawunu GmbH closed, the project continued under Bytabo GmbH, where I remained part of the same development cycle."
+        "Technologies: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku.",
+        "Re-architected and rebuilt the taxi booking platform UI using React, introducing a consistent Material Design 2 design system.",
+        "Built from scratch a taxi order management platform for operators using Angular, improving order processing speed by 3x.",
+        "Designed and implemented a promo and discount system for taxi customers, enabling increasing marketing customer interactions by 2x.",
+        "Integrated address search and autocomplete using Google Places API, expanding supported customer locations by 300%.",
+        "Covered the 6 most complex business flows with E2E tests, validating full user-to-user scenarios."
       ]
     },
     "livee": {
       "company": "Livee LLC, France",
-      "position": "Full-Stack Developer/Tech Owner (Full-time, 4+ years)",
-      "date": "March 2021",
+      "position": "Full-Stack Developer/Tech Owner/Product Engineer (Contract, 4+ years)",
+      "date": "March 2022",
       "description": [
-        "Developed several React-based admin platforms using MUI framework and Atlassian.",
-        "Built and maintained Express.js/Hapi.js/PostgREST backend with PostgreSQL.",
-        "Mobile application development using React Native with Expo + deployment to Play Market and App Store.",
-        "Managed infrastructure on Heroku, Netlify and GitHub.",
-        "Set up and integrated a range of marketing and analytics tools."
+        "Technologies: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku",
+        "Developed 3 React-based admin dashboards covering full event management workflows.",
+        "Migrated 200+ event management screens from Atlassian UI to MUI, reducing frontend development time by ~30%.",
+        "Implemented multi-admin workflows allowing organizers to manage events within shared accounts.",
+        "Designed a registration module for event hosts, onboarding 10% more organizers who required attendee tracking.",
+        "Built CSV/XLSX import-export pipelines for event data, reducing manual data entry workload by ~50%.",
+        "Built AWS S3-based file storage system for event resource libraries (documents, media, attachments).",
+        "Developed a custom event page editor, with ~25% of users adopting it immediately after release.",
+        "Rebuilt Google Ads campaigns, reducing customer acquisition cost by ~50%."
       ]
     }
   },
@@ -131,12 +139,12 @@
       "copywriting": "Took many copywriting courses. Able to clearly and concisely convey the essence in texts. Regularly applies this skill in UI creation.",
       "psychology": "Interested in how people make decisions and how desires work. Applies knowledge in practice, e.g., when creating landing pages.",
       "gtmGa": "Worked with these tools on several projects. Able to set up integrations and link them, e.g., with Google Ads.",
-      "webdesign": "Completed quality web design courses and keeps up with current trends through resources like Awwwards and CSS Design Awards. Knows how to create modern, visually strong, and user-friendly interfaces.",
-      "materialDesign": "Well-versed in Material Design principles and applies them in interface development. Regularly works with Material Design from Angular and MUI.",
-      "wordpress": "Created many websites on WordPress. Knows the basics of PHP, enabling effective code fixing and optimization when needed.",
+      "webdesign": "Completed quality web design courses and keeps up with current trends through resources like Awwwards and CSS Design Awards. Know how to create modern, visually strong, and user-friendly interfaces.",
+      "materialDesign": "Well-versed in Material Design principles and applies them in interface development. Regularly work with Material Design from Angular and MUI.",
+      "wordpress": "Created many websites on WordPress. Know the basics of PHP, enabling effective code fixing and optimization when needed.",
       "videoEditing": "Can write scripts and create videos using modern video editing tools. Can provide work samples if needed.",
       "googleAds": "Completed professional certification in 2016. Set up and optimized many ad campaigns. Can significantly improve the conversion rate of existing campaigns.",
-      "ai": "Uses AI tools in development and keeps up with the latest innovations. Works with CURSOR AI."
+      "ai": "Use AI tools in development and keep up with the latest innovations. Work with CURSOR AI, Claude Code, GitHub Copilot."
     }
   },
   "filter": "Filter by",
@@ -148,8 +156,8 @@
   },
   "portfolio": {
     "header": {
-      "title": "Portfolio",
-      "goBack": "Back"
+      "title": "Portfolio & <0>GitHub</0>",
+      "goBack": "Back to Resume"
     },
     "description": {
       "firstProjects": {
@@ -372,13 +380,33 @@
         }
       },
       "conf": {
-        "title": "Event Service Platform",
-        "alt": "Event Service Platform",
+        "title": "Event Service Admin Dashboard ",
+        "alt": "Event Service Admin Dashboard",
         "features": {
           "feature1": "Adaptive layout",
           "feature2": "Material design 2",
-          "feature3": "MUI framework",
+          "feature3": "MUI framework with consistent typography",
           "feature4": "Separate mobile design"
+        }
+      },
+      "events": {
+        "title": "Events Hosting Platform ",
+        "alt": "Events Hosting Platform",
+        "features": {
+          "feature1": "Adaptive layout",
+          "feature2": "Material design 2",
+          "feature3": "MUI framework with consistent typography",
+          "feature4": "Animations with Framer Motion"
+        }
+      },
+      "ai-tools": {
+        "title": "Receipt parsing and audio transcription",
+        "alt": "Receipt parsing and audio transcription",
+        "features": {
+          "feature1": "Integration with OpenAI API",
+          "feature2": "Backend with Nest.js",
+          "feature3": "90% work done with Cursor AI",
+          "feature4": "Dark/light themes"
         }
       }
     }

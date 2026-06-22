@@ -52,12 +52,12 @@ const Skills = ({ sx }) => {
       >
         {SKILLS.map(({ id, name, level }) => (
           <Grid container key={id} spacing={2} alignItems="center">
-            <Grid size={{ xs: 4, md: 3 }}>
+            <Grid size={{ xs: 4, md: 3.5 }}>
               <Typography sx={{ lineHeight: 1.2 }} variant="body1">
                 {name}
               </Typography>
             </Grid>
-            <Grid size={{ xs: 8, md: 9 }}>
+            <Grid size={{ xs: 8, md: 8.5 }}>
               <SkillBar level={level} />
             </Grid>
           </Grid>

@@ -1,9 +1,23 @@
 import React from 'react';
-import { Stack, Box, Typography } from '@mui/material';
-import { Button } from '@mui/material';
-import { Link, useParams } from 'react-router';
+import { Stack, Box, Typography, Button, Link } from '@mui/material';
+import { Link as RouterLink, useParams } from 'react-router';
 import { LanguagePopover } from '../LanguagePopover';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+
+const GitHubLink = ({ children }) => (
+  <Link
+    sx={{
+      color: 'inherit',
+      textDecorationColor: 'inherit',
+      '&:hover': { color: 'primary.main' },
+    }}
+    href="https://github.com/oleynichenko"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {children}
+  </Link>
+);
 
 const PortfolioHeader = ({ sx }) => {
   const { lang } = useParams();
@@ -24,7 +38,7 @@ const PortfolioHeader = ({ sx }) => {
           mb: 4,
         }}
       >
-        <Button component={Link} to={`/${lang}`} size="small">
+        <Button component={RouterLink} to={`/${lang}`} size="small">
           {t('portfolio.header.goBack')}
         </Button>
         <LanguagePopover />
@@ -33,7 +47,10 @@ const PortfolioHeader = ({ sx }) => {
         sx={{ textTransform: 'uppercase', lineHeight: 1, textAlign: 'center' }}
         variant="h3"
       >
-        {t('portfolio.header.title')}
+        <Trans
+          i18nKey="portfolio.header.title"
+          components={[<GitHubLink />]}
+        />
       </Typography>
     </Box>
   );

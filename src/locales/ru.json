@@ -11,11 +11,11 @@
       "stack": {
         "title": "Стек технологий (посл. 4 года)",
         "text": [
-          "React, Angular, Next.js и React Native",
-          "Express.js, Nest.js, Hapi.js, MongoDB, PostgreSQL",
-          "Docker, GitHub, Heroku, Netlify",
-          "MUI, Angular Material, PrimeNG, Atlassian",
-          "Figma, Adobe XD, Synthesia"
+          "React, Redux, React Query, Next.js и React Native с Expo",
+          "Express.js, Nest.js, Hapi.js, Redis, PostgreSQL, OpenAI API",
+          "Docker, GitHub, Heroku, Netlify, AWS",
+          "Material UI, Atlassian, Figma",
+          "Cursor AI, Claude Code, GitHub Copilot"
         ]
       },
       "experience": {
@@ -61,7 +61,11 @@
     "title": "Контакты",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "portfolio": "Портфолио"
+    "whatsapp": "WhatsApp"
+  },
+  "layout": {
+    "resumePdf": "Скачать резюме (PDF)",
+    "portfolio": "Портфолио & GitHub"
   },
   "education": {
     "title": "Образование"
@@ -69,47 +73,51 @@
   "experience": {
     "title": "Опыт работы",
     "be": {
-      "company": "«Be Ukraine» LLC, Италия",
-      "position": "Front-end разработчик  (Full-time, ~2 года)",
+      "company": "«Be Ukraine» LLC, Украина",
+      "position": "Front-end разработчик (Full-time, ~2 года)",
       "date": "Апрель 2019",
       "description": [
-        "Разработка банковского приложения для внутренних операций.",
-        "SCSS/Pug шаблоны + Angular 8 + компоненты PrimeNG.",
-        "Тесное сотрудничество с командами QA и backend для обеспечения плавной интеграции."
+        "Технологии: Angular, PrimeNG, Pug, SCSS",
+        "Работал над fintech банковским приложением со сложными многоформными экранами и тяжёлой бизнес-логикой, требующей продуктового понимания банковских процессов.",
+        "Уволился, чтобы перейти в проект с Node.js стеком для усиления backend-навыков."
       ]
     },
     "jbook": {
-      "company": "Проект «JBOOK» — приложение для чтения книг, Израиль",
+      "company": "Проект «JBOOK», Израиль",
       "position": "Front-end разработчик (Full-time, 3+ года)",
       "date": "Октябрь 2016",
       "description": [
-        "Разработал многоязычную библиотеку с PWA.",
-        "Вёрстка + Angular + Node.js + MongoDB.",
-        "Использовался UI-фреймворк Material Design.",
-        "Интеграция с API социальных сетей."
+        "Технологии: PWA, Angular, Express.js, MongoDB, Material Design.",
+        "Разработал многоязычную библиотеку с переводом на уровне абзацев и параллельным сравнением нескольких авторских переводов."
       ]
     },
     "kawunu": {
       "company": "«Kawunu» GmbH + «Bytabo» GmbH, Германия",
-      "position": "Full-Stack разработчик (Part-time, 5+ лет)",
-      "date": "Апрель 2020",
+      "position": "Full-Stack разработчик (контракт 1 год, поддержка 4 года)",
+      "date": "Март 2021",
       "description": [
-        "Разработка платформы заказа такси на базе React.",
-        "Создание и поддержка админ-панели на Angular и Material Design.",
-        "Разработка бэкенда с использованием Express.js, Sequelize и PostgreSQL.",
-        "После закрытия Kawunu GmbH проект продолжился в Bytabo GmbH."
+        "Технологии: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku.",
+        "Переработал и перестроил UI платформы заказа такси на React, внедрив единую дизайн-систему Material Design 2.",
+        "С нуля создал платформу управления заказами такси для операторов на Angular, ускорив обработку заказов в 3 раза.",
+        "Спроектировал и реализовал систему промо и скидок для клиентов такси, увеличив маркетинговые взаимодействия с клиентами в 2 раза.",
+        "Интегрировал поиск адресов и автодополнение через Google Places API, расширив поддерживаемые локации клиентов на 300%.",
+        "Покрыл 6 самых сложных бизнес-процессов E2E-тестами, проверяя полные сценарии от пользователя к пользователю."
       ]
     },
     "livee": {
       "company": "Livee LLC, Франция",
-      "position": "Full-Stack разработчик/Tech Owner (Full-time, 4+ года)",
-      "date": "Март 2021",
+      "position": "Full-Stack разработчик/Tech Owner/Product Engineer (контракт, 4+ года)",
+      "date": "Март 2022",
       "description": [
-        "Разработка нескольких админ-панелей на React для с использованием MUI и Atlassian.",
-        "Создание и поддержка бэкенда на Express.js/Hapi.js/PostgREST с PostgreSQL.",
-        "Разработка двух мобильных приложений на React Native с Expo и деплой в Play Market и App Store.",
-        "Обеспечение работы инфраструктуры c Heroku, Netlify и GitHub.",
-        "Настройка и интеграция ряда маркетинговых и аналитических инструментов."
+        "Технологии: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku",
+        "Разработал 3 админ-панели на React, покрывающие полные рабочие процессы управления мероприятиями.",
+        "Мигрировал 200+ экранов управления мероприятиями с Atlassian UI на MUI, сократив время frontend-разработки примерно на 30%.",
+        "Реализовал multi-admin workflows, позволяющие организаторам управлять мероприятиями в общих аккаунтах.",
+        "Спроектировал модуль регистрации для организаторов мероприятий, привлекая на 10% больше организаторов, которым нужен учёт участников.",
+        "Построил CSV/XLSX import-export pipelines для данных мероприятий, сократив объём ручного ввода данных примерно на 50%.",
+        "Создал файловое хранилище на AWS S3 для библиотек ресурсов мероприятий (документы, медиа, вложения).",
+        "Разработал кастомный редактор страниц мероприятий — около 25% пользователей начали использовать его сразу после релиза.",
+        "Перестроил кампании Google Ads, сократив стоимость привлечения клиентов примерно на 50%."
       ]
     }
   },
@@ -136,7 +144,7 @@
       "wordpress": "оздавал множество сайтов на WordPress. Знаю основы PHP, что позволяет мне эффективно исправлять и оптимизировать код при необходимости.",
       "videoEditing": "Умею писать сценарии и создавать ролики с использованием современных инструментов для видеомонтажа. При необходимости могу предоставить примеры работ.",
       "googleAds": "В 2016 году прошёл профессиональную сертификацию. Настраивал и оптимизировал множество рекламных кампаний. Могу существенно повысить конверсию существующих кампаний.",
-      "ai": "Использую AI-инструменты в разработке и всегда стараюсь быть в курсе последних новинок. Работаю с CURSOR AI."
+      "ai": "Использую AI-инструменты в разработке и всегда стараюсь быть в курсе последних новинок. Работаю с CURSOR AI, Claude Code, GitHub Copilot."
     }
   },
   "filter": "Фильтровать по",
@@ -148,8 +156,8 @@
   },
   "portfolio": {
     "header": {
-      "title": "Портфолио",
-      "goBack": "Назад"
+      "title": "Портфолио & <0>GitHub</0>",
+      "goBack": "Назад к резюме"
     },
     "description": {
       "firstProjects": {
@@ -379,6 +387,26 @@
           "feature2": "Material design 2",
           "feature3": "MUI framework",
           "feature4": "Отдельный дизайн для мобильных"
+        }
+      },
+      "events": {
+        "title": "Платформа для проведения мероприятий",
+        "alt": "Платформа для проведения мероприятий",
+        "features": {
+          "feature1": "Адаптивная вёрстка",
+          "feature2": "Material design 2",
+          "feature3": "MUI framework с единой типографикой",
+          "feature4": "Анимации с Framer Motion"
+        }
+      },
+      "ai-tools": {
+        "title": "Парсинг чеков и транскрипция аудио",
+        "alt": "Парсинг чеков и транскрипция аудио",
+        "features": {
+          "feature1": "Интеграция с OpenAI API",
+          "feature2": "Backend на Nest.js",
+          "feature3": "90% работы выполнено с Cursor AI",
+          "feature4": "Тёмная/светлая темы"
         }
       }
     }

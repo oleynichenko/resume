@@ -34,20 +34,26 @@ const PortfolioWorkButtons = ({ links, color, colorDark, features }) => {
       </Box>
 
       <Stack sx={{ gap: { xs: 2, md: 3 }, flexShrink: 0 }}>
-        <Button
-          variant="contained"
-          href={ links.code ? links.code : links.project}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{
-            fontSize: '0.8rem',
-            textTransform: 'uppercase',
-            letterSpacing: '0.5px',
-            backgroundColor: colorDark || color,
-          }}
-        >
-          {t(links.code ? 'portfolio.workItem.viewCode' : 'portfolio.workItem.openProject')}
-        </Button>
+        {(links.code || links.project) && (
+          <Button
+            variant="contained"
+            href={links.code ? links.code : links.project}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              fontSize: '0.8rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              backgroundColor: colorDark || color,
+            }}
+          >
+            {t(
+              links.code
+                ? 'portfolio.workItem.viewCode'
+                : 'portfolio.workItem.openProject',
+            )}
+          </Button>
+        )}
         {links.demo && (
           <Button
             variant="contained"

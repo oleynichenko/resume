@@ -18,6 +18,8 @@ const options = [
   { id: 'apis', name: 'APIs' },
   { id: 'database', name: 'Databases' },
   { id: 'devops', name: 'DevOps' },
+  { id: 'systemDesign', name: 'System Design' },
+  { id: 'ai', name: 'AI' },
 ];
 
 export const FilterSelect = ({ sx, selected, onChange }) => {

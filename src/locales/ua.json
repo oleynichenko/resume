@@ -11,11 +11,11 @@
       "stack": {
         "title": "Технічний стек (останні 4 роки)",
         "text": [
-          "React, Angular, Next.js та React Native",
-          "Express.js, Nest.js, Hapi.js, MongoDB, PostgreSQL",
-          "Docker, GitHub, Heroku, Netlify",
-          "MUI, Angular Material, PrimeNG, Atlassian",
-          "Figma, Adobe XD, Synthesia"
+          "React, Redux, React Query, Next.js та React Native з Expo",
+          "Express.js, Nest.js, Hapi.js, Redis, PostgreSQL, OpenAI API",
+          "Docker, GitHub, Heroku, Netlify, AWS",
+          "Material UI, Atlassian, Figma",
+          "Cursor AI, Claude Code, GitHub Copilot"
         ]
       },
       "experience": {
@@ -61,7 +61,11 @@
     "title": "Контакти",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "portfolio": "Портфоліо"
+    "whatsapp": "WhatsApp"
+  },
+  "layout": {
+    "resumePdf": "Завантажити резюме (PDF)",
+    "portfolio": "Портфоліо & GitHub"
   },
   "education": {
     "title": "Освіта"
@@ -69,47 +73,51 @@
   "experience": {
     "title": "Досвід роботи",
     "be": {
-      "company": "«Be Ukraine» LLC, Італія",
+      "company": "«Be Ukraine» LLC, Україна",
       "position": "Front-end розробник (Full-time, ~2 роки)",
       "date": "Квітень 2019",
       "description": [
-        "Розробка банківського додатку для внутрішніх операцій.",
-        "SCSS/Pug шаблони + Angular 8 + компоненти PrimeNG.",
-        "Тісна співпраця з командами QA та backend для забезпечення плавної інтеграції."
+        "Технології: Angular, PrimeNG, Pug, SCSS",
+        "Працював над fintech банківським застосунком із складними багатоформовими екранами та насиченою бізнес-логікою, що вимагала продуктового розуміння банківських процесів.",
+        "Звільнився, щоб перейти в проект з Node.js стеком для поглиблення backend-навиків."
       ]
     },
     "jbook": {
-      "company": "Проєкт «JBOOK» — додаток для читання книг, Ізраїль",
+      "company": "Проєкт «JBOOK», Ізраїль",
       "position": "Front-end розробник (Full-time, 3+ роки)",
       "date": "Жовтень 2016",
       "description": [
-        "Розробив багатомовну бібліотеку з PWA.",
-        "Верстка + Angular + Node.js + MongoDB стек.",
-        "Використання UI-фреймворку Material Design.",
-        "Інтеграція з API соціальних мереж."
+        "Технології: PWA, Angular, Express.js, MongoDB, Material Design.",
+        "Створив багатомовну бібліотеку з перекладом на рівні абзаців та паралельним порівнянням кількох авторських перекладів."
       ]
     },
     "kawunu": {
       "company": "«Kawunu» GmbH + «Bytabo» GmbH, Німеччина",
-      "position": "Full-Stack розробник (Part-time, 5+ років)",
-      "date": "Квітень 2020",
+      "position": "Full-Stack розробник (контракт 1 рік, підтримка 4 роки)",
+      "date": "Березень 2021",
       "description": [
-        "Розробка платформи для бронювання таксі на базі React.",
-        "Створення та підтримка адмін-панелі на Angular та Material Design.",
-        "Розробка бекенду з використанням Express.js, Sequelize та PostgreSQL.",
-        "Після закриття Kawunu GmbH проєкт продовжився у Bytabo GmbH."
+        "Технології: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku.",
+        "Переробив і перебудував UI платформи бронювання таксі на React, впровадивши єдину дизайн-систему Material Design 2.",
+        "З нуля створив платформу управління замовленнями таксі для операторів на Angular, прискоривши обробку замовлень у 3 рази.",
+        "Спроєктував і реалізував систему промо та знижок для клієнтів таксі, збільшивши маркетингові взаємодії з клієнтами у 2 рази.",
+        "Інтегрував пошук адрес і автодоповнення через Google Places API, розширивши підтримувані локації клієнтів на 300%.",
+        "Покрив 6 найскладніших бізнес-процесів E2E-тестами, перевіряючи повні сценарії від користувача до користувача."
       ]
     },
     "livee": {
       "company": "Livee LLC, Франція",
-      "position": "Full-Stack розробник/Tech Owner (Full-time, 4+ роки)",
-      "date": "Березень 2021",
+      "position": "Full-Stack розробник/Tech Owner/Product Engineer (контракт, 4+ роки)",
+      "date": "Березень 2022",
       "description": [
-        "Розробка кількох адмін-панелей на React з використанням MUI та Atlassian.",
-        "Створення та підтримка бекенду на Express.js/Hapi.js/PostgREST з PostgreSQL.",
-        "Розробка двох мобільних застосунків на React Native з Expo та їхнє розгортання в Play Market та App Store.",
-        "Забезпечення роботи інфраструктури з Heroku, Netlify та GitHub.",
-        "Налаштування та інтеграція низки маркетингових та аналітичних інструментів."
+        "Технології: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku",
+        "Розробив 3 адмін-панелі на React, що покривають повні робочі процеси управління подіями.",
+        "Мігрував 200+ екранів управління подіями з Atlassian UI на MUI, скоротивши час frontend-розробки приблизно на 30%.",
+        "Реалізував multi-admin workflows, що дозволяють організаторам керувати подіями в спільних акаунтах.",
+        "Спроєктував модуль реєстрації для організаторів подій, залучивши на 10% більше організаторів, яким потрібен облік учасників.",
+        "Побудував CSV/XLSX import-export pipelines для даних подій, скоротивши обсяг ручного введення даних приблизно на 50%.",
+        "Створив файлове сховище на AWS S3 для бібліотек ресурсів подій (документи, медіа, вкладення).",
+        "Розробив кастомний редактор сторінок подій — близько 25% користувачів почали використовувати його одразу після релізу.",
+        "Перебудував кампанії Google Ads, скоротивши вартість залучення клієнтів приблизно на 50%."
       ]
     }
   },
@@ -136,7 +144,7 @@
       "wordpress": "Створював багато сайтів на WordPress. Знаю основи PHP, що дозволяє ефективно виправляти та оптимізувати код, коли це необхідно.",
       "videoEditing": "Можу писати сценарії та створювати відео з використанням сучасних інструментів для відеомонтажу. За потреби можу надати приклади робіт.",
       "googleAds": "Пройшов професійну сертифікацію у 2016 році. Налаштовував та оптимізував багато рекламних кампаній. Можу значно покращити конверсію існуючих кампаній.",
-      "ai": "Використовую AI-інструменти в розробці та стежу за останніми новинками. Працюю з CURSOR AI."
+      "ai": "Використовую AI-інструменти в розробці та стежу за останніми новинками. Працюю з CURSOR AI, Claude Code, GitHub Copilot."
     }
   },
   "filter": "Фільтрувати за",
@@ -148,8 +156,8 @@
   },
   "portfolio": {
     "header": {
-      "title": "Портфоліо",
-      "goBack": "Назад"
+      "title": "Портфоліо & <0>GitHub</0>",
+      "goBack": "Назад до резюме"
     },
     "description": {
       "firstProjects": {
@@ -379,6 +387,26 @@
           "feature2": "Material design 2",
           "feature3": "MUI framework",
           "feature4": "Окремий дизайн для мобільних"
+        }
+      },
+      "events": {
+        "title": "Платформа для проведення подій",
+        "alt": "Платформа для проведення подій",
+        "features": {
+          "feature1": "Адаптивна верстка",
+          "feature2": "Material design 2",
+          "feature3": "MUI framework з єдиною типографікою",
+          "feature4": "Анімації з Framer Motion"
+        }
+      },
+      "ai-tools": {
+        "title": "Парсинг чеків і транскрипція аудіо",
+        "alt": "Парсинг чеків і транскрипція аудіо",
+        "features": {
+          "feature1": "Інтеграція з OpenAI API",
+          "feature2": "Backend на Nest.js",
+          "feature3": "90% роботи виконано з Cursor AI",
+          "feature4": "Темна/світла теми"
         }
       }
     }

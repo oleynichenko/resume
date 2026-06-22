@@ -1,16 +1,14 @@
 import { Stack, Typography, Box, Link } from '@mui/material';
 import Email from '@mui/icons-material/Email';
-import Language from '@mui/icons-material/Language';
+import Phone from '@mui/icons-material/Phone';
 import LinkedIn from '@mui/icons-material/LinkedIn';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from './SectionTitle';
-import { Link as RouterLink, useParams } from 'react-router';
 import { motion } from 'motion/react';
 import { varFade } from '../animate/variants/fade';
 
 const Contacts = ({ sx }) => {
   const { t } = useTranslation();
-  const { lang } = useParams();
 
   const contacts = [
     {
@@ -36,13 +34,12 @@ const Contacts = ({ sx }) => {
     {
       icon: (
         <Stack sx={{ bgcolor: 'primary.main', borderRadius: '50%', p: 1 }}>
-          <Language fontSize="large" sx={{ color: 'white' }} />
+          <Phone fontSize="large" sx={{ color: 'white' }} />
         </Stack>
       ),
-      label: t('contacts.portfolio'),
-      value: 'oleynichenko.github.io',
-      href: `/${lang}/portfolio`,
-      isRouterLink: true,
+      label: t('contacts.whatsapp'),
+      value: '+380 50 865 82 18',
+      href: 'https://wa.me/380508658218',
     },
   ];
 
@@ -62,7 +59,7 @@ const Contacts = ({ sx }) => {
           flexWrap: 'wrap',
         }}
       >
-        {contacts.map(({ icon, label, value, href, isRouterLink }) => (
+        {contacts.map(({ icon, label, value, href }) => (
           <Box
             key={label}
             sx={{
@@ -73,31 +70,16 @@ const Contacts = ({ sx }) => {
           >
             {icon}
             <Stack>
-              {isRouterLink ? (
-                <Link
-                  sx={{
-                    color: 'inherit',
-                    textDecorationColor: 'inherit',
-                    '&:hover': { color: 'primary.main' },
-                  }}
-                  component={RouterLink}
-                  variant="h5"
-                  to={href}
-                >
-                  {value}
-                </Link>
-              ) : (
-                <Link
-                  sx={{ fontWeight: 400, '&:hover': { color: 'primary.main' } }}
-                  color="inherit"
-                  variant="h5"
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {value}
-                </Link>
-              )}
+              <Link
+                sx={{ fontWeight: 400, '&:hover': { color: 'primary.main' } }}
+                color="inherit"
+                variant="h5"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {value}
+              </Link>
               <Typography variant="body1">{label}</Typography>
             </Stack>
           </Box>

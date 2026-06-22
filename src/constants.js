@@ -14,25 +14,25 @@ const experienceItems = [
     company: 'experience.jbook.company',
     position: 'experience.jbook.position',
     description: 'experience.jbook.description',
-    tags: ['angular', 'apis', 'database', 'devops'],
+    tags: ['angular', 'apis', 'database', 'devops', 'systemDesign'],
   },
   {
-    year: 2020,
+    year: 2021,
     date: 'experience.kawunu.date',
     company: 'experience.kawunu.company',
     position: 'experience.kawunu.position',
     description: 'experience.kawunu.description',
-    link: 'https://www.kawunu.com',
-    tags: ['angular', 'react', 'apis', 'database'],
+    link: 'https://www.airportliner.com',
+    tags: ['angular', 'react', 'apis', 'database', 'systemDesign'],
   },
   {
-    year: 2021,
+    year: 2022,
     date: 'experience.livee.date',
     company: 'experience.livee.company',
     position: 'experience.livee.position',
     description: 'experience.livee.description',
     link: 'https://www.livee.com/',
-    tags: ['react', 'apis', 'database', 'devops', 'next'],
+    tags: ['react', 'apis', 'database', 'devops', 'next', 'systemDesign', 'ai'],
   },
 ];
 
@@ -41,22 +41,50 @@ const educationItems = [
     id: 1,
     name: 'Cursor AI: Learn by Building Full-Stack Next.js 15 App',
     year: 2025,
-    tag: 'react',
+    tag: 'ai',
     link: 'https://www.udemy.com/course/cursorai-nextjs/',
+  },
+  {
+    id: 28,
+    name: 'Claude Code - The Practical Guide',
+    year: 2026,
+    tag: 'ai',
+    link: 'https://www.udemy.com/course/claude-code-the-practical-guide/',
   },
   {
     id: 26,
     name: 'Next.js & React - The Complete Guide',
-    year: 2026,
+    year: 2025,
     tag: 'next',
     link: 'https://webpros.udemy.com/course/nextjs-react-the-complete-guide',
   },
   {
     id: 27,
     name: "Next JS: The Complete Developer's Guide",
-    year: 2026,
+    year: 2025,
     tag: 'next',
     link: 'https://webpros.udemy.com/course/next-js-the-complete-developers-guide',
+  },
+  {
+    id: 29,
+    name: 'Mastering the System Design Interview',
+    year: 2026,
+    tag: 'systemDesign',
+    link: 'https://webpros.udemy.com/course/system-design-interview-prep',
+  },
+  {
+    id: 30,
+    name: 'System Design Masterclass (2026)',
+    year: 2026,
+    tag: 'systemDesign',
+    link: 'https://www.udemy.com/course/system-design-masterclass/',
+  },
+  {
+    id: 31,
+    name: 'Ultimate AWS Certified Developer Associate 2026 DVA-C02',
+    year: 2026,
+    tag: 'devops',
+    link: 'https://webpros.udemy.com/course/aws-certified-developer-associate-dva-c01',
   },
   {
     id: 2,
@@ -231,16 +259,112 @@ const educationItems = [
 const SKILLS = [
   { id: 1, name: 'React + Redux', level: 10 },
   { id: 2, name: 'React Native', level: 8 },
+  { id: 4, name: 'Node JS/Nest.js', level: 7 },
+  { id: 5, name: 'Mongo/PostgreSQL', level: 7 },
   { id: 3, name: 'Angular + NgRx', level: 6 },
-  { id: 4, name: 'Node JS', level: 7 },
-  { id: 5, name: 'Mongo/Postgres', level: 7 },
   { id: 6, name: 'Next.js', level: 5 },
-  { id: 7, name: 'WordPress', level: 4 },
-  { id: 8, name: 'Docker + Github', level: 6 },
-  { id: 9, name: 'UX/UI', level: 9 },
+  { id: 7, name: 'AWS/Heroku', level: 6 },
+  { id: 8, name: 'Docker/Git', level: 8 },
+  { id: 9, name: 'Cursor AI', level: 10 },
 ];
 
 const portfolioItems2016_2017 = [
+  {
+    id: 'device',
+    title: 'portfolio.items.device.title',
+    tags: ['portfolio.tags.layout', 'portfolio.tags.design'],
+    image: {
+      desktop: '/img/device-ds-1x.jpg',
+      tablet: '/img/device-tb-1x.jpg',
+      alt: 'portfolio.items.device.alt',
+    },
+    features: [
+      'portfolio.items.device.features.feature1',
+      'portfolio.items.device.features.feature2',
+      'portfolio.items.device.features.feature3',
+      'portfolio.items.device.features.feature4',
+      'portfolio.items.device.features.feature5',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/device',
+      demo: 'https://oleynichenko.github.io/device/index.html',
+    },
+    color: '#ffe27f',
+    colorDark: '#665A32',
+  },
+  {
+    id: 'brb',
+    title: 'portfolio.items.brb.title',
+    tags: ['portfolio.tags.layout'],
+    image: {
+      desktop: '/img/brb-ds-1x.jpg',
+      tablet: '/img/brb-tb-1x.jpg',
+      alt: 'portfolio.items.brb.alt',
+    },
+    features: [
+      'portfolio.items.brb.features.feature1',
+      'portfolio.items.brb.features.feature2',
+      'portfolio.items.brb.features.feature3',
+      'portfolio.items.brb.features.feature4',
+      'portfolio.items.brb.features.feature5',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/barbershop',
+      demo: 'https://oleynichenko.github.io/barbershop/index.html',
+    },
+    color: '#000',
+    colorLight: '#F2F2F2',
+  },
+  {
+    id: 'pilates',
+    title: 'portfolio.items.pilates.title',
+    tags: [
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
+      'portfolio.tags.php',
+      'portfolio.tags.javascript',
+    ],
+    image: {
+      desktop: '/img/pilates-ds-1x.jpg',
+      tablet: '/img/pilates-tb-1x.jpg',
+      alt: 'portfolio.items.pilates.alt',
+    },
+    features: [
+      'portfolio.items.pilates.features.feature1',
+      'portfolio.items.pilates.features.feature2',
+      'portfolio.items.pilates.features.feature3',
+      'portfolio.items.pilates.features.feature4',
+      'portfolio.items.pilates.features.feature5',
+      'portfolio.items.pilates.features.feature5',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/pilates',
+      demo: 'https://pilates-trainer.github.io',
+    },
+    color: '#c7ade9',
+    colorDark: '#40374B',
+  },
+  {
+    id: 'azbyka',
+    title: 'portfolio.items.azbyka.title',
+    tags: ['portfolio.tags.design'],
+    image: {
+      desktop: '/img/azb-ds-1x.jpg',
+      tablet: '/img/azb-tb-1x.jpg',
+      alt: 'portfolio.items.azbyka.alt',
+    },
+    features: [
+      'portfolio.items.azbyka.features.feature1',
+      'portfolio.items.azbyka.features.feature2',
+      'portfolio.items.azbyka.features.feature3',
+      'portfolio.items.azbyka.features.feature4',
+    ],
+    links: {
+      project: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
+    },
+    color: '#6E4B0B',
+    colorLight: '#FFF6E5',
+  },
   {
     id: 'jbook',
     title: 'portfolio.items.jbook.title',
@@ -419,27 +543,6 @@ const portfolioItems2016_2017 = [
     colorDark: '#2a2b25',
   },
   {
-    id: 'azbyka',
-    title: 'portfolio.items.azbyka.title',
-    tags: ['portfolio.tags.design'],
-    image: {
-      desktop: '/img/azb-ds-1x.jpg',
-      tablet: '/img/azb-tb-1x.jpg',
-      alt: 'portfolio.items.azbyka.alt',
-    },
-    features: [
-      'portfolio.items.azbyka.features.feature1',
-      'portfolio.items.azbyka.features.feature2',
-      'portfolio.items.azbyka.features.feature3',
-      'portfolio.items.azbyka.features.feature4',
-    ],
-    links: {
-      project: 'https://www.behance.net/gallery/70632601/Azbykaru-redesign',
-    },
-    color: '#6E4B0B',
-    colorLight: '#FFF6E5',
-  },
-  {
     id: 'slider',
     title: 'portfolio.items.slider.title',
     tags: ['portfolio.tags.javascript', 'portfolio.tags.svg'],
@@ -460,164 +563,140 @@ const portfolioItems2016_2017 = [
     color: '#ebdcff',
     colorDark: '#35303c',
   },
-  {
-    id: 'device',
-    title: 'portfolio.items.device.title',
-    tags: ['portfolio.tags.layout', 'portfolio.tags.design'],
-    image: {
-      desktop: '/img/device-ds-1x.jpg',
-      tablet: '/img/device-tb-1x.jpg',
-      alt: 'portfolio.items.device.alt',
-    },
-    features: [
-      'portfolio.items.device.features.feature1',
-      'portfolio.items.device.features.feature2',
-      'portfolio.items.device.features.feature3',
-      'portfolio.items.device.features.feature4',
-      'portfolio.items.device.features.feature5',
-    ],
-    links: {
-      code: 'https://github.com/oleynichenko/device',
-      demo: 'https://oleynichenko.github.io/device/index.html',
-    },
-    color: '#ffe27f',
-    colorDark: '#665A32',
-  },
-  {
-    id: 'pixel',
-    title: 'portfolio.items.pixel.title',
-    tags: ['portfolio.tags.javascript'],
-    image: {
-      desktop: '/img/pixel-ds-1x.jpg',
-      tablet: '/img/pixel-tb-1x.jpg',
-      alt: 'portfolio.items.pixel.alt',
-    },
-    features: [
-      'portfolio.items.pixel.features.feature1',
-      'portfolio.items.pixel.features.feature2',
-      'portfolio.items.pixel.features.feature3',
-      'portfolio.items.pixel.features.feature4',
-    ],
-    links: {
-      code: 'https://github.com/oleynichenko/pixel-hunter',
-      demo: 'https://oleynichenko.github.io/pixel-hunter/',
-    },
-    color: '#b3cfd0',
-    colorDark: '#475252',
-  },
-  {
-    id: 'brb',
-    title: 'portfolio.items.brb.title',
-    tags: ['portfolio.tags.layout'],
-    image: {
-      desktop: '/img/brb-ds-1x.jpg',
-      tablet: '/img/brb-tb-1x.jpg',
-      alt: 'portfolio.items.brb.alt',
-    },
-    features: [
-      'portfolio.items.brb.features.feature1',
-      'portfolio.items.brb.features.feature2',
-      'portfolio.items.brb.features.feature3',
-      'portfolio.items.brb.features.feature4',
-      'portfolio.items.brb.features.feature5',
-    ],
-    links: {
-      code: 'https://github.com/oleynichenko/barbershop',
-      demo: 'https://oleynichenko.github.io/barbershop/index.html',
-    },
-    color: '#000',
-    colorLight: '#F2F2F2',
-  },
-  {
-    id: 'pilates',
-    title: 'portfolio.items.pilates.title',
-    tags: [
-      'portfolio.tags.design',
-      'portfolio.tags.layout',
-      'portfolio.tags.php',
-      'portfolio.tags.javascript',
-    ],
-    image: {
-      desktop: '/img/pilates-ds-1x.jpg',
-      tablet: '/img/pilates-tb-1x.jpg',
-      alt: 'portfolio.items.pilates.alt',
-    },
-    features: [
-      'portfolio.items.pilates.features.feature1',
-      'portfolio.items.pilates.features.feature2',
-      'portfolio.items.pilates.features.feature3',
-      'portfolio.items.pilates.features.feature4',
-      'portfolio.items.pilates.features.feature5',
-    ],
-    links: {
-      code: 'https://github.com/oleynichenko/pilates',
-      demo: 'https://pilates-trainer.github.io',
-    },
-    color: '#c7ade9',
-    colorDark: '#40374B',
-  },
-  {
-    id: 'todo',
-    title: 'portfolio.items.todo.title',
-    tags: [
-      'portfolio.tags.node',
-      'portfolio.tags.express',
-      'portfolio.tags.mongoose',
-      'portfolio.tags.jsonwebtoken',
-    ],
-    image: {
-      desktop: '/img/todo-ds-1x.jpg',
-      tablet: '/img/todo-tb-1x.jpg',
-      alt: 'portfolio.items.todo.alt',
-    },
-    features: [
-      'portfolio.items.todo.features.feature1',
-      'portfolio.items.todo.features.feature2',
-      'portfolio.items.todo.features.feature3',
-      'portfolio.items.todo.features.feature4',
-      'portfolio.items.todo.features.feature5',
-    ],
-    links: {
-      code: 'https://github.com/oleynichenko/Todo-App',
-    },
-    color: '#695EB8',
-    colorLight: '#E6E2FF',
-  },
+  // {
+  //   id: 'pixel',
+  //   title: 'portfolio.items.pixel.title',
+  //   tags: ['portfolio.tags.javascript'],
+  //   image: {
+  //     desktop: '/img/pixel-ds-1x.jpg',
+  //     tablet: '/img/pixel-tb-1x.jpg',
+  //     alt: 'portfolio.items.pixel.alt',
+  //   },
+  //   features: [
+  //     'portfolio.items.pixel.features.feature1',
+  //     'portfolio.items.pixel.features.feature2',
+  //     'portfolio.items.pixel.features.feature3',
+  //     'portfolio.items.pixel.features.feature4',
+  //   ],
+  //   links: {
+  //     code: 'https://github.com/oleynichenko/pixel-hunter',
+  //     demo: 'https://oleynichenko.github.io/pixel-hunter/',
+  //   },
+  //   color: '#b3cfd0',
+  //   colorDark: '#475252',
+  // },
+  // {
+  //   id: 'todo',
+  //   title: 'portfolio.items.todo.title',
+  //   tags: [
+  //     'portfolio.tags.node',
+  //     'portfolio.tags.express',
+  //     'portfolio.tags.mongoose',
+  //     'portfolio.tags.jsonwebtoken',
+  //   ],
+  //   image: {
+  //     desktop: '/img/todo-ds-1x.jpg',
+  //     tablet: '/img/todo-tb-1x.jpg',
+  //     alt: 'portfolio.items.todo.alt',
+  //   },
+  //   features: [
+  //     'portfolio.items.todo.features.feature1',
+  //     'portfolio.items.todo.features.feature2',
+  //     'portfolio.items.todo.features.feature3',
+  //     'portfolio.items.todo.features.feature4',
+  //     'portfolio.items.todo.features.feature5',
+  //   ],
+  //   links: {
+  //     code: 'https://github.com/oleynichenko/Todo-App',
+  //   },
+  //   color: '#695EB8',
+  //   colorLight: '#E6E2FF',
+  // },
 ];
 
 const portfolioItems2025_2026 = [
+  // {
+  //   id: 'daat',
+  //   title: 'portfolio.items.daat.title',
+  //   tags: [
+  //     'portfolio.tags.react',
+  //     'portfolio.tags.gatsby',
+  //     'portfolio.tags.cssAnimations',
+  //   ],
+  //   image: {
+  //     desktop: '/img/daat-ds-1x.jpg',
+  //     tablet: '/img/daat-tb-1x.jpg',
+  //     alt: 'portfolio.items.daat.alt',
+  //   },
+  //   features: [
+  //     'portfolio.items.daat.features.feature1',
+  //     'portfolio.items.daat.features.feature2',
+  //     'portfolio.items.daat.features.feature3',
+  //     'portfolio.items.daat.features.feature4',
+  //   ],
+  //   links: {
+  //     code: 'https://github.com/oleynichenko/daat',
+  //     demo: 'https://daat.agency',
+  //   },
+  //   color: '#000',
+  //   colorLight: '#F2F2F2',
+  // },
   {
-    id: 'daat',
-    title: 'portfolio.items.daat.title',
+    id: 'events',
+    title: 'portfolio.items.events.title',
     tags: [
       'portfolio.tags.react',
-      'portfolio.tags.gatsby',
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
       'portfolio.tags.cssAnimations',
     ],
     image: {
-      desktop: '/img/daat-ds-1x.jpg',
-      tablet: '/img/daat-tb-1x.jpg',
-      alt: 'portfolio.items.daat.alt',
+      desktop: '/img/events-ds-1x.jpg',
+      tablet: '/img/events-tb-1x.jpg',
+      alt: 'portfolio.items.events.alt',
     },
     features: [
-      'portfolio.items.daat.features.feature1',
-      'portfolio.items.daat.features.feature2',
-      'portfolio.items.daat.features.feature3',
-      'portfolio.items.daat.features.feature4',
+      'portfolio.items.events.features.feature1',
+      'portfolio.items.events.features.feature2',
+      'portfolio.items.events.features.feature3',
+      'portfolio.items.events.features.feature4',
     ],
     links: {
-      code: 'https://github.com/oleynichenko/daat',
-      demo: 'https://daat.agency',
+      demo: 'https://events.conf.app',
     },
-    color: '#000',
-    colorLight: '#F2F2F2',
+    color: '#358bf0',
+    colorLight: '#deedff',
+  },
+  {
+    id: 'ai-tools',
+    title: 'portfolio.items.ai-tools.title',
+    tags: [
+      'portfolio.tags.design',
+      'portfolio.tags.layout',
+      'portfolio.tags.react',
+    ],
+    image: {
+      desktop: '/img/ai-tools-ds-1x.jpg',
+      tablet: '/img/ai-tools-tb-1x.jpg',
+      alt: 'portfolio.items.ai-tools.alt',
+    },
+    features: [
+      'portfolio.items.ai-tools.features.feature1',
+      'portfolio.items.ai-tools.features.feature2',
+      'portfolio.items.ai-tools.features.feature3',
+      'portfolio.items.ai-tools.features.feature4',
+    ],
+    links: {
+      code: 'https://github.com/oleynichenko/ai-tools',
+      demo: 'https://ai-powered-tools.netlify.app/',
+    },
+    color: '#ff71a1',
+    colorLight: '#ffe6f0',
   },
   {
     id: 'conf',
     title: 'portfolio.items.conf.title',
-    tags: [
-      'portfolio.tags.design',
-    ],
+    tags: ['portfolio.tags.design'],
     image: {
       desktop: '/img/conf-ds-1x.jpg',
       tablet: '/img/conf-tb-1x.jpg',
@@ -630,7 +709,8 @@ const portfolioItems2025_2026 = [
       'portfolio.items.conf.features.feature4',
     ],
     links: {
-      project: 'https://www.behance.net/gallery/245323777/Redesign-of-Event-Service-Platform',
+      project:
+        'https://www.behance.net/gallery/245323777/Redesign-of-Event-Service-Platform',
     },
     color: '#358bf0',
     colorLight: '#deedff',
@@ -655,8 +735,9 @@ const TECHNOLOGIES = [
   'portfolio.technologies.tech6',
 ];
 
-const UPDATE_DATE = '2026-03-10';
+const UPDATE_DATE = '2026-06-10';
 const SECTION_HEIGHT = 400;
+const RESUME_PDF_URL = `${import.meta.env.BASE_URL}OleksandrOliinychenko_fs.pdf`;
 
 export {
   experienceItems,
@@ -668,4 +749,5 @@ export {
   WEBSITE_FEATURES,
   portfolioItems2016_2017,
   portfolioItems2025_2026,
+  RESUME_PDF_URL,
 };
