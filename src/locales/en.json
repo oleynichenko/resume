@@ -1,10 +1,10 @@
 {
   "about": {
     "name": "Oleksandr Oliinychenko",
-    "position": "Full-Stack Web Developer",
+    "position": "Full-Stack Software Engineer",
     "description": [
       "Mathematician by education. After graduating from Taras Shevchenko National University of Kyiv, worked for several years at the Institute of Mathematics of the National Academy of Sciences of Ukraine. Later, I built a career in FMCG, progressing from sales manager to managing director of a distribution company.",
-      "In 2013, I moved to internet marketing. Launched and led the promotion of several educational projects. Since 2016, I've been doing what I really love - web development and UX design."
+      "In 2013, I moved to internet marketing. Launched and led the promotion of several educational projects. Since 2016, I've been doing what I really love - web development."
     ],
     "lastDescription": "I have experience in both front-end and back-end development, as well as DevOps and usually strive to influence overall product development. My stack over the past 4 years includes... <0>Read more</0>",
     "modal": {
@@ -37,7 +37,7 @@
     "info": {
       "position": {
         "key": "Desired position",
-        "value": "Full-Stack Web Developer"
+        "value": "Full-Stack Software Engineer"
       },
       "experience": {
         "key": "Experience",
@@ -109,7 +109,7 @@
       "position": "Full-Stack Developer/Tech Owner/Product Engineer (Contract, 4+ years)",
       "date": "March 2022",
       "description": [
-        "Technologies: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku",
+        "Technologies: React, React Native, Material UI, Hapi.js, Nest.js, PostgREST.js, PostgreSQL, Auth0, Heroku, Netlify.",
         "Developed 3 React-based admin dashboards covering full event management workflows.",
         "Migrated 200+ event management screens from Atlassian UI to MUI, reducing frontend development time by ~30%.",
         "Implemented multi-admin workflows allowing organizers to manage events within shared accounts.",

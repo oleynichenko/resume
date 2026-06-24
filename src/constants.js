@@ -259,11 +259,11 @@ const educationItems = [
 const SKILLS = [
   { id: 1, name: 'React + Redux', level: 10 },
   { id: 2, name: 'React Native', level: 8 },
-  { id: 4, name: 'Node JS/Nest.js', level: 7 },
+  { id: 4, name: 'Node JS/Nest.js', level: 8 },
   { id: 5, name: 'Mongo/PostgreSQL', level: 7 },
   { id: 3, name: 'Angular + NgRx', level: 6 },
   { id: 6, name: 'Next.js', level: 5 },
-  { id: 7, name: 'AWS/Heroku', level: 6 },
+  { id: 7, name: 'AWS/Heroku', level: 8 },
   { id: 8, name: 'Docker/Git', level: 8 },
   { id: 9, name: 'Cursor AI', level: 10 },
 ];
@@ -737,7 +737,7 @@ const TECHNOLOGIES = [
 
 const UPDATE_DATE = '2026-06-10';
 const SECTION_HEIGHT = 400;
-const RESUME_PDF_URL = `${import.meta.env.BASE_URL}OleksandrOliinychenko_fs.pdf`;
+const RESUME_PDF_URL = `${import.meta.env.BASE_URL}OleksandrOliinychenkoFullStackEngineer.pdf`;
 
 export {
   experienceItems,

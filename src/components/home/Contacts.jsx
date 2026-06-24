@@ -29,7 +29,7 @@ const Contacts = ({ sx }) => {
       ),
       label: t('contacts.linkedin'),
       value: 'linkedin.com/in/oliinychenko',
-      href: 'https://www.linkedin.com/in/oliinychenko/',
+      href: 'https://www.linkedin.com/in/oliinychenko',
     },
     {
       icon: (
