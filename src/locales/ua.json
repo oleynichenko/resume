@@ -109,7 +109,7 @@
       "position": "Full-Stack розробник/Tech Owner/Product Engineer (контракт, 4+ роки)",
       "date": "Березень 2022",
       "description": [
-        "Технології: React, Angular, RxJs, Express.js, PostgreSQL, MUI, Angular Material Design, Playwright, Heroku",
+        "Технології: React, Next.js, React Native, Material UI, Hapi.js, Nest.js, PostgREST.js, PostgreSQL, Auth0, Heroku, Netlify.",
         "Розробив 3 адмін-панелі на React, що покривають повні робочі процеси управління подіями.",
         "Мігрував 200+ екранів управління подіями з Atlassian UI на MUI, скоротивши час frontend-розробки приблизно на 30%.",
         "Реалізував multi-admin workflows, що дозволяють організаторам керувати подіями в спільних акаунтах.",

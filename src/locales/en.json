@@ -109,7 +109,7 @@
       "position": "Full-Stack Developer/Tech Owner/Product Engineer (Contract, 4+ years)",
       "date": "March 2022",
       "description": [
-        "Technologies: React, React Native, Material UI, Hapi.js, Nest.js, PostgREST.js, PostgreSQL, Auth0, Heroku, Netlify.",
+        "Technologies: React, Next.js, React Native, Material UI, Hapi.js, Nest.js, PostgREST.js, PostgreSQL, Auth0, Heroku, Netlify.",
         "Developed 3 React-based admin dashboards covering full event management workflows.",
         "Migrated 200+ event management screens from Atlassian UI to MUI, reducing frontend development time by ~30%.",
         "Implemented multi-admin workflows allowing organizers to manage events within shared accounts.",
